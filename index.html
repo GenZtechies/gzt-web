@@ -8,25 +8,44 @@
     <title>GenZ Techies</title>
 
     <!-- TailwindCSS CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&display=swap');
+
+    * {
+        font-family: 'Lexend', sans-serif;
+    }
+</style>
 
 <body>
+    <div class="flex h-screen w-screen">
+        <div class="bg-no-repeat bg-cover bg-center min-h-screen w-screen absolute"
+            style="background-image: url('./banner.svg')">
+        </div>
 
-    <section class="text-gray-400 bg-gray-500 body-font min-h-screen">
-        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="./simple_banner.svg">
-            <div class="text-center lg:w-2/3 w-full">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">GenZTechies is coming soon...</h1>
-                <p class="leading-relaxed mb-8"></p>
-                <div class="flex justify-center">
-                    <a href="https://github.com/GenZTechies" target="_blank" class="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">View Github</a>
+        <div class="m-auto z-10">
+            <div class="text-center justify-center">
+                <h1
+                    class="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-4xl md:text-6xl lg:text-8xl h-auto">
+                    <span class="text-white">Connecting</span> Teen Techies
+                    <br class="hidden md:block">
+                    <span class="text-white">Across</span> Nigeria
+                </h1>
+
+                <div class="mt-12 text-yellow-400 text-2xl lg:md:text-3xl font-black">
+                    Gen<span class="text-3xl lg:md:text-4xl">Z</span>techies.<span class="text-5xl lg:md:text-6xl">com</span>
+                </div>
+
+                <div class="mt-8">
+                    <a href="https://forms.gle/W4JgHYBjw9U9WmrCA"
+                        class="px-10 py-2 font-semibold text-white rounded-full transition duration-500 ease-in-out bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-yellow-500 hover:to-pink-900 focus:shadow-outline focus:outline-none">
+                        Wanna hear when we go live?
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-
-
+    </div>
 </body>
 
 </html>
