@@ -34,17 +34,36 @@
         * {
             font-family: 'Lexend', sans-serif;
         }
+        .personImage {
+            width: 86px;
+            height: 86px;;
+        }
+        @media screen and (min-width: 1024px) {
+            .personImage {
+                width: 117px;
+                height: 117px;
+            }
+        }
+        .aboutText {
+            max-width: 180px; 
+        }
+        @media screen and (min-width: 1024px) {
+            .aboutText {
+                max-width: 250px;
+            }
+        }
     </style>
     <body style="background: #131249;">
-        <div class="container px-5 mx-auto py-5">
-            <div class="w-full flex mx-auto max-w-sm justify-center">
-                <div class="flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-r from-yellow-500 to-purple-500 mr-2">
-                    <img class="" style="width: 86px; height: 86px" src="assets/Eniola.png"/>
+        
+        <div class="container px-5 mx-auto py-5 md: grid md:grid-cols-2">
+            <div class="w-full flex mx-auto max-w-sm justify-center mb-8">
+                <div class="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-500 to-purple-500 mr-2">
+                    <img class="personImage"  src="assets/Eniola.png"/>
                 </div>
                 <div class="textContainer">
-                    <p class="text-yellow-600 mt-2 font-normal" style="font-size: 20px;">Eniola Osabiya</p>
-                    <p class="mb-2 font-normal bg-gradient-to-r from-yellow-500 to-purple-500 text-transparent bg-clip-text text-base">Fullstack web developer</p>
-                    <p class="text-white text-xs mb-2" style="max-width: 180px;">Nisi et enim nulla qui est aliquip voluptate pariatur duis. </p>
+                    <p class="text-yellow-600 mt-2 font-normal text-xl lg:text-2xl" >Eniola Osabiya</p>
+                    <p class="mb-2 font-normal bg-gradient-to-r from-yellow-500 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">Fullstack web developer</p>
+                    <p class="text-white text-xs mb-2 lg:text-sm aboutText" >Nisi et enim nulla qui est aliquip voluptate pariatur duis. </p>
                     <div class="flex">
                         <img class="pr-2" src="assets/icons/Vector.svg"/>
                         <img class="pr-2" src="assets/icons/Vector (1).svg"/>
@@ -54,7 +73,57 @@
                 </div> 
 
             </div>
-            <!-- <div class="flex w-96 bg-black h-32 mx-auto">
+            <div class="w-full flex mx-auto max-w-sm justify-center mb-8">
+                <div class="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-500 to-purple-500 mr-2">
+                    <img class="personImage"  src="assets/Eniola.png"/>
+                </div>
+                <div class="textContainer">
+                    <p class="text-yellow-600 mt-2 font-normal text-xl lg:text-2xl" >Eniola Osabiya</p>
+                    <p class="mb-2 font-normal bg-gradient-to-r from-yellow-500 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">Fullstack web developer</p>
+                    <p class="text-white text-xs mb-2 lg:text-sm aboutText">Nisi et enim nulla qui est aliquip voluptate pariatur duis. </p>
+                    <div class="flex">
+                        <img class="pr-2" src="assets/icons/Vector.svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (1).svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (2).svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (3).svg"/>
+                    </div>
+                </div> 
+
+            </div>
+            <div class="w-full flex mx-auto max-w-sm justify-center mb-8">
+                <div class="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-500 to-purple-500 mr-2">
+                    <img class="personImage"  src="assets/Eniola.png"/>
+                </div>
+                <div class="textContainer">
+                    <p class="text-yellow-600 mt-2 font-normal text-xl lg:text-2xl" >Eniola Osabiya</p>
+                    <p class="mb-2 font-normal bg-gradient-to-r from-yellow-500 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">Fullstack web developer</p>
+                    <p class="text-white text-xs mb-2 lg:text-sm aboutText">Nisi et enim nulla qui est aliquip voluptate pariatur duis. </p>
+                    <div class="flex">
+                        <img class="pr-2" src="assets/icons/Vector.svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (1).svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (2).svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (3).svg"/>
+                    </div>
+                </div> 
+
+            </div>
+            <div class="w-full flex mx-auto max-w-sm justify-center mb-8">
+                <div class="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-500 to-purple-500 mr-2">
+                    <img class="personImage"  src="assets/Eniola.png"/>
+                </div>
+                <div class="textContainer">
+                    <p class="text-yellow-600 mt-2 font-normal text-xl lg:text-2xl" >Eniola Osabiya</p>
+                    <p class="mb-2 font-normal bg-gradient-to-r from-yellow-500 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">Fullstack web developer</p>
+                    <p class="text-white text-xs mb-2 lg:text-sm aboutText">Nisi et enim nulla qui est aliquip voluptate pariatur duis. </p>
+                    <div class="flex">
+                        <img class="pr-2" src="assets/icons/Vector.svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (1).svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (2).svg"/>
+                        <img class="pr-2" src="assets/icons/Vector (3).svg"/>
+                    </div>
+                </div> 
+
+            </div>
         </div>
     </body>
 
