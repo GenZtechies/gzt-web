@@ -51,9 +51,6 @@ function MyApp({ Component, pageProps }) {
           property="twitter:image"
           content="https://genztechies.com/assets/site-preview.png"
         />
-
-        {/* <!-- TailwindCSS CDN --> */}
-        <script src="https://cdn.tailwindcss.com" />
       </Head>
 
       <Component {...pageProps} />
