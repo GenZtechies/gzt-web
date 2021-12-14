@@ -30,41 +30,49 @@
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700;800&display=swap');
-
-    * {
-        font-family: 'Lexend', sans-serif;
-    }
 </style>
 
-<body style="background: #131249;">
-    <div class="flex h-screen w-screen">
-        <div class="bg-no-repeat bg-cover bg-center min-h-screen w-screen absolute"
-            style="background-image: url('./assets/banner.svg')">
-        </div>
+<body>
 
-        <div class="m-auto z-10">
-            <div class="text-center justify-center">
-                <h1
-                    class="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-4xl md:text-6xl lg:text-8xl h-auto">
-                    <span class="text-white">Connecting</span> Teen Techies
-                    <br class="hidden md:block">
-                    <span class="text-white">Across</span> Nigeria
-                </h1>
-
-                <div class="mt-12 text-yellow-400 text-2xl lg:md:text-3xl font-black">
-                    Gen<span class="text-3xl lg:md:text-4xl">Z</span>techies.<span
-                        class="text-5xl lg:md:text-6xl">com</span>
+    <footer class="bg-[#131249] text-white">
+        <div
+            class="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 m-auto text-center">
+                <img src="./assets/footer/nav-logo.svg" class=" m-auto" alt="logo">
+            </div>
+            <div class="flex flex-wrap flex-grow px-auto mt-10 text-center">
+                <div class="lg:w-1/2"></div>
+                <div class="lg:w-1/4 md:w-1/2 w-full">
+                    <a href="" class="block p-3">Home</a>
+                    <a href="" class="block p-3">About</a>
                 </div>
-
-                <div class="mt-8">
-                    <a href="https://forms.gle/W4JgHYBjw9U9WmrCA"
-                        class="px-10 py-2 font-semibold text-white rounded-full transition duration-500 ease-in-out bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-yellow-500 hover:to-pink-900 focus:shadow-outline focus:outline-none">
-                        Wanna hear when we go live?
-                    </a>
+                <div class="lg:w-1/4 md:w-1/2 w-full">
+                    <a href="" class="block p-3">Contact Us</a>
+                    <a href="" class="block p-3">Team</a>
                 </div>
             </div>
         </div>
-    </div>
+
+        <hr class="container mx-auto text-gray-600 hidden lg:block" />
+
+        <div class="container mx-auto px-5 lg:py-10 pb-5 flex flex-wrap flex-col lg:flex-row">
+            <p class="text-sm text-left hidden lg:block">Copyright © 2021 GenzTechies. All rights reserved</p>
+            <p class="text-sm text-center p-5 lg:p-0 mx-auto">
+                <a href="">Credits</a>
+            </p>
+            <p class="text-sm text-center p-5 lg:p-0 lg:ml-auto">
+                <a href="">
+                    <img src="./assets/footer/footer-github-icon.svg" class="inline-flex mx-1" alt="">
+                    &#8226;
+                    <span class="mx-1">View On GitHub</span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
 </body>
+
+<script>
+</script>
 
 </html>
