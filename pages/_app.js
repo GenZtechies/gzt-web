@@ -28,9 +28,6 @@ function MyApp({ Component, pageProps }) {
             <meta property="twitter:title" content="GenZtechies - Connecting Teen Techies Across Nigeria" />
             <meta property="twitter:description" content="Connecting Teen Techies Across Nigeria" />
             <meta property="twitter:image" content="https://genztechies.com/assets/site-preview.png" />
-
-            {/* <!-- TailwindCSS CDN --> */}
-            <script src="https://cdn.tailwindcss.com" />
         </Head>
 
         <Component {...pageProps} />
