@@ -43,6 +43,8 @@ jobs:
           yarn export
           # Copy CNAME to build output
           cp CNAME out/
+          # Tell Github not to process as Jekyll
+          touch out/.nojekyll
 
       - name: Deployment
         run: |
