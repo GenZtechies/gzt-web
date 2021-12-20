@@ -8,7 +8,7 @@ export default function IndexPage() {
         />
         <div className="m-auto z-10">
           <div className="text-center justify-center">
-            <h1 className="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-4xl md:text-6xl lg:text-8xl h-auto">
+            <h1 className="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-4xl md:text-6xl lg:text-8xl">
               <span className="text-white">Connecting</span> Teen Techies
               <br className="hidden md:block" />
               <span className="text-white">Across</span> Nigeria
