@@ -36,22 +36,20 @@
     }
 </style>
 
-<body class="bg-[#131249]">
+<body class="bg-[#3331C4]">
+    
     <div class="flex h-screen w-screen">
-
-        <div class="bg-no-repeat bg-cover bg-center min-h-screen w-screen absolute"
-            style="background-image: url('./assets/hero.svg'); ">
+        <div class="bg-no-repeat bg-cover bg-center min-h-full w-screen absolute bg-[#131249] rounded-b-[25vh]"
+            style="background-image: url('./assets/home/hero.svg'); ">
         </div>
 
-        <div class="mx-auto mt-[27vh] z-10">
+        <div class="mx-auto mt-[26vh] lg:mt-[24vh] z-10">
             <div class="text-center justify-center">
                 <h1
                     class="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-3xl md:text-4xl lg:text-7xl">
                     <span class="text-white">Connecting</span> Teen
-                    <br />
-                    Techies <span class="text-white">Across</span>
-                    <br />
-                    Nigeria
+                    <br /> Techies <span class="text-white">Across</span>
+                    <br /> Nigeria
                 </h1>
 
                 <div class="mt-8">
@@ -69,6 +67,65 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-10 lg:grid-cols-2">
+            <div class="flex flex-col justify-center md:pr-8 xl:pr-0">
+                <div class="mb-6">
+                    <h2 class="max-w-lg mb-6 text-2xl tracking-widest font-sans text-yellow-300">
+                        / 01
+                    </h2>
+                    <h2
+                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
+                        <img src="./assets/breadcrum/dot.svg" class="inline-block w-7" alt="" /> WHO WE ARE
+                    </h2>
+                    <p class="text-base md:text-lg text-white">
+                        We are a community that connect teen techies/devs across Nigeria in one place to share network
+                        opportunities and get to know each other
+                    </p>
+                </div>
+                <div>
+                    <a href="" class="px-3 py-3 font-light rounded-full text-yellow-400">
+                        Learn More <img class="inline-block" src="./assets/arrow.svg" alt="directional arrow" />
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center justify-center -mx-4 lg:pl-8">
+                <img src="./assets/home/who_we_are.png" alt="hero" class="min-w-full h-full px-5" />
+            </div>
+        </div>
+    </div>
+
+    <div class="px-4 py-16 mx-auto max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div class="grid gap-10">
+            <div class="flex flex-col justify-center md:pr-8 xl:pr-0">
+                <div class="mb-6">
+                    <h2 class="max-w-lg mb-6 text-2xl tracking-widest font-sans text-yellow-300">
+                        / 02
+                    </h2>
+                    <h2
+                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
+                        <img src="./assets/breadcrum/dot.svg" class="inline-block w-7" alt="" /> OUR MISSON
+                    </h2>
+                    <div class="grid grid-cols-3 lg:grid-cols-5">
+                        <div class="col-span-1 lg:col-span-1">
+                            <img src="./assets/home/mission_quote.svg" class="px-5 inline-block min-h-full"
+                                alt="mission_quote" />
+                        </div>
+                        <div class="col-span-2 lg:col-span-4 text-xl md:text-3xl lg:text-5xl text-white">
+                            Our mission is to connect teens involved in technology across Nigeria to share ideas and
+                            access
+                            new opportunities.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex w-screen py-10">
+        <img src="./assets/home/mission_vector.svg" class="mx-auto max-w-6xl w-full" alt="mission_vector">
     </div>
 </body>
 
