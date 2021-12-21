@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer
       className="text-white"
-      style={{ background: "linear-gradient(180deg,white 25%,#131249 25%)" }}
+      style={{ background: "linear-gradient(180deg,#3331C4 25%,#131249 25%)" }}
     >
       <div className="flex mx-10 justify-center">
         <div className="p-2 w-screen bg-gradient-to-r from-yellow-300 to-purple-600 rounded-3xl">
