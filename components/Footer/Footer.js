@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <footer
-      className="text-white"
+      className="text-white inline-footer-gradient"
       style={{ background: "linear-gradient(180deg,white 25%,#131249 25%)" }}
     >
       <div className="flex mx-10 justify-center">
