@@ -5,7 +5,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {}
+    extend: {
+      footerGradient:{
+        background: "linear-gradient(180deg,white 25%,#131249 25%)"
+      }
+    }
   },
   plugins: []
 };

@@ -99,7 +99,7 @@ function Team() {
                 </div>
             </div>
         </div>
-      </body>
+      </main>
       <Footer />
     </>
   );
