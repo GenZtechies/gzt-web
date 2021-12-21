@@ -10,7 +10,7 @@ function Team() {
       {/* Change this to the current Active Page */}
       <Breadcrum currentPage="Team" />
 
-      <main className="bg-[#131249]">
+      <body className="bg-[#131249]">
         <div className="container mx-auto text-center mb-8 mt-10 max-w-sm px-8 md:max-w-2xl lg:max-w-3xl">
             <h1 className="text-2xl mb-5 bg-gradient-to-r from-yellow-400 to-purple-500 text-transparent bg-clip-text md:text-4xl md:font-bold">Meet the team</h1>
             <p className="text-white md:text-2xl">
@@ -31,10 +31,10 @@ function Team() {
                         Nisi et enim nulla qui est aliquip voluptate pariatur duis.
                     </p>
                     <div className="flex">
-                        <Image width={16} height={16} className="px-2" src="/assets/icons/github.svg"/>
-                        <Image width={16} height={16} className="px-2" src="/assets/icons/twitter.svg"/>
-                        <Image width={16} height={16} className="px-2" src="/assets/icons/linkedin.svg"/>
-                        <Image width={16} height={16} className="px-2" src="/assets/icons/more.svg"/>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/github.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/twitter.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/linkedin.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/more.svg"/></span>
                     </div>
                 </div>
             </div>
@@ -51,10 +51,10 @@ function Team() {
                         Nisi et enim nulla qui est aliquip voluptate pariatur duis.
                     </p>
                     <div className="flex">
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/github.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/twitter.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/linkedin.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/more.svg"/>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/github.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/twitter.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/linkedin.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/more.svg"/></span>
                     </div>
                 </div>
             </div>
@@ -71,10 +71,10 @@ function Team() {
                         Nisi et enim nulla qui est aliquip voluptate pariatur duis.
                     </p>
                     <div className="flex">
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/github.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/twitter.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/linkedin.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/more.svg"/>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/github.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/twitter.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/linkedin.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/more.svg"/></span>
                     </div>
                 </div>
             </div>
@@ -91,15 +91,15 @@ function Team() {
                         Nisi et enim nulla qui est aliquip voluptate pariatur duis.
                     </p>
                     <div className="flex">
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/github.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/twitter.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/linkedin.svg"/>
-                        <Image width={16} height={16} className="pr-2" src="/assets/icons/more.svg"/>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/github.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/twitter.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/linkedin.svg"/></span>
+                        <span className="pr-2"><Image width={16} height={16} src="/assets/icons/more.svg"/></span>
                     </div>
                 </div>
             </div>
         </div>
-      </main>
+      </body>
       <Footer />
     </>
   );
