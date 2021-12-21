@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       footerGradient:{
-        background: "linear-gradient(180deg,white 25%,#131249 25%)"
+        background: "linear-gradient(180deg,white 25%,#131249 25%)",
       }
     }
   },
