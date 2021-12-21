@@ -10,7 +10,7 @@ function Team() {
       {/* Change this to the current Active Page */}
       <Breadcrum currentPage="Team" />
 
-      <body className="bg-[#131249]">
+      <main className="bg-[#131249]">
         <div className="container mx-auto text-center mb-8 mt-10 max-w-sm px-8 md:max-w-2xl lg:max-w-3xl">
             <h1 className="text-2xl mb-5 bg-gradient-to-r from-yellow-400 to-purple-500 text-transparent bg-clip-text md:text-4xl md:font-bold">Meet the team</h1>
             <p className="text-white md:text-2xl">
