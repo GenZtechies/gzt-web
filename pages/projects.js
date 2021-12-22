@@ -8,7 +8,7 @@ function Projects() {
 
       <main className="bg-[#3331C4] pb-12">
         {/* Change this to the current Active Page */}
-        <Breadcrum currentPage="Sample" />
+        <Breadcrum currentPage="Projects" />
 
         <body className="bg-[#131249]">
           <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-128 lg:py-16 lg:flex-row lg:items-center">
