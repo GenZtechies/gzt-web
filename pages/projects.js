@@ -10,7 +10,7 @@ function Projects() {
         {/* Change this to the current Active Page */}
         <Breadcrum currentPage="Projects" />
 
-        <body className="bg-[#131249]">
+        <body>
           <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-128 lg:py-16 lg:flex-row lg:items-center">
             <div className="flex items-center justify-center w-full lg:w-1/2">
               <span className="object-contain w-full h-full max-w-2xl rounded-3xl">
