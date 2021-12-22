@@ -10,12 +10,13 @@ function Projects() {
         {/* Change this to the current Active Page */}
         <Breadcrum currentPage="Projects" />
 
-        <div className="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-128 lg:py-16 lg:flex-row lg:items-center">
-          <div className="flex items-center justify-center w-full lg:w-1/2">
+        <div className="container flex flex-col px-6 py-5 mx-auto space-y-6 lg:h-128 lg:py-16 lg:flex-row lg:items-center">
+          <div className="flex items-center justify-center w-full lg:w-1/2 mx-auto">
             <span className="object-contain w-full h-full max-w-2xl rounded-3xl">
               <Image
                 width={379}
                 height={288}
+                layout="responsive"
                 src="/assets/projects/p-genztechies.svg"
                 alt="p-genztechies"
               />
