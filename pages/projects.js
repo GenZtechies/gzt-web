@@ -15,8 +15,8 @@ function Projects() {
               <div className="flex items-center justify-center w-full lg:w-1/2">
                 <span className="object-contain w-full h-full max-w-2xl rounded-3xl">
                   <Image
-                    width={252}
-                    height={255}
+                    width={379}
+                    height={288}
                     src="/assets/projects/p-genztechies.svg"
                     alt="p-genztechies"
                   />
