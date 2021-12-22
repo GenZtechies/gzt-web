@@ -165,12 +165,13 @@ function Members() {
           </div>
           <div className="w-full flex mx-auto max-w-sm justify-center mb-8">
             <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
-              <Image
-                width={106}
-                height={109}
-                className="w-[86px] h-[86px] md:w-[117px] md:h-[117px]"
-                src="/assets/people/Precious.png"
-              />
+              <span className="w-[86px] h-[86px] md:w-[117px] md:h-[117px]">
+                <Image
+                  width={252}
+                  height={255}
+                  src="/assets/people/Precious.png"
+                />
+              </span>
             </div>
             <div className="textContainer">
               <p className="mt-2 font-normal text-yellow-400 text-xl lg:text-2xl">
