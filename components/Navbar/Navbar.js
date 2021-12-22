@@ -6,8 +6,8 @@ function Navbar() {
 
   return (
     <>
-      <div>
-        <nav className="flex justify-between px-4 py-5 mx-auto bg-[#3331C4]">
+      <div className="z-20 relative">
+        <nav className="flex justify-between px-4 py-5 mx-auto bg-[#3331C4] ">
           <div>
             <img
               src="./assets/navbar/nav-logo.svg"
