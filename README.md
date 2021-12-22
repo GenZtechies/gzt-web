@@ -1,3 +1,3 @@
-# GZT Web
+# GZT Website
 
 NextJS x TailwindCSS
