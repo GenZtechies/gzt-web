@@ -1,7 +1,7 @@
 export default function Breadcrum({ currentPage }) {
   return (
     <>
-      <div className="relative w-full h-48 lg:h-60">
+      <div className="relative z-20 w-full h-48 lg:h-60 ">
         <img
           className="w-full object-fill h-48 hidden md:block lg:h-60"
           src="assets/breadcrum/desktop-ellipse.png"
