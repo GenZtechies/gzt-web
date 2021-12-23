@@ -5,7 +5,7 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "members-update": "node utils/members-cli.js"
+    "members-update": "node utils/members-cli.js && node utils/image-collage-cli.js"
   },
   "dependencies": {
     "@settlin/collage": "^2.0.1",

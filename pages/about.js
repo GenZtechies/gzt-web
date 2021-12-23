@@ -146,11 +146,12 @@ function About() {
             We Learn, Build and have fun
           </h1>
 
-          <div className="p-5">
+          <div className="p-5 w-full">
             <div className="rounded-xl bg-gradient-to-r p-4 from-yellow-500 to-pink-500">
               <img
                 src="/assets/community_collage.jpg"
                 alt="A placeholder Image"
+                className="mx-auto"
               />
             </div>
           </div>
