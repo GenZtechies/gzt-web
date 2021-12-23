@@ -76,18 +76,18 @@ function About() {
                     </Link>
                   </div>
                 </div>
-                {/* <div className="flex items-center justify-center -mx-4 lg:pl-8 relative">
+                <div className="flex items-center justify-center -mx-4 lg:pl-8 relative">
                   <div className="w-full h-98">
                     <Image
-                      width={106}
-                      height={109}
+                      width={100}
+                      height={100}
                       layout="responsive"
                       src="/assets/home/who_we_are.png"
                       alt="hero"
                       className="min-w-full px-5"
                     />
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
 
