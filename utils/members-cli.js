@@ -25,7 +25,7 @@ const fileContentsFiltered = fileContents.filter((content) => content !== null);
 // Write fileContents to file named index.js
 fs.writeFileSync(
   path.resolve(dir, "index.js"),
-  `export default ${JSON.stringify(fileContentsFiltered, null, 2)};`
+  `module.exports = ${JSON.stringify(fileContentsFiltered, null, 2)};`
 );
 
 console.log("Members autodiscovered and exported 🚀🚀🚀");

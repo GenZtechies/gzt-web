@@ -1,4 +1,4 @@
-export default [
+module.exports = [
   {
     "full_name": "Eniola Osabiya",
     "username": "eni4sure",
