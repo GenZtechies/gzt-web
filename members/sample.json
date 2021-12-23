@@ -1,0 +1,18 @@
+{
+    "full_name": "YOUR_FULL_NAME",
+    "username": "YOUR_USERNAME",
+    "image_url": "YOUR_IMG_URL",
+    "short_description": "YOUR_SHORT_DESCRIPTION",
+    "role": "YOUR_ROLE",
+    "links": {
+        "website_or_extra": "YOUR_WEBSITE_URL",
+        "github": "https://github.com/YOUR_GH_USERNAME",
+        "twitter": "https://www.twitter.com/YOUR_TWITTER_HANDLE",
+        "linkedin": "https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME"
+    },
+    "location": {
+        "state": "YOUR_STATE_OR_PROVINCE",
+        "country": "YOUR_COUNTRY"
+    },
+    "isActive": true
+}
