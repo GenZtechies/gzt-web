@@ -8,6 +8,7 @@
     "members-update": "node utils/members-cli.js && node utils/image-collage-cli.js"
   },
   "dependencies": {
+    "gsap": "^3.9.0",
     "@settlin/collage": "^2.0.1",
     "next": "latest",
     "react": "^17.0.2",

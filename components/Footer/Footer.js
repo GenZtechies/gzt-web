@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer({ overlayBg }) {
   return (
     <footer
-      className="text-white"
+      className="text-white footer"
       style={{
         background: `linear-gradient(180deg,${
           overlayBg ? overlayBg : "#3331C4"

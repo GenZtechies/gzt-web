@@ -2,8 +2,33 @@ import Link from "next/link";
 import Image from "next/image";
 import genztechiesMembers from "../members/index";
 import { Navbar, Footer, Breadcrum } from "../components";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 function About() {
+  // Gsap Animation Config
+  const el = useRef();
+  const q = gsap.utils.selector(el);
+  const tl = useRef();
+
+  useEffect(() => {
+    tl = gsap.timeline()
+
+      tl.from(q(".image"), {
+        x: 100,
+        ease: "power2.bounce",
+        duration: 1,
+      })
+      tl.to(q(".image"), {
+        x: 0
+      })
+      tl.from(q(".num-1"), {
+        duration: 1.5,
+        ease: "power2.bounce",
+        x: "300%"
+      })
+  });
+
   const filteredMembersImage = genztechiesMembers.map((member) => ({
     source: member.image_url
   }));
@@ -12,10 +37,10 @@ function About() {
     <>
       <Navbar />
 
-      <main className="bg-[#3331C4] overflow-x-hidden">
+      <main ref={el} className="bg-[#3331C4] overflow-x-hidden">
         <Breadcrum currentPage="About" />
-
-        <div className="w-56 h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 right-5 sm:right-12 md:right-12 opacity-50">
+       
+        <div className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 right-5 sm:right-12 md:right-12 opacity-50">
           <Image
             width={500}
             height={500}
@@ -26,13 +51,13 @@ function About() {
         </div>
 
         {/* About section starts  */}
-        <section className="bg-[#3331C4] relative">
+        <section className="bg-[#3331C4] num-1 relative">
           <div>
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
               <div className="grid gap-10 lg:grid-cols-2">
                 <div className="flex flex-col justify-center md:pr-8 xl:pr-0">
                   <div className="mb-6">
-                    <h2 className="max-w-lg mb-6 text-2xl tracking-widest font-sans text-yellow-300">
+                    <h2 className="max-w-lg num-1 mb-6 text-2xl tracking-widest font-sans text-yellow-300">
                       / 01
                     </h2>
                     <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
