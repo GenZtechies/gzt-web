@@ -1,31 +1,28 @@
-import Image from "next/image";
-import { Navbar, Footer, Breadcrum } from "../components";
 import Link from "next/link";
+import Image from "next/image";
+import genztechiesMembers from "../members/index";
+import { ReactPhotoCollage } from "react-photo-collage";
+import { Navbar, Footer, Breadcrum } from "../components";
+
 function About() {
+  const filteredMembersImage = genztechiesMembers.map((member) => ({
+    source: member.image_url
+  }));
+
   return (
     <>
       <Navbar />
 
       <main className="bg-[#3331C4] overflow-x-hidden">
         <Breadcrum currentPage="About" />
-        <div className="w-56 h-56 sm:w-96 md:h-96 absolute top-28 md:top-0 scale-125 z-10 left-0 opacity-50">
-          <Image
-            width={500}
-            height={500}
-            layout="responsive"
-            src="/assets/home/gradient_ring_one.svg"
-            // class="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
-            alt=""
-          />
-        </div>
+
         <div className="w-56 h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 right-5 sm:right-12 md:right-12 opacity-50">
           <Image
             width={500}
             height={500}
             layout="responsive"
             src="/assets/home/gradient_ring_second.svg"
-            // class="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
-            alt=""
+            // className="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
           />
         </div>
 
@@ -47,7 +44,6 @@ function About() {
                           layout="responsive"
                           src="/assets/breadcrum/dot.svg"
                           className="inline-block w-7"
-                          alt
                         />
                       </span>{" "}
                       WHO WE ARE
@@ -106,7 +102,6 @@ function About() {
                           layout="responsive"
                           src="/assets/breadcrum/dot.svg"
                           className="inline-block w-7"
-                          alt
                         />
                       </span>{" "}
                       OUR MISSON
@@ -132,10 +127,10 @@ function About() {
                 </div>
               </div>
             </div>
-            <div class="flex w-screen pt-10 translate-y-1">
+            <div className="flex w-screen pt-10 translate-y-1">
               <img
                 src="/assets/home/mission_vector.svg"
-                class="mx-auto max-w-6xl w-full"
+                className="mx-auto max-w-6xl w-full"
                 alt="mission_vector"
               />
             </div>
@@ -148,7 +143,7 @@ function About() {
           <h2 className=" max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
             More than just a coommunity
           </h2>
-          <h1 class="text-3xl font-black tracking-wide text-yellow-400 lg:text-4xl py-3">
+          <h1 className="text-3xl font-black tracking-wide text-yellow-400 lg:text-4xl py-3">
             We Learn, Build and have fun
           </h1>
 
