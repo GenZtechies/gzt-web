@@ -1,37 +1,31 @@
+import React from "react";
+import { gsap } from "gsap";
 import Link from "next/link";
 import Image from "next/image";
-import genztechiesMembers from "../members/index";
 import { Navbar, Footer, Breadcrum } from "../components";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
 
 function About() {
   // Gsap Animation Config
-  const el = useRef();
+  const el = React.useRef();
   const q = gsap.utils.selector(el);
-  const tl = useRef();
+  const tl = React.useRef();
 
-  useEffect(() => {
-    tl = gsap.timeline()
-
-      tl.from(q(".image"), {
-        x: 100,
-        ease: "power2.bounce",
-        duration: 1,
-      })
-      tl.to(q(".image"), {
-        x: 0
-      })
-      tl.from(q(".num-1"), {
-        duration: 1.5,
-        ease: "power2.bounce",
-        x: "300%"
-      })
+  React.useEffect(() => {
+    tl = gsap.timeline();
+    tl.from(q(".image"), {
+      x: 100,
+      ease: "power2.bounce",
+      duration: 1
+    });
+    tl.to(q(".image"), {
+      x: 0
+    });
+    tl.from(q(".num-1"), {
+      duration: 1.5,
+      ease: "power2.bounce",
+      x: "300%"
+    });
   });
-
-  const filteredMembersImage = genztechiesMembers.map((member) => ({
-    source: member.image_url
-  }));
 
   return (
     <>
@@ -39,7 +33,7 @@ function About() {
 
       <main ref={el} className="bg-[#3331C4] overflow-x-hidden">
         <Breadcrum currentPage="About" />
-       
+
         <div className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 right-5 sm:right-12 md:right-12 opacity-50">
           <Image
             width={500}
@@ -188,7 +182,6 @@ function About() {
           </Link>
         </section>
       </main>
-      {/* More than just a coommunity section ends */}
 
       <Footer overlayBg="#29279B" />
     </>

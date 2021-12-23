@@ -1,16 +1,15 @@
+import gsap from "gsap";
+import React from "react";
 import Image from "next/image";
 import { Navbar, Footer, Breadcrum } from "../components";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-
 function Projects() {
   // GSAP Animation Config
-  const el = useRef();
+  const el = React.useRef();
   const q = gsap.utils.selector(el);
-  const tl = useRef();
+  const tl = React.useRef();
 
-  useEffect(() => {
+  React.useEffect(() => {
     tl = gsap.timeline();
 
     // banner image
@@ -35,9 +34,8 @@ function Projects() {
     });
 
     tl.from(q(".text-2"), { duration: 1, ease: "back.out(1, 0.3)", y: -500 });
-    
-    tl.from(q(".button"), { duration: 1, ease: "back.out(1, 0.3)", y: 500 });
 
+    tl.from(q(".button"), { duration: 1, ease: "back.out(1, 0.3)", y: 500 });
   });
 
   return (

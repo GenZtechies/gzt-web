@@ -1,11 +1,11 @@
-import Image from "next/image";
 import Link from "next/link";
-import { Navbar, Footer, Breadcrum } from "../components";
+import { Navbar, Footer } from "../components";
 
 function Index() {
   return (
     <>
       <Navbar />
+
       <main className="bg-[#3331C4]">
         <div className="flex h-screen w-screen">
           <div

@@ -1,17 +1,16 @@
+import gsap from "gsap";
+import React from "react";
 import Image from "next/image";
 import genztechiesMembers from "../members/index";
 import { Navbar, Footer, Breadcrum } from "../components";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
 
 function Members() {
-  
   // GSAP Animation Config
-  const el = useRef();
+  const el = React.useRef();
   const q = gsap.utils.selector(el);
-  const tl = useRef();
+  const tl = React.useRef();
 
-  useEffect(() => {
+  React.useEffect(() => {
     tl = gsap.timeline();
 
     // header
@@ -40,7 +39,7 @@ function Members() {
       x: "300%"
     });
   });
-  
+
   const filteredMembers = genztechiesMembers.filter(
     (member) => member.isActive
   );
@@ -64,7 +63,10 @@ function Members() {
         <div className="container px-5 mx-auto py-5 md:grid md:grid-cols-2 lg:max-w-5xl">
           {filteredMembers.map((member) => {
             return (
-              <div key={member.username} className="w-full flex mx-auto max-w-sm justify-center mb-8">
+              <div
+                key={member.username}
+                className="w-full flex mx-auto max-w-sm justify-center mb-8"
+              >
                 <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
                   <img
                     width={252}
