@@ -9,7 +9,11 @@ function Index() {
         {/* Change this to the current Active Page */}
         <Breadcrum currentPage="Home" />
           <div className="flex h-screen w-screen ">
-              <div className="bg-no-repeat bg-cover bg-center min-h-full w-screen absolute bg-[#131249] rounded-b-[25vh] index-page-bg-image">
+              <div
+                className="bg-no-repeat bg-cover bg-center min-h-full w-screen absolute bg-[#131249] rounded-b-[25vh] index-page-bg-image"
+                style={{
+                  backgroundImage: `url('/assets/home/hero.svg')`
+                }}>
               </div>
 
               <div className="mx-auto mt-[26vh] lg:mt-[24vh] z-10">
