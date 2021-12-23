@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Breadcrum({ currentPage }) {
   return (
     <>
@@ -15,6 +17,17 @@ export default function Breadcrum({ currentPage }) {
           <img className="inline-block" src="assets/breadcrum/dot.svg" />
           <span className="inline-block ml-3">{currentPage}</span>
         </p>
+      </div>
+
+      <div className="w-56 h-56 sm:w-96 md:h-96 absolute top-28 md:top-0 scale-125 z-10 left-0 opacity-50">
+        <Image
+          width={500}
+          height={500}
+          layout="responsive"
+          src="/assets/home/gradient_ring_one.svg"
+          // className="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
+          alt=""
+        />
       </div>
     </>
   );
