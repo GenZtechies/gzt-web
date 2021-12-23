@@ -1,7 +1,7 @@
-import Image from "next/image";
-import { Navbar, Footer, Breadcrum } from "../components";
 import Link from "next/link";
-
+import Image from "next/image";
+import genztechiesMembers from "../members/index";
+import { Navbar, Footer, Breadcrum } from "../components";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
@@ -29,30 +29,24 @@ function About() {
       })
   });
 
+  const filteredMembersImage = genztechiesMembers.map((member) => ({
+    source: member.image_url
+  }));
+
   return (
     <>
       <Navbar />
 
       <main ref={el} className="bg-[#3331C4] overflow-x-hidden">
         <Breadcrum currentPage="About" />
-        <div className="w-56 image h-56 sm:w-96 md:h-96 absolute top-28 md:top-0 scale-125 z-10 left-0 opacity-50">
-          <Image
-            width={500}
-            height={500}
-            layout="responsive"
-            src="/assets/home/gradient_ring_one.svg"
-            // class="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
-            alt=""
-          />
-        </div>
+       
         <div className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 right-5 sm:right-12 md:right-12 opacity-50">
           <Image
             width={500}
             height={500}
             layout="responsive"
             src="/assets/home/gradient_ring_second.svg"
-            // class="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
-            alt=""
+            // className="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
           />
         </div>
 
@@ -74,7 +68,6 @@ function About() {
                           layout="responsive"
                           src="/assets/breadcrum/dot.svg"
                           className="inline-block w-7"
-                          alt
                         />
                       </span>{" "}
                       WHO WE ARE
@@ -103,18 +96,18 @@ function About() {
                     </Link>
                   </div>
                 </div>
-                {/* <div className="flex items-center justify-center -mx-4 lg:pl-8 relative">
+                <div className="flex items-center justify-center -mx-4 lg:pl-8 relative">
                   <div className="w-full h-98">
                     <Image
-                      width={106}
-                      height={109}
+                      width={100}
+                      height={100}
                       layout="responsive"
                       src="/assets/home/who_we_are.png"
                       alt="hero"
                       className="min-w-full px-5"
                     />
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
 
@@ -133,7 +126,6 @@ function About() {
                           layout="responsive"
                           src="/assets/breadcrum/dot.svg"
                           className="inline-block w-7"
-                          alt
                         />
                       </span>{" "}
                       OUR MISSON
@@ -159,10 +151,10 @@ function About() {
                 </div>
               </div>
             </div>
-            <div class="flex w-screen pt-10 translate-y-1">
+            <div className="flex w-screen pt-10 translate-y-1">
               <img
                 src="/assets/home/mission_vector.svg"
-                class="mx-auto max-w-6xl w-full"
+                className="mx-auto max-w-6xl w-full"
                 alt="mission_vector"
               />
             </div>
@@ -175,15 +167,20 @@ function About() {
           <h2 className=" max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
             More than just a coommunity
           </h2>
-          <h1 class="text-3xl font-black tracking-wide text-yellow-400 lg:text-4xl py-3">
+          <h1 className="text-3xl font-black tracking-wide text-yellow-400 lg:text-4xl py-3">
             We Learn, Build and have fun
           </h1>
 
-          <img
-            src="/assets/about/placeholder.svg"
-            alt="A placeholder Image"
-            className="py-5 px-5"
-          />
+          <div className="p-5 w-full">
+            <div className="rounded-xl bg-gradient-to-r p-4 from-yellow-500 to-pink-500">
+              <img
+                src="/assets/community_collage.jpg"
+                alt="A placeholder Image"
+                className="mx-auto"
+              />
+            </div>
+          </div>
+
           <Link href="#">
             <a className="px-5 py-2 bg-yellow-500 rounded-full cursor-pointer">
               MEET THE TEAM

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import genztechiesMembers from "../members/index";
 import { Navbar, Footer, Breadcrum } from "../components";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -39,6 +40,10 @@ function Members() {
       x: "300%"
     });
   });
+  
+  const filteredMembers = genztechiesMembers.filter(
+    (member) => member.isActive
+  );
 
   return (
     <>
@@ -57,198 +62,72 @@ function Members() {
           </p>
         </div>
         <div className="container px-5 mx-auto py-5 md:grid md:grid-cols-2 lg:max-w-5xl">
-          <div className="w-full cards flex mx-auto max-w-sm justify-center mb-8">
-            <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
-              <span className="w-[86px] h-[86px] md:w-[117px] md:h-[117px]">
-                <Image
-                  width={252}
-                  height={255}
-                  src="/assets/people/Eniola.png"
-                />
-              </span>
-            </div>
-            <div className="textContainer">
-              <p className="mt-2 font-normal text-yellow-400 text-xl lg:text-2xl">
-                Eniola Osabiya
-              </p>
-              <p className="mb-2 font-normal bg-gradient-to-r from-yellow-400 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">
-                Fullstack web developer
-              </p>
-              <p className="text-white text-xs mb-2 lg:text-sm max-w-[180px] md:max-w-[250px]">
-                Nisi et enim nulla qui est aliquip voluptate pariatur duis.
-              </p>
-              <div className="flex">
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/github.svg"
+          {filteredMembers.map((member) => {
+            return (
+              <div key={member.username} className="w-full flex mx-auto max-w-sm justify-center mb-8">
+                <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
+                  <img
+                    width={252}
+                    height={255}
+                    src={member.image_url}
+                    className="w-[86px] h-[86px] md:w-[117px] md:h-[117px] rounded-full"
+                    onError={(e) => {
+                      e.target.src = "/assets/avatar.svg";
+                    }}
                   />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/twitter.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/linkedin.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image width={16} height={16} src="/assets/icons/more.svg" />
-                </span>
+                </div>
+                <div className="textContainer">
+                  <p className="mt-2 font-normal text-yellow-400 text-xl lg:text-2xl">
+                    {member.full_name}
+                  </p>
+                  <p className="mb-2 font-normal bg-gradient-to-r from-yellow-400 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">
+                    {member.role}
+                  </p>
+                  <p className="text-white text-xs mb-2 lg:text-sm max-w-[180px] md:max-w-[250px]">
+                    {member.short_description}
+                  </p>
+                  <div className="flex">
+                    {member.links?.github && (
+                      <a href={member.links.github} className="pr-2">
+                        <Image
+                          width={20}
+                          height={20}
+                          src="/assets/icons/github.svg"
+                        />
+                      </a>
+                    )}
+                    {member.links?.twitter && (
+                      <a href={member.links.twitter} className="pr-2">
+                        <Image
+                          width={20}
+                          height={20}
+                          src="/assets/icons/twitter.svg"
+                        />
+                      </a>
+                    )}
+                    {member.links?.linkedin && (
+                      <a href={member.links.linkedin} className="pr-2">
+                        <Image
+                          width={20}
+                          height={20}
+                          src="/assets/icons/linkedin.svg"
+                        />
+                      </a>
+                    )}
+                    {member.links?.website_or_extra && (
+                      <a href={member.links.website_or_extra} className="pr-2">
+                        <Image
+                          width={20}
+                          height={20}
+                          src="/assets/icons/more.svg"
+                        />
+                      </a>
+                    )}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="w-full cards flex mx-auto max-w-sm justify-center mb-8">
-            <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
-              <span className="w-[86px] h-[86px] md:w-[117px] md:h-[117px]">
-                <Image
-                  width={252}
-                  height={255}
-                  src="/assets/people/Tunji.png"
-                />
-              </span>
-            </div>
-            <div className="textContainer">
-              <p className="mt-2 font-normal text-yellow-400 text-xl lg:text-2xl">
-                Adetunji Adeyinka
-              </p>
-              <p className="mb-2 font-normal bg-gradient-to-r from-yellow-400 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">
-                Fullstack web developer
-              </p>
-              <p className="text-white text-xs mb-2 lg:text-sm max-w-[180px] md:max-w-[250px]">
-                Nisi et enim nulla qui est aliquip voluptate pariatur duis.
-              </p>
-              <div className="flex">
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/github.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/twitter.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/linkedin.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image width={16} height={16} src="/assets/icons/more.svg" />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="w-full cards flex mx-auto max-w-sm justify-center mb-8">
-            <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
-              <span className="w-[86px] h-[86px] md:w-[117px] md:h-[117px]">
-                <Image
-                  width={252}
-                  height={255}
-                  src="/assets/people/Caleb.png"
-                />
-              </span>
-            </div>
-            <div className="textContainer">
-              <p className="mt-2 font-normal text-yellow-400 text-xl lg:text-2xl">
-                Caleb Areeveso
-              </p>
-              <p className="mb-2 font-normal bg-gradient-to-r from-yellow-400 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">
-                Fullstack web developer
-              </p>
-              <p className="text-white text-xs mb-2 lg:text-sm max-w-[180px] md:max-w-[250px]">
-                Nisi et enim nulla qui est aliquip voluptate pariatur duis.
-              </p>
-              <div className="flex">
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/github.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/twitter.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/linkedin.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image width={16} height={16} src="/assets/icons/more.svg" />
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="w-full cards flex mx-auto max-w-sm justify-center mb-8">
-            <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
-              <span className="w-[86px] h-[86px] md:w-[117px] md:h-[117px]">
-                <Image
-                  width={252}
-                  height={255}
-                  src="/assets/people/Precious.png"
-                />
-              </span>
-            </div>
-            <div className="textContainer">
-              <p className="mt-2 font-normal text-yellow-400 text-xl lg:text-2xl">
-                Precious John
-              </p>
-              <p className="mb-2 font-normal bg-gradient-to-r from-yellow-400 to-purple-500 text-transparent bg-clip-text text-base lg:text-xl">
-                Fullstack web developer
-              </p>
-              <p className="text-white text-xs mb-2 lg:text-sm max-w-[180px] md:max-w-[250px]">
-                Nisi et enim nulla qui est aliquip voluptate pariatur duis.
-              </p>
-              <div className="flex">
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/github.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/twitter.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image
-                    width={16}
-                    height={16}
-                    src="/assets/icons/linkedin.svg"
-                  />
-                </span>
-                <span className="pr-2">
-                  <Image width={16} height={16} src="/assets/icons/more.svg" />
-                </span>
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </main>
 
