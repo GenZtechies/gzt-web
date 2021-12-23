@@ -10,7 +10,7 @@ const filenames = fs.readdirSync(dir);
 
 // Get file contents
 const fileContents = filenames.map((filename) => {
-  if (["index.js", "sample.json"].includes(filename)) return null;
+  if (["index.js", "sample.json", "README.md"].includes(filename)) return null;
 
   // Get json contents
   const file = fs.readFileSync(path.resolve(dir, filename), "utf8");
