@@ -26,7 +26,7 @@ function Members() {
         <div className="container px-5 mx-auto py-5 md:grid md:grid-cols-2 lg:max-w-5xl">
           {filteredMembers.map((member) => {
             return (
-              <div className="w-full flex mx-auto max-w-sm justify-center mb-8">
+              <div key={member.username} className="w-full flex mx-auto max-w-sm justify-center mb-8">
                 <div className="flex items-center justify-center w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-r from-yellow-400 to-purple-500 mr-2">
                   <img
                     width={252}

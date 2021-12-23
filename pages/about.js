@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import genztechiesMembers from "../members/index";
-import { ReactPhotoCollage } from "react-photo-collage";
 import { Navbar, Footer, Breadcrum } from "../components";
 
 function About() {
@@ -147,11 +146,15 @@ function About() {
             We Learn, Build and have fun
           </h1>
 
-          <img
-            src="/assets/about/placeholder.svg"
-            alt="A placeholder Image"
-            className="py-5 px-5"
-          />
+          <div className="p-5">
+            <div className="rounded-xl bg-gradient-to-r p-4 from-yellow-500 to-pink-500">
+              <img
+                src="/assets/community_collage.jpg"
+                alt="A placeholder Image"
+              />
+            </div>
+          </div>
+
           <Link href="#">
             <a className="px-5 py-2 bg-yellow-500 rounded-full cursor-pointer">
               MEET THE TEAM
