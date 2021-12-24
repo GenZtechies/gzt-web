@@ -1,25 +1,100 @@
+import React from "react";
 import Link from "next/link";
 import { Navbar, Footer } from "../components";
 
+import { gsap } from "gsap";
+
 function Index() {
+  // Gsap Animation Config
+  const el = React.useRef();
+  const q = gsap.utils.selector(el);
+  const tl = React.useRef();
+
+  React.useEffect(() => {
+    tl = gsap.timeline();
+    tl.from(q(".header"), { duration: 1.5, ease: "back.out(1, 0.3)", y: -200 });
+
+    tl.from(
+      q(".button"),
+      {
+        opacity: 0,
+        duration: 1.5
+      },
+      "-=1.5"
+    );
+    tl.from(
+      q(".text"),
+      { duration: 1, ease: "back.out(1, 0.3)", y: 200 },
+      "-=1.5"
+    );
+    tl.from(
+      q(".num-1"),
+      {
+        duration: 1,
+        ease: "power2.bounce",
+        x: "300%"
+      },
+      "-=1"
+    )
+      .from(
+        q(".image-1"),
+        {
+          duration: 2.5,
+          opacity: 0
+        },
+        "-=1"
+      )
+      .from(
+        q(".num-2"),
+        {
+          duration: 1,
+          ease: "power2.bounce",
+          x: "-300%"
+        },
+        "-=0.5"
+      );
+
+    tl.from(
+      q(".num-3"),
+      {
+        duration: 1,
+        ease: "power2.bounce",
+        x: "-300%"
+      },
+      "-=0.5"
+    ).from(
+      q(".banner"),
+      {
+        duration: 2,
+        opacity:0,
+        x: "-300%"
+      },
+      "-=0.5"
+    ).from(
+      q(".text-2"),
+      { duration: 1, ease: "back.out(1, 0.3)", y: 500 },
+      "-=0"
+    );
+  });
+
   return (
     <>
       <Navbar />
 
-      <main className="bg-[#3331C4]">
+      <main ref={el} className="bg-[#3331C4]">
         <div className="flex h-screen w-screen">
           <div
-            className="bg-no-repeat bg-cover bg-center min-h-full w-screen absolute bg-[#131249] rounded-b-[25vh]"
+            className="bg-no-repeat image bg-cover bg-center min-h-full w-screen absolute bg-[#131249] rounded-b-[25vh]"
             style={{ backgroundImage: 'url("./assets/home/hero.svg")' }}
           ></div>
           <div className="mx-auto mt-[26vh] lg:mt-[24vh] z-10">
             <div className="text-center justify-center">
-              <h1 className="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-3xl md:text-4xl lg:text-7xl">
+              <h1 className="font-black header bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-3xl md:text-4xl lg:text-7xl">
                 <span className="text-white">Connecting</span> Teen
                 <br /> Techies <span className="text-white">Across</span>
                 <br /> Nigeria
               </h1>
-              <div className="mt-8">
+              <div className="mt-8 button">
                 <a
                   href="https://forms.gle/W4JgHYBjw9U9WmrCA"
                   className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400"
@@ -27,7 +102,7 @@ function Index() {
                   Join The Community
                 </a>
               </div>
-              <div className="mt-8">
+              <div className="mt-8 text">
                 <a
                   href="https://forms.gle/W4JgHYBjw9U9WmrCA"
                   className="px-10 py-3 font-light rounded-full text-yellow-400"
@@ -52,7 +127,7 @@ function Index() {
 
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-2">
-            <div className="flex flex-col justify-center md:pr-8 xl:pr-0">
+            <div className="flex num-1 flex-col justify-center md:pr-8 xl:pr-0">
               <div className="mb-6">
                 <h2 className="max-w-lg mb-6 text-2xl tracking-widest font-sans text-yellow-300">
                   / 01
@@ -89,7 +164,7 @@ function Index() {
               <img
                 src="./assets/home/who_we_are.png"
                 alt="hero"
-                className="min-w-full px-5"
+                className="min-w-full px-5 image-1"
               />
             </div>
           </div>
@@ -103,7 +178,7 @@ function Index() {
 
         <div className="px-4 py-16 mx-auto max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-10">
-            <div className="flex flex-col justify-center md:pr-8 xl:pr-0">
+            <div className="flex num-2 flex-col justify-center md:pr-8 xl:pr-0">
               <div className="mb-6">
                 <h2 className="max-w-lg mb-6 text-2xl tracking-widest font-sans text-yellow-300">
                   / 02
@@ -143,7 +218,7 @@ function Index() {
         </div>
 
         <div className="bg-[#29279B] -mt-11">
-          <div className="px-8 pt-16 mx-auto max-w-full md:px-24">
+          <div className="px-8 num-3 pt-16 mx-auto max-w-full md:px-24">
             <h2 className="mb-6 text-2xl tracking-widest font-sans text-yellow-300">
               / 03
             </h2>
@@ -159,12 +234,12 @@ function Index() {
           <div className="flex flex-col px-6 pt-8 mx-auto space-y-6 lg:h-128 lg:flex-row lg:items-center">
             <div className="flex items-center justify-center w-full lg:w-1/2">
               <img
-                className="object-contain w-full h-full max-w-2xl rounded-3xl"
+                className="banner object-contain w-full h-full max-w-2xl rounded-3xl"
                 src="./assets/projects/p-genztechies.svg"
                 alt="p-genztechies"
               />
             </div>
-            <div className="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
+            <div className="flex text-2 flex-col items-center w-full lg:flex-row lg:w-1/2">
               <div className="max-w-lg lg:mx-12 lg:order-2">
                 <h1 className="text-3xl font-black tracking-wide text-yellow-400 lg:text-4xl">
                   GenZtechies
