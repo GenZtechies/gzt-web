@@ -43,7 +43,7 @@ function Footer({ overlayBg }) {
         <div className="flex flex-wrap flex-grow px-auto mt-10 text-center">
           <div className="lg:w-1/2" />
           <div className="lg:w-1/4 md:w-1/2 w-full">
-            <Link href="/home">
+            <Link href="/">
               <a className="block p-3">Home</a>
             </Link>
             <Link href="/about">

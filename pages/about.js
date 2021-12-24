@@ -19,12 +19,12 @@ function About() {
     });
     tl.to(q(".image"), {
       x: 0
-    });
+    }, ">");
     tl.from(q(".num-1"), {
       duration: 1.5,
       ease: "power2.bounce",
-      x: "300%"
-    });
+      x: "-300%"
+    }, "-=1.5");
   });
 
   return (
