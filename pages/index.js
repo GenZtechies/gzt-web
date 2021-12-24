@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Navbar, Footer } from "../components";
 
 import { gsap } from "gsap";
@@ -103,17 +104,18 @@ function Index() {
                 </a>
               </div>
               <div className="mt-8 text">
-                <a
-                  href="https://forms.gle/W4JgHYBjw9U9WmrCA"
-                  className="px-10 py-3 font-light rounded-full text-yellow-400"
-                >
-                  Learn More{" "}
-                  <img
-                    className="inline-block"
-                    src="./assets/arrow.svg"
-                    alt="directional arrow"
-                  />
-                </a>
+                <Link href="/about">
+                  <a
+                    className="px-10 py-3 font-light rounded-full text-yellow-400"
+                  >
+                    Learn More{" "}
+                    <img
+                      className="inline-block"
+                      src="./assets/arrow.svg"
+                      alt="directional arrow"
+                    />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -133,11 +135,15 @@ function Index() {
                   / 01
                 </h2>
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
-                  <img
-                    src="./assets/breadcrum/dot.svg"
-                    className="inline-block w-7"
-                    alt=""
-                  />{" "}
+                  <span className="w-7 inline-block">
+                    <Image
+                      width={10}
+                      height={10}
+                      layout="responsive"
+                      src="/assets/breadcrum/dot.svg"
+                      className="inline-block w-7"
+                    />
+                  </span>{" "}
                   WHO WE ARE
                 </h2>
                 <p className="text-base md:text-lg text-white">
@@ -184,11 +190,15 @@ function Index() {
                   / 02
                 </h2>
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
-                  <img
-                    src="./assets/breadcrum/dot.svg"
-                    className="inline-block w-7"
-                    alt=""
-                  />{" "}
+                  <span className="w-7 inline-block">
+                    <Image
+                      width={10}
+                      height={10}
+                      layout="responsive"
+                      src="/assets/breadcrum/dot.svg"
+                      className="inline-block w-7"
+                    />
+                  </span>{" "}
                   OUR MISSON
                 </h2>
                 <div className="grid grid-cols-3 lg:grid-cols-5 space-x-5">
@@ -255,7 +265,7 @@ function Index() {
                 </div>
                 <div className="my-6">
                   <a
-                    href
+                    href="https://genztechies.com"
                     className="bg-white p-4 font-light rounded-full text-[#29279B]"
                   >
                     View Live Site{" "}
