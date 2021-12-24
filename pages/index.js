@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Navbar, Footer } from "../components";
-
 import { gsap } from "gsap";
 
 function Index() {
