@@ -75,16 +75,17 @@ function Projects() {
                 <span>TailwindCSS</span>
               </div>
               <div className="my-6 button">
-                <Link href="https://genztechies.com">
-                  <a className="bg-white p-4 font-light rounded-full text-[#29279B]">
-                    View Live Site
-                    <img
-                      className="inline-block w-9"
-                      src="/assets/projects/arrow.svg"
-                      alt="directional arrow"
-                    />
-                  </a>
-                </Link>
+                <a
+                  href="https://genztechies.com"
+                  className="bg-white p-4 font-light rounded-full text-[#29279B]"
+                >
+                  View Live Site
+                  <img
+                    className="inline-block w-9"
+                    src="/assets/projects/arrow.svg"
+                    alt="directional arrow"
+                  />
+                </a>
               </div>
             </div>
           </div>

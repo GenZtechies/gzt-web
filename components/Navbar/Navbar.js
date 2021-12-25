@@ -35,16 +35,15 @@ function Navbar() {
                   Projects
                 </a>
               </Link>
-              <Link href="https://forms.gle/W4JgHYBjw9U9WmrCA">
-                <a
-                  target="_blank"
-                  className="text-[#3331C4] hidden md:block"
-                >
-                  <button className="p-3 bg-yellow-500 rounded-full">
-                    Join The Community
-                  </button>
-                </a>
-              </Link>
+              <a
+                href="https://forms.gle/W4JgHYBjw9U9WmrCA"
+                target="_blank"
+                className="text-[#3331C4] hidden md:block"
+              >
+                <button className="p-3 bg-yellow-500 rounded-full">
+                  Join The Community
+                </button>
+              </a>
             </div>
             <div className="flex lg:hidden">
               <button className="block" onClick={() => setIsOpen(!isOpen)}>
