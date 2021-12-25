@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Navbar, Footer, Breadcrum } from "../components";
 
 function Projects() {
@@ -74,14 +75,16 @@ function Projects() {
                 <span>TailwindCSS</span>
               </div>
               <div className="my-6 button">
-                <a className="bg-white p-4 font-light rounded-full text-[#29279B]">
-                  View Live Site
-                  <img
-                    className="inline-block w-9"
-                    src="/assets/projects/arrow.svg"
-                    alt="directional arrow"
-                  />
-                </a>
+                <Link href="https://genztechies.com">
+                  <a className="bg-white p-4 font-light rounded-full text-[#29279B]">
+                    View Live Site
+                    <img
+                      className="inline-block w-9"
+                      src="/assets/projects/arrow.svg"
+                      alt="directional arrow"
+                    />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

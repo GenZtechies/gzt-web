@@ -91,16 +91,11 @@ function About() {
                   </div>
                 </div>
                 <div className="flex items-center justify-center -mx-4 lg:pl-8 relative">
-                  <div className="w-full h-98">
-                    <Image
-                      width={100}
-                      height={100}
-                      layout="responsive"
-                      src="/assets/home/who_we_are.png"
-                      alt="hero"
-                      className="min-w-full px-5"
-                    />
-                  </div>
+                  <img
+                    src="./assets/home/who_we_are.png"
+                    alt="hero"
+                    className="min-w-full w-full h-98 px-5 image-1"
+                  />
                 </div>
               </div>
             </div>

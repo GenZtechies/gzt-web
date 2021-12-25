@@ -64,7 +64,7 @@ function Footer({ overlayBg }) {
       <div className="container mx-auto px-5 lg:py-10 pb-5 flex flex-wrap flex-col lg:flex-row">
         <p className="text-sm text-left hidden lg:block">
           Copyright &copy; {new Date().getFullYear()} GenzTechies. All rights
-          reserved
+          reserved.
         </p>
         <Link href="/credits">
           <a className="text-sm text-center p-5 lg:p-0 mx-auto">Credits</a>
