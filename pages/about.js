@@ -170,7 +170,7 @@ function About() {
             </div>
           </div>
 
-          <Link href="#">
+          <Link href="/members">
             <a className="px-5 py-2 bg-yellow-500 rounded-full cursor-pointer">
               MEET THE TEAM
             </a>

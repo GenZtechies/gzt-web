@@ -23,7 +23,7 @@ function Footer({ overlayBg }) {
                 Are you a teen techie looking to meet other techies in Nigeria?
               </h2>
               <p className="my-5">Join Us In Our Community</p>
-              <a href="" target="_blank" className="text-[#3331C4]">
+              <a href="https://forms.gle/W4JgHYBjw9U9WmrCA" target="_blank" className="text-[#3331C4]">
                 <button className="px-5 py-2 bg-yellow-500 rounded-full">
                   Join The Community
                 </button>
