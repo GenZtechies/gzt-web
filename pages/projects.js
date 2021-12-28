@@ -65,7 +65,7 @@ function Projects() {
               <h1 className="text-3xl header-1 font-black tracking-wide text-yellow-400 lg:text-4xl">
                 GenZtechies
               </h1>
-              <p className="mt-4 text text-gray-600 dark:text-gray-300">
+              <p className="mt-4 text text-gray-400 dark:text-gray-300">
                 A website that brings together teen developers and innovators
                 from around Nigeria in one place to exchange networking
                 opportunities and get to know one another.

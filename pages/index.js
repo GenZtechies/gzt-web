@@ -152,17 +152,18 @@ function Index() {
                 </p>
               </div>
               <div>
-                <a
-                  href
-                  className="px-3 py-3 font-light rounded-full text-yellow-400"
-                >
-                  Learn More{" "}
-                  <img
-                    className="inline-block"
-                    src="./assets/arrow.svg"
-                    alt="directional arrow"
-                  />
-                </a>
+                <Link href="/about">
+                  <a
+                    className="px-3 py-3 font-light rounded-full text-yellow-400"
+                  >
+                    Learn More{" "}
+                    <img
+                      className="inline-block"
+                      src="./assets/arrow.svg"
+                      alt="directional arrow"
+                    />
+                  </a>
+                </Link>
               </div>
             </div>
             <div className="flex items-center justify-center -mx-4 lg:pl-8">
@@ -253,7 +254,7 @@ function Index() {
                 <h1 className="text-3xl font-black tracking-wide text-yellow-400 lg:text-4xl">
                   GenZtechies
                 </h1>
-                <p className="mt-4 text-gray-600 dark:text-gray-300">
+                <p className="mt-4 text-gray-400 dark:text-gray-300">
                   A website that brings together teen developers and innovators
                   from around Nigeria in one place to exchange networking
                   opportunities and get to know one another.
