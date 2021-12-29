@@ -1,23 +1,5 @@
 module.exports = [
   {
-    "full_name": "Eniola Osabiya",
-    "username": "eni4sure",
-    "image_url": "https://avatars.githubusercontent.com/u/52782730?v=4",
-    "short_description": "I started my coding journey in 2016, when I was 12yrs Old. I have an obsession for *clean* and structured code 😊",
-    "role": "Full Stack Developer",
-    "links": {
-      "website_or_extra": "https://eniolaosabiya.com",
-      "github": "https://github.com/eni4sure",
-      "twitter": "https://twitter.com/eni4sure",
-      "linkedin": "https://www.linkedin.com/in/eniola-osabiya"
-    },
-    "location": {
-      "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
     "full_name": "Ronald Dosunmu",
     "username": "Iamronaldosunmu",
     "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
@@ -36,9 +18,24 @@ module.exports = [
     "isActive": true
   },
   {
-    "full_name": "Ikram Babs-Lawal",
-    "username": "Code_Quinn",
-    "image_url": "https://m.facebook.com/photo.php?fbid=388537539463802&id=100049226779149&set=a.216211910029700&source=11&refid=17&_ft_=mf_story_key.388537582797131%3Atop_level_post_id.388537539463802%3Atl_objid.388537539463802%3Acontent_owner_id_new.100049226779149%3Athrowback_story_fbid.388537582797131%3Astory_location.4%3Astory_attachment_style.profile_media%3Athid.100049226779149%3A306061129499414%3A30%3A0%3A1641023999%3A-4693220578658978736%3A%3A&__tn__=H-R",
+    "full_name": "Eniola Osabiya",
+    "username": "eni4sure",
+    "image_url": "https://avatars.githubusercontent.com/u/52782730?v=4",
+    "short_description": "I started my coding journey in 2016, when I was 12yrs Old. I have an obsession for *clean* and structured code 😊",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "https://eniolaosabiya.com",
+      "github": "https://github.com/eni4sure",
+      "twitter": "https://twitter.com/eni4sure",
+      "linkedin": "https://www.linkedin.com/in/eniola-osabiya"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Ikram Babs-Lawal",
     "username": "Code_Quinn",
     "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/241872053_388537542797135_3797128416203328467_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=hqquoe3LEXYAX__VpAG&_nc_ht=scontent-lga3-2.xx&oh=00_AT_su8DpbAQ2WIWIGj_bfckRZx5-_B7J6s4vLpyAVvNOIw&oe=61D2BCDD",
