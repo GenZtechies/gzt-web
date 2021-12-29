@@ -39,6 +39,9 @@ module.exports = [
     "full_name": "Ikram Babs-Lawal",
     "username": "Code_Quinn",
     "image_url": "https://m.facebook.com/photo.php?fbid=388537539463802&id=100049226779149&set=a.216211910029700&source=11&refid=17&_ft_=mf_story_key.388537582797131%3Atop_level_post_id.388537539463802%3Atl_objid.388537539463802%3Acontent_owner_id_new.100049226779149%3Athrowback_story_fbid.388537582797131%3Astory_location.4%3Astory_attachment_style.profile_media%3Athid.100049226779149%3A306061129499414%3A30%3A0%3A1641023999%3A-4693220578658978736%3A%3A&__tn__=H-R",
+    "full_name": "Ikram Babs-Lawal",
+    "username": "Code_Quinn",
+    "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/241872053_388537542797135_3797128416203328467_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=hqquoe3LEXYAX__VpAG&_nc_ht=scontent-lga3-2.xx&oh=00_AT_su8DpbAQ2WIWIGj_bfckRZx5-_B7J6s4vLpyAVvNOIw&oe=61D2BCDD",
     "short_description": "I started my coding journey when I was 11yrs Old. I am obsessed with cats, chocolate and coding 😊",
     "role": "Frontend Developer",
     "links": {
@@ -55,7 +58,7 @@ module.exports = [
   {
     "full_name": "Okpe Onoja",
     "username": "onoja123",
-    "image_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fhashnode.com%2F%40Iam_the_code&psig=AOvVaw1mOIVyYxd6rmQdOxYrnFOF&ust=1640420878037000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCNnLWH_PQCFQAAAAAdAAAAABAD",
+    "image_url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1599345517785/CTo_08ERw.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress",
     "short_description": "A 16 years old Fullstack developer based in Nigeria. I strive to develop new products that make life easier and flexible😊",
     "role": "Full Stack Developer",
     "links": {
