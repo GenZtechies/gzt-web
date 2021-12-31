@@ -28,7 +28,7 @@ function Footer({ overlayBg }) {
                 target="_blank"
                 className="text-[#3331C4]"
               >
-                <button className="px-5 py-2 bg-yellow-300 rounded-full hover:scale-105 text-base transition duration-150 ease-in-out hover:bg-yellow-500">
+                <button className="px-5 py-2 bg-yellow-400 rounded-full hover:scale-105 text-base transition duration-150 ease-in-out hover:bg-yellow-500">
                   Join The Community
                 </button>
               </a>
