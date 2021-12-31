@@ -12,7 +12,7 @@ export default function Breadcrum({ currentPage }) {
           className="w-full object-fill h-48 md:hidden"
           src="assets/breadcrum/mobile-ellipse.png"
         />
-        <p className="absolute text-center w-full bottom-10 text-xl text-white">
+        <p className="absolute text-center w-full bottom-10 text-xl text-white translate-y-[-4rem]">
           <span className="inline-block mr-3">Home</span>
           <img className="inline-block" src="assets/breadcrum/dot.svg" />
           <span className="inline-block ml-3">{currentPage}</span>
