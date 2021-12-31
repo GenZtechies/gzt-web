@@ -44,20 +44,20 @@ function Index() {
                 <br /> Techies <span className="text-white">Across</span>
                 <br /> Nigeria
               </h1>
-              <div className="mt-8">
+              <div className="mt-8 transition duration-150 ease-in-out hover:scale-105">
                 <a
                   href="https://forms.gle/W4JgHYBjw9U9WmrCA"
-                  className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400 text-base"
+                  className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400 text-base transition duration-150 ease-in-out hover:bg-yellow-500 hover:scale-105"
                 >
                   Join The Community
                 </a>
               </div>
               <div className="mt-8">
                 <Link href="/about">
-                  <a className="px-10 py-3 font-light rounded-full text-yellow-400 text-base">
+                  <a className="px-10 py-3 font-light rounded-full text-yellow-400 hover:text-yellow-300 text-base ">
                     Learn More{" "}
                     <img
-                      className="inline-block"
+                      className="inline-block transition duration-150 ease-in-out hover:opacity-90 hover:scale-105"
                       src="./assets/arrow.svg"
                       alt="directional arrow"
                     />
