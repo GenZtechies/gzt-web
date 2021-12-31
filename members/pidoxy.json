@@ -1,0 +1,18 @@
+{
+    "full_name": "Emmanuel Idoko",
+    "username": "Pidoxy",
+    "image_url": "https://avatars.githubusercontent.com/u/56538561?v=4",
+    "short_description": "I love thinking, converting designs to code, writing beautifully thought logics and now deep learning",
+    "role": "Frontend and ML Developer",
+    "links": {
+      "website_or_extra": "https://pidoxy.dev/",
+      "github": "https://github.com/pidoxy",
+      "twitter": "https://twitter.com/home",
+      "linkedin": "https://www.linkedin.com/in/emmanuelidoko/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  }
