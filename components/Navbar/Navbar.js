@@ -64,7 +64,10 @@ function Navbar() {
                 target="_blank"
                 className="text-[#3331C4] hidden md:block"
               >
-                <button className="p-3 bg-yellow-500 rounded-full">
+                <button
+                  className="p-3 bg-yellow-500 rounded-full hover:scale-105 transition duration-150 ease-in-out
+                "
+                >
                   Join The Community
                 </button>
               </a>
