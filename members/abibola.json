@@ -1,0 +1,18 @@
+{
+    "full_name": "Ifunanyachi Abibola Oworu-Chima",
+    "username": "Abibola",
+    "image_url": "https://i.ibb.co/RD0Rbh5/abibola.jpg",
+    "short_description": "I started my coding journey in 2020. I love music and books.",
+    "role": "Front-end Developer, UI/UX Designer",
+    "links": {
+        "website_or_extra": "",
+        "github": "https://github.com/PhoenixAqua",
+        "twitter": "https://www.twitter.com/abbie_bola",
+        "linkedin": "https://www.linkedin.com/in/ifunanyachi-oworu-chima-998435210"
+    },
+    "location": {
+        "state": "England",
+        "country": "UK"
+    },
+    "isActive": true
+}
