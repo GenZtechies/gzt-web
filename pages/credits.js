@@ -1,4 +1,4 @@
-import { Navbar, Footer, Breadcrum } from "../components";
+import { Layout, Breadcrum } from "../components";
 
 function Sample() {
   return (
