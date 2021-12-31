@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Breadcrum({ currentPage }) {
   return (
     <>
@@ -13,9 +13,14 @@ export default function Breadcrum({ currentPage }) {
           src="assets/breadcrum/mobile-ellipse.png"
         />
         <p className="absolute text-center w-full bottom-10 text-xl text-white translate-y-[-4rem]">
-          <span className="inline-block mr-3">Home</span>
+          <Link href="/">
+            <a className="inline-block mr-3">Home</a>
+          </Link>
           <img className="inline-block" src="assets/breadcrum/dot.svg" />
-          <span className="inline-block ml-3">{currentPage}</span>
+
+          <Link href={`/${currentPage}`}>
+            <a className="inline-block ml-3">{currentPage}</a>
+          </Link>
         </p>
       </div>
 
