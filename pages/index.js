@@ -31,7 +31,7 @@ function Index() {
 
           {/* mobile bg image  */}
           <div
-            className="z-20 block sm:hidden bg-no-repeat bg-cover bg-center h-[60rem] w-screen absolute bg-[#3331C4] scale-[1] sm:translate-y-[-40rem] "
+            className="z-20 block sm:hidden bg-no-repeat bg-cover bg-center h-[60rem] w-screen absolute bg-transparent scale-[1] sm:translate-y-[-40rem] "
             style={{
               backgroundImage: 'url("./assets/home/mobilehero.svg")',
               width: "-webkit-fill-available"
