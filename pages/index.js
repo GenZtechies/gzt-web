@@ -113,10 +113,10 @@ function Index() {
                 </div>
                 <div>
                   <Link href="/about">
-                    <a className="px-3 py-3 font-light rounded-full text-yellow-400">
+                    <a className="px-10 py-3 font-light rounded-full text-yellow-400 hover:text-yellow-300 text-base ">
                       Learn More{" "}
                       <img
-                        className="inline-block"
+                        className="inline-block transition duration-150 ease-in-out hover:opacity-90 hover:scale-105"
                         src="./assets/arrow.svg"
                         alt="directional arrow"
                       />
