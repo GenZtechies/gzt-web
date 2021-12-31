@@ -37,7 +37,7 @@ function Index() {
               width: "-webkit-fill-available"
             }}
           ></div>
-          <div className="mx-auto mt-[26vh] lg:mt-[24vh] z-10 translate-y-[7rem]  sm:translate-y-[5rem] md:translate-y-[10rem] xl:translate-y-[25rem]">
+          <div className="mx-auto mt-[26vh] lg:mt-[24vh] z-20 translate-y-[7rem]  sm:translate-y-[5rem] md:translate-y-[10rem] xl:translate-y-[25rem]">
             <div className="text-center justify-center">
               <h1 className="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-4xl lg:text-7xl">
                 <span className="text-white">Connecting</span> Teen
