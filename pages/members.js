@@ -90,7 +90,12 @@ function Members() {
                   </p>
                   <div className="flex">
                     {member.links?.github && (
-                      <a href={member.links.github} className="pr-2">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={member.links.github}
+                        className="pr-2"
+                      >
                         <Image
                           width={20}
                           height={20}
@@ -99,7 +104,12 @@ function Members() {
                       </a>
                     )}
                     {member.links?.twitter && (
-                      <a href={member.links.twitter} className="pr-2">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={member.links.twitter}
+                        className="pr-2"
+                      >
                         <Image
                           width={20}
                           height={20}
@@ -108,7 +118,12 @@ function Members() {
                       </a>
                     )}
                     {member.links?.linkedin && (
-                      <a href={member.links.linkedin} className="pr-2">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={member.links.linkedin}
+                        className="pr-2"
+                      >
                         <Image
                           width={20}
                           height={20}
@@ -117,7 +132,12 @@ function Members() {
                       </a>
                     )}
                     {member.links?.website_or_extra && (
-                      <a href={member.links.website_or_extra} className="pr-2">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={member.links.website_or_extra}
+                        className="pr-2"
+                      >
                         <Image
                           width={20}
                           height={20}
