@@ -11,11 +11,15 @@ function Navbar() {
       <div className="z-20 relative">
         <nav className="flex justify-between px-4 py-5 mx-auto bg-[#3331C4] ">
           <div>
-            <img
-              src="./assets/navbar/nav-logo.svg"
-              className="p-3"
-              alt="logo"
-            />
+            <Link href="/">
+              <a>
+                <img
+                  src="./assets/navbar/nav-logo.svg"
+                  className="p-3"
+                  alt="logo"
+                />
+              </a>
+            </Link>
           </div>
           <div className="flex space-x-8">
             <div className="flex space-x-8">
@@ -65,7 +69,7 @@ function Navbar() {
                 className="text-[#3331C4] hidden md:block"
               >
                 <button
-                  className="p-3 bg-yellow-300 rounded-full hover:scale-105 transition duration-150 ease-in-out
+                  className="p-3 bg-yellow-300 rounded-full hover:scale-105 transition duration-150 ease-in-out hover:bg-yellow-500
                 "
                 >
                   Join The Community
