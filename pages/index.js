@@ -1,12 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Navbar, Footer } from "../components";
+import { Navbar, Footer, Layout } from "../components";
 
 function Index() {
   return (
-    <>
-      <Navbar />
-
+    <Layout>
       <main className="bg-[#3331C4]">
         {/* Please DO NOT Temper with this code, it took me hours to fix it 
         
@@ -251,9 +249,7 @@ function Index() {
           </div>
         </div>
       </main>
-
-      <Footer overlayBg="#29279B" />
-    </>
+    </Layout>
   );
 }
 
