@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Navbar, Footer, Layout } from "../components";
+import { Layout } from "../components";
 
 function Index() {
   return (
