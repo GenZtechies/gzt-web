@@ -18,6 +18,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Ifunanyachi Abibola Oworu-Chima",
+    "username": "Abibola",
+    "image_url": "https://i.ibb.co/mcRfkvk/abibola.jpg",
+    "short_description": "I started my coding journey in 2020. I love music and books.",
+    "role": "Front-end Developer, UI/UX Designer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/PhoenixAqua",
+      "twitter": "https://www.twitter.com/abbie_bola",
+      "linkedin": "https://www.linkedin.com/in/ifunanyachi-oworu-chima-998435210"
+    },
+    "location": {
+      "state": "England",
+      "country": "UK"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Eniola Osabiya",
     "username": "eni4sure",
     "image_url": "https://avatars.githubusercontent.com/u/52782730?v=4",
@@ -66,6 +84,24 @@ module.exports = [
     },
     "location": {
       "state": "Kaduna",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Emmanuel Idoko",
+    "username": "Pidoxy",
+    "image_url": "https://avatars.githubusercontent.com/u/56538561?v=4",
+    "short_description": "I love thinking, converting designs to code, writing beautifully thought logics and now deep learning",
+    "role": "Frontend and ML Developer",
+    "links": {
+      "website_or_extra": "https://pidoxy.dev/",
+      "github": "https://github.com/pidoxy",
+      "twitter": "https://twitter.com/home",
+      "linkedin": "https://www.linkedin.com/in/emmanuelidoko/"
+    },
+    "location": {
+      "state": "Lagos",
       "country": "Nigeria"
     },
     "isActive": true

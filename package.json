@@ -5,7 +5,8 @@
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "members-update": "node utils/members-cli.js && node utils/image-collage-cli.js"
+    "members-update": "node utils/members-cli.js && node utils/image-collage-cli.js",
+    "pre-commit-complete": "git add ."
   },
   "dependencies": {
     "gsap": "^3.9.0",
@@ -21,6 +22,7 @@
     "tailwindcss": "^3.0.0"
   },
   "pre-commit": [
-    "members-update"
+    "members-update",
+    "pre-commit-complete"
   ]
 }
