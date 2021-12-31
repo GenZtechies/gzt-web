@@ -224,14 +224,14 @@ function Index() {
                   <span>NextJS</span>
                   <span>TailwindCSS</span>
                 </div>
-                <div className="my-6">
+                <div className="my-6 transition-all duration-300">
                   <a
                     href="https://genztechies.com"
-                    className="bg-white p-4 font-light rounded-full text-[#29279B]"
+                    className="bg-white p-4 font-light rounded-full text-[#29279B] hover:p-5 transition-all duration-500 ease-in-out"
                   >
                     View Live Site{" "}
                     <img
-                      className="inline-block w-9"
+                      className="inline-block w-9 transition duration-150 ease-in-out hover:opacity-90 hover:scale-105"
                       src="./assets/projects/arrow.svg"
                       alt="directional arrow"
                     />
@@ -241,9 +241,9 @@ function Index() {
             </div>
           </div>
           <div className="flex items-center justify-center w-full pt-10 pb-20">
-            <div className="mt-8">
+            <div className="mt-8  hover:scale-105 transition duration-150 ease-in-out">
               <Link href="/projects">
-                <a className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400">
+                <a className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400 text-base transition duration-150 ease-in-out hover:bg-yellow-500">
                   View All Projects
                 </a>
               </Link>
