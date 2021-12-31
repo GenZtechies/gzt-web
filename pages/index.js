@@ -8,22 +8,38 @@ function Index() {
       <Navbar />
 
       <main className="bg-[#3331C4]">
+        {/* Please DO NOT Temper with this code, it took me hours to fix it 
+        
+        
+        ****************************************
+        */}
+
         <div
-          className="flex h-screen w-screen"
+          className="flex h-[60rem] md:h-[70rem] lg:h-[100rem] xl:h-[130rem] w-screen"
           style={{
             width: "-webkit-fill-available"
           }}
         >
+          {/* desktop bg image  */}
           <div
-            className="bg-no-repeat bg-cover bg-center min-h-full w-screen absolute bg-[#131249] rounded-b-[25vh]"
+            className="hidden sm:block bg-no-repeat bg-cover bg-center h-[60rem] md:h-[70rem] lg:h-[100rem] xl:h-[130rem] w-screen absolute bg-[#3331C4]"
             style={{
               backgroundImage: 'url("./assets/home/hero.svg")',
               width: "-webkit-fill-available"
             }}
           ></div>
-          <div className="mx-auto mt-[26vh] lg:mt-[24vh] z-10">
+
+          {/* mobile bg image  */}
+          <div
+            className="block sm:hidden bg-no-repeat bg-cover bg-center h-[60rem] w-screen absolute bg-[#3331C4] scale-[1] sm:translate-y-[-40rem] "
+            style={{
+              backgroundImage: 'url("./assets/home/mobilehero.svg")',
+              width: "-webkit-fill-available"
+            }}
+          ></div>
+          <div className="mx-auto mt-[26vh] lg:mt-[24vh] z-10 translate-y-[7rem]  sm:translate-y-[5rem] md:translate-y-[10rem] xl:translate-y-[25rem]">
             <div className="text-center justify-center">
-              <h1 className="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-3xl md:text-4xl lg:text-7xl">
+              <h1 className="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-4xl lg:text-7xl">
                 <span className="text-white">Connecting</span> Teen
                 <br /> Techies <span className="text-white">Across</span>
                 <br /> Nigeria
@@ -31,14 +47,14 @@ function Index() {
               <div className="mt-8">
                 <a
                   href="https://forms.gle/W4JgHYBjw9U9WmrCA"
-                  className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400"
+                  className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400 text-base"
                 >
                   Join The Community
                 </a>
               </div>
               <div className="mt-8">
                 <Link href="/about">
-                  <a className="px-10 py-3 font-light rounded-full text-yellow-400">
+                  <a className="px-10 py-3 font-light rounded-full text-yellow-400 text-base">
                     Learn More{" "}
                     <img
                       className="inline-block"
@@ -51,6 +67,12 @@ function Index() {
             </div>
           </div>
         </div>
+
+        {/* 
+        
+        ****************************************
+        
+        Please DO NOT Temper with this code, it took me hours to fix it  */}
 
         <img
           src="./assets/home/gradient_ring_one.svg"
@@ -149,10 +171,18 @@ function Index() {
           </div>
         </div>
 
-        <div className="flex w-full py-10">
+        {/* <div className="flex w-full py-10">
           <img
             src="./assets/home/mission_vector.svg"
             className="mx-auto max-w-6xl"
+            alt="mission_vector"
+          />
+        </div> */}
+
+        <div className="flex w-screen pt-10 translate-y-[-2rem] md:translate-y-1">
+          <img
+            src="/assets/home/mission_vector.svg"
+            className="mx-auto max-w-6xl w-full"
             alt="mission_vector"
           />
         </div>
