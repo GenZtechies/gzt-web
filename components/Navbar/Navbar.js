@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Navbar() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
@@ -18,20 +20,42 @@ function Navbar() {
           <div className="flex space-x-8">
             <div className="flex space-x-8">
               <Link href="/">
-                <a className="p-3 text-white lg:block hidden uppercase">Home</a>
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase",
+                    router.pathname === "/" && "text-yellow-500"
+                  ].join(" ")}
+                >
+                  Home
+                </a>
               </Link>
               <Link href="/about">
-                <a className="p-3 text-white lg:block hidden uppercase">
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase",
+                    router.pathname === "/about" && "text-yellow-500"
+                  ].join(" ")}
+                >
                   About
                 </a>
               </Link>
               <Link href="/members">
-                <a className="p-3 text-white lg:block hidden uppercase">
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase",
+                    router.pathname === "/members" && "text-yellow-500"
+                  ].join(" ")}
+                >
                   Members
                 </a>
               </Link>
               <Link href="/projects">
-                <a className="p-3 text-white lg:block hidden uppercase">
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase",
+                    router.pathname === "/projects" && "text-yellow-500"
+                  ].join(" ")}
+                >
                   Projects
                 </a>
               </Link>
