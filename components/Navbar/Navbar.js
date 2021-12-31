@@ -22,7 +22,7 @@ function Navbar() {
               <Link href="/">
                 <a
                   className={[
-                    "p-3 text-white lg:block hidden uppercase",
+                    "p-3 text-white lg:block hidden uppercase  hover:text-yellow-500",
                     router.pathname === "/" && "text-yellow-500"
                   ].join(" ")}
                 >
@@ -32,7 +32,7 @@ function Navbar() {
               <Link href="/about">
                 <a
                   className={[
-                    "p-3 text-white lg:block hidden uppercase",
+                    "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
                     router.pathname === "/about" && "text-yellow-500"
                   ].join(" ")}
                 >
@@ -42,7 +42,7 @@ function Navbar() {
               <Link href="/members">
                 <a
                   className={[
-                    "p-3 text-white lg:block hidden uppercase",
+                    "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
                     router.pathname === "/members" && "text-yellow-500"
                   ].join(" ")}
                 >
@@ -52,7 +52,7 @@ function Navbar() {
               <Link href="/projects">
                 <a
                   className={[
-                    "p-3 text-white lg:block hidden uppercase",
+                    "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
                     router.pathname === "/projects" && "text-yellow-500"
                   ].join(" ")}
                 >
