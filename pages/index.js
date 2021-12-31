@@ -31,7 +31,7 @@ function Index() {
 
           {/* mobile bg image  */}
           <div
-            className="block sm:hidden bg-no-repeat bg-cover bg-center h-[60rem] w-screen absolute bg-[#3331C4] scale-[1] sm:translate-y-[-40rem] "
+            className="z-20 block sm:hidden bg-no-repeat bg-cover bg-center h-[60rem] w-screen absolute bg-[#3331C4] scale-[1] sm:translate-y-[-40rem] "
             style={{
               backgroundImage: 'url("./assets/home/mobilehero.svg")',
               width: "-webkit-fill-available"
@@ -77,7 +77,7 @@ function Index() {
         <section className="relative">
           <img
             src="./assets/home/gradient_ring_one.svg"
-            className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[-50vh] scale-125 z-10 left-0 opacity-50"
+            className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[-25vh] sm:top-[-50vh] scale-125 z-10 left-0 opacity-50"
             alt=""
           />
 
