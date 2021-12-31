@@ -5,7 +5,7 @@ import { Layout } from "../components";
 function Index() {
   return (
     <Layout>
-      <main className="bg-[#3331C4]">
+      <div>
         {/* Please DO NOT Temper with this code, it took me hours to fix it 
         
         
@@ -248,7 +248,7 @@ function Index() {
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </Layout>
   );
 }
