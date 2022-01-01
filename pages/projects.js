@@ -2,7 +2,7 @@ import gsap from "gsap";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Navbar, Footer, Breadcrum } from "../components";
+import { Layout, Breadcrum } from "../components";
 
 function Projects() {
   // GSAP Animation Config
@@ -40,9 +40,7 @@ function Projects() {
   });
 
   return (
-    <>
-      <Navbar />
-
+    <Layout>
       <main ref={el} className="bg-[#3331C4] pb-12">
         {/* Change this to the current Active Page */}
         <Breadcrum currentPage="Projects" />
@@ -91,9 +89,7 @@ function Projects() {
           </div>
         </div>
       </main>
-
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

@@ -1,0 +1,18 @@
+{
+  "full_name": "Caleb Areeveso",
+  "username": "calebareeveso",
+  "image_url": "https://avatars.githubusercontent.com/u/58891908?v=4",
+  "short_description": "I build and provide innovative Solutions that transform businesses and lives",
+  "role": "Full Stack Developer",
+  "links": {
+    "website_or_extra": "https://linktr.ee/calebareeveso",
+    "github": "https://github.com/calebareeveso",
+    "twitter": "https://www.twitter.com/calebareeveso",
+    "linkedin": "https://www.linkedin.com/in/calebareeveso"
+  },
+  "location": {
+    "state": "Lgos",
+    "country": "Nigeria"
+  },
+  "isActive": true
+}

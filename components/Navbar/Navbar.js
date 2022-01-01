@@ -1,7 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Navbar() {
+  const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
@@ -9,29 +11,55 @@ function Navbar() {
       <div className="z-20 relative">
         <nav className="flex justify-between px-4 py-5 mx-auto bg-[#3331C4] ">
           <div>
-            <img
-              src="./assets/navbar/nav-logo.svg"
-              className="p-3"
-              alt="logo"
-            />
+            <Link href="/">
+              <a>
+                <img
+                  src="./assets/navbar/nav-logo.svg"
+                  className="p-3"
+                  alt="logo"
+                />
+              </a>
+            </Link>
           </div>
           <div className="flex space-x-8">
             <div className="flex space-x-8">
               <Link href="/">
-                <a className="p-3 text-white lg:block hidden uppercase">Home</a>
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase  hover:text-yellow-500",
+                    router.pathname === "/" && "text-yellow-500"
+                  ].join(" ")}
+                >
+                  Home
+                </a>
               </Link>
               <Link href="/about">
-                <a className="p-3 text-white lg:block hidden uppercase">
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
+                    router.pathname === "/about" && "text-yellow-500"
+                  ].join(" ")}
+                >
                   About
                 </a>
               </Link>
               <Link href="/members">
-                <a className="p-3 text-white lg:block hidden uppercase">
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
+                    router.pathname === "/members" && "text-yellow-500"
+                  ].join(" ")}
+                >
                   Members
                 </a>
               </Link>
               <Link href="/projects">
-                <a className="p-3 text-white lg:block hidden uppercase">
+                <a
+                  className={[
+                    "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
+                    router.pathname === "/projects" && "text-yellow-500"
+                  ].join(" ")}
+                >
                   Projects
                 </a>
               </Link>
@@ -40,7 +68,10 @@ function Navbar() {
                 target="_blank"
                 className="text-[#3331C4] hidden md:block"
               >
-                <button className="p-3 bg-yellow-500 rounded-full">
+                <button
+                  className="p-3 bg-yellow-300 rounded-full hover:scale-105 transition duration-150 ease-in-out hover:bg-yellow-500
+                "
+                >
                   Join The Community
                 </button>
               </a>

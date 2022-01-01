@@ -2,7 +2,7 @@ import gsap from "gsap";
 import React from "react";
 import Image from "next/image";
 import genztechiesMembers from "../members/index";
-import { Navbar, Footer, Breadcrum } from "../components";
+import { Breadcrum, Layout } from "../components";
 
 function Members() {
   // GSAP Animation Config
@@ -45,10 +45,8 @@ function Members() {
   );
 
   return (
-    <>
-      <Navbar />
-
-      <main ref={el} className="bg-[#3331C4] pb-12">
+    <Layout>
+      <div ref={el} className=" pb-12">
         <Breadcrum currentPage="Members" />
 
         <div className="container header-1 mx-auto text-center mb-8 mt-10 max-w-sm px-8 md:max-w-2xl lg:max-w-3xl">
@@ -151,10 +149,8 @@ function Members() {
             );
           })}
         </div>
-      </main>
-
-      <Footer />
-    </>
+      </div>
+    </Layout>
   );
 }
 
