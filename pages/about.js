@@ -40,16 +40,6 @@ function About() {
       <main ref={el} className="bg-[#3331C4] overflow-x-hidden">
         <Breadcrum currentPage="About" />
 
-        <div className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 right-5 sm:right-12 md:right-12 opacity-50">
-          <Image
-            width={500}
-            height={500}
-            layout="responsive"
-            src="/assets/home/gradient_ring_second.svg"
-            // className="m-w-full h-full absolute top-1/3 opacity-50 z-10 left-0"
-          />
-        </div>
-
         {/* About section starts  */}
         <section className="bg-[#3331C4] num-1 relative">
           <div>

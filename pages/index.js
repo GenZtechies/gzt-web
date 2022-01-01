@@ -81,57 +81,58 @@ function Index() {
 
           <img
             src="./assets/home/gradient_ring_second.svg"
-            className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 right-0 sm:right-12 md:right-12 opacity-50"
+            className="w-56 image h-56 sm:w-96 md:h-96 absolute top-[120vh] scale-125 z-10 sm:right-12 md:right-12 opacity-50"
             alt=""
           />
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
-            <div className="grid gap-10 lg:grid-cols-2">
-              <div className="flex flex-col justify-center md:pr-8 xl:pr-0">
-                <div className="mb-6">
-                  <h2 className="max-w-lg mb-6 text-2xl tracking-widest font-sans text-yellow-300">
-                    / 01
-                  </h2>
-                  <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
-                    <span className="w-7 inline-block">
-                      <Image
-                        width={10}
-                        height={10}
-                        layout="responsive"
-                        src="/assets/breadcrum/dot.svg"
-                        className="inline-block w-7"
-                      />
-                    </span>{" "}
-                    WHO WE ARE
-                  </h2>
-                  <p className="text-base md:text-lg text-white">
-                    We are a community that connect teen techies/devs across
-                    Nigeria in one place to share network opportunities and get
-                    to know each other
-                  </p>
-                </div>
-                <div>
-                  <Link href="/about">
-                    <a className="px-10 py-3 font-light rounded-full text-yellow-400 hover:text-yellow-300 text-base ">
-                      Learn More{" "}
-                      <img
-                        className="inline-block transition duration-150 ease-in-out hover:opacity-90 hover:scale-105"
-                        src="./assets/arrow.svg"
-                        alt="directional arrow"
-                      />
-                    </a>
-                  </Link>
-                </div>
+        </section>
+
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
+          <div className="grid gap-10 lg:grid-cols-2">
+            <div className="flex flex-col justify-center md:pr-8 xl:pr-0">
+              <div className="mb-6">
+                <h2 className="max-w-lg mb-6 text-2xl tracking-widest font-sans text-yellow-300">
+                  / 01
+                </h2>
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl sm:leading-none bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-500">
+                  <span className="w-7 inline-block">
+                    <Image
+                      width={10}
+                      height={10}
+                      layout="responsive"
+                      src="/assets/breadcrum/dot.svg"
+                      className="inline-block w-7"
+                    />
+                  </span>{" "}
+                  WHO WE ARE
+                </h2>
+                <p className="text-base md:text-lg text-white">
+                  We are a community that connect teen techies/devs across
+                  Nigeria in one place to share network opportunities and get to
+                  know each other
+                </p>
               </div>
-              <div className="flex items-center justify-center -mx-4 lg:pl-8">
-                <img
-                  src="./assets/home/who_we_are.png"
-                  alt="hero"
-                  className="min-w-full px-5"
-                />
+              <div>
+                <Link href="/about">
+                  <a className="px-10 py-3 font-light rounded-full text-yellow-400 hover:text-yellow-300 text-base ">
+                    Learn More{" "}
+                    <img
+                      className="inline-block transition duration-150 ease-in-out hover:opacity-90 hover:scale-105"
+                      src="./assets/arrow.svg"
+                      alt="directional arrow"
+                    />
+                  </a>
+                </Link>
               </div>
             </div>
+            <div className="flex items-center justify-center -mx-4 lg:pl-8">
+              <img
+                src="./assets/home/who_we_are.png"
+                alt="hero"
+                className="min-w-full px-5"
+              />
+            </div>
           </div>
-        </section>
+        </div>
 
         <div className="px-4 py-16 mx-auto max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="grid gap-10">
