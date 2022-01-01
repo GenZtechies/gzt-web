@@ -39,4 +39,3 @@ createCollage(options).then((canvas) => {
 
   console.log("Community image collage updated 😎🤘🏾");
 });
-
