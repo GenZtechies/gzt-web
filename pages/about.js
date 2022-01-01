@@ -2,7 +2,7 @@ import React from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
 import Image from "next/image";
-import { Navbar, Footer, Breadcrum } from "../components";
+import { Layout, Breadcrum } from "../components";
 
 function About() {
   // Gsap Animation Config
@@ -17,20 +17,26 @@ function About() {
       ease: "power2.bounce",
       duration: 1
     });
-    tl.to(q(".image"), {
-      x: 0
-    }, ">");
-    tl.from(q(".num-1"), {
-      duration: 1.5,
-      ease: "power2.bounce",
-      x: "-300%"
-    }, "-=1.5");
+    tl.to(
+      q(".image"),
+      {
+        x: 0
+      },
+      ">"
+    );
+    tl.from(
+      q(".num-1"),
+      {
+        duration: 1.5,
+        ease: "power2.bounce",
+        x: "-300%"
+      },
+      "-=1.5"
+    );
   });
 
   return (
-    <>
-      <Navbar />
-
+    <Layout>
       <main ref={el} className="bg-[#3331C4] overflow-x-hidden">
         <Breadcrum currentPage="About" />
 
@@ -177,9 +183,7 @@ function About() {
           </Link>
         </section>
       </main>
-
-      <Footer overlayBg="#29279B" />
-    </>
+    </Layout>
   );
 }
 
