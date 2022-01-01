@@ -65,7 +65,7 @@ function Projects() {
               </h1>
               <p className="mt-4 text text-gray-400 dark:text-gray-300">
                 A website that brings together teen developers and innovators
-                from around Nigeria in one place to exchange networking
+                from around Nigeria to exchange networking
                 opportunities and get to know one another.
               </p>
               <div className="flex text-2 flex-wrap flex-row space-x-5 text-yellow-400 my-3">

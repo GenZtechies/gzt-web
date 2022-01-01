@@ -22,7 +22,7 @@ function Footer({ overlayBg }) {
               <h2 className="text-xl md:text-2xl lg:text-5xl text-center text-white mb-2">
                 Are you a teen techie looking to meet other techies in Nigeria?
               </h2>
-              <p className="my-5">Join Us In Our Community</p>
+              {/* <p className="my-5">Join Us In Our Community</p> */}
               <a
                 href="https://forms.gle/W4JgHYBjw9U9WmrCA"
                 target="_blank"

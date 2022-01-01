@@ -106,9 +106,7 @@ function Index() {
                   WHO WE ARE
                 </h2>
                 <p className="text-base md:text-lg text-white">
-                  We are a community that connect teen techies/devs across
-                  Nigeria in one place to share network opportunities and get to
-                  know each other
+                  We are a community that connects teenagers in technology across Nigeria to share opportunities within the network and foster quality connections.
                 </p>
               </div>
               <div>
@@ -216,7 +214,7 @@ function Index() {
                 </h1>
                 <p className="mt-4 text-gray-400 dark:text-gray-300">
                   A website that brings together teen developers and innovators
-                  from around Nigeria in one place to exchange networking
+                  from around Nigeria to exchange networking
                   opportunities and get to know one another.
                 </p>
                 <div className="flex flex-wrap flex-row space-x-5 text-yellow-400 my-3">

@@ -63,9 +63,7 @@ function About() {
                       WHO WE ARE
                     </h2>
                     <p className="text-base md:text-lg text-white">
-                      We are a community that connect teen techies/devs across
-                      Nigeria in one place to share network opportunities and
-                      get to know each other
+                      We are a community that connects teenagers in technology across Nigeria to share opportunities within the network and foster quality connections.
                     </p>
                   </div>
                   <div>
