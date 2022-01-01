@@ -1,0 +1,18 @@
+{
+    "full_name": "Okpe Onoja",
+    "username": "onoja123",
+    "image_url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1599345517785/CTo_08ERw.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress",
+    "short_description": "A 16 years old Fullstack developer based in Nigeria. I strive to develop new products that make life easier and flexible😊",
+    "role": "Full Stack Developer",
+    "links": {
+        "website_or_extra": "https://okpeonoja.netlify.app/",
+        "github": "https://github.com/onoja123",
+        "twitter": "https://twitter.com/okpe_onoja",
+        "linkedin": "https://www.linkedin.com/in/okpe-godwin-onoja-5814311b5/"
+    },
+    "location": {
+        "state": "Kaduna",
+        "country": "Nigeria"
+    },
+    "isActive": true
+}

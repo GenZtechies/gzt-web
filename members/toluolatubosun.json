@@ -1,0 +1,18 @@
+{
+    "full_name": "John Olatubosun",
+    "username": "toluolatubosun",
+    "image_url": "https://avatars.githubusercontent.com/u/64479657?v=4",
+    "short_description": "I enjoy working on new project ideas. Also I am a crypto enthusiast 😎",
+    "role": "Full Stack Developer",
+    "links": {
+        "website_or_extra": "https://n-timee.web.app/",
+        "github": "https://github.com/toluolatubosun",
+        "twitter": "https://twitter.com/king_tolu_7",
+        "linkedin": "https://www.linkedin.com/in/john-olatubosun/"
+    },
+    "location": {
+        "state": "Lagos",
+        "country": "Nigeria"
+    },
+    "isActive": true
+}

@@ -1,0 +1,18 @@
+{
+    "full_name": "Ilyas Rufai",
+    "username": "rufilboy",
+    "image_url": "https://avatars.githubusercontent.com/u/69714197?v=4",
+    "short_description": "I started my coding journey in 2019, I've in view of helping big companies and startups deliver better software.",
+    "role": "DevOps Engineer",
+    "links": {
+        "website_or_extra": "https://github.com/rufilboy",
+        "github": "https://github.com/rufilboy",
+        "twitter": "https://twitter.com/IlyasRufai",
+        "linkedin": "https://www.linkedin.com/in/ilyas-rufai"
+    },
+    "location": {
+        "state": "Ibadan",
+        "country": "Nigeria"
+    },
+    "isActive": true
+}

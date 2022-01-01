@@ -1,0 +1,18 @@
+{
+  "full_name": "Adetunji Adeyinka",
+  "username": "itzadetunji",
+  "image_url": "https://avatars.githubusercontent.com/u/55273527?v=4",
+  "short_description": "I'm a web developer who is 16 years old. I enjoy coding, working on myself, and striving to be the best I can be. I also love photography 😎.",
+  "role": "Backend Developer",
+  "links": {
+      "website_or_extra": "https://drive.google.com/file/d/1EjIjq9bk7b7KX0es87Xah9cqoeWRoFrp/view?usp=sharing",
+      "github": "https://github.com/itzadetunji",
+      "twitter": "https://www.twitter.com/itzadetunji1",
+      "linkedin": "https://www.linkedin.com/in/adetunji-adeyinka-8aa5311b9/"
+  },
+  "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+  },
+  "isActive": true
+}
