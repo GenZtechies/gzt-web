@@ -1,0 +1,18 @@
+{
+    "full_name": "Ayanfeoluwa Edun",
+    "username": "Ayanfe",
+    "image_url": "https://i.ibb.co/K5NyJPr/img-20201223-123049-946.png",
+    "short_description": "I’m a generalist with interests in business strategy, human behaviour, design, systems thinking, and science in general.",
+    "role": "Product Management",
+    "links": {
+        "website_or_extra": "https://ayanfeedun.substack.com",
+        "github": "",
+        "twitter": "https://www.twitter.com/ayanfeedun",
+        "linkedin": "https://www.linkedin.com/in/ayanfeoluwa-edun-522982190"
+    },
+    "location": {
+        "state": "Ogun",
+        "country": "Nigeria"
+    },
+    "isActive": true
+}
