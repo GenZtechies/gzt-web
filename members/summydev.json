@@ -1,0 +1,35 @@
+{
+
+  "full_name": "Sumayah Adegbite",
+
+  "username": "summydev",
+
+  "image_url": "https://avatars.githubusercontent.com/u/66903624?v=4",
+
+  "short_description": "I am a 14-year-old Software Developer from Lagos Nigeria. When I am not coding, then I am creating technical contents. I love pizza 🍕 and playing dart 🎯 ",
+
+  "role": "Backend Developer",
+
+  "links": {
+
+    "website_or_extra": "YOUR_WEBSITE_URL",
+
+    "github": " https://summydev.github.io/summydev/ ",
+
+    "twitter": "https://www.twitter.com/summydev",
+
+    "linkedin": "https://www.linkedin.com/in/sumayah-adegbite-32894a202"
+
+  },
+
+  "location": {
+
+    "state": "Lagos",
+
+    "country": "Nigeria"
+
+  },
+
+  "isActive": true
+
+}
