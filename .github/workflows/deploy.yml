@@ -1,4 +1,3 @@
-
 name: GZT Web Deployment Script
 
 on:
@@ -10,40 +9,48 @@ on:
   workflow_dispatch:
 
 jobs:
-  prettier:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        # Make sure the actual branch is checked out when running on pull requests
-        ref: ${{ github.head_ref }}
-
-    - name: Prettify code
-      uses: creyD/prettier_action@v3.1
-      with:
-        prettier_options: --write **/*.{js,md}
-        commit_message: Prettier Action
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   deploy:
-    needs: prettier
-
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
 
-      - name: Install yarn dependencies and build project
+      - name: Prettify code
+        uses: creyD/prettier_action@v3.1
+        with:
+          prettier_options: --write **/*.{js,md}
+          commit_message: Prettier Action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Use cached node_modules
+        uses: c-hive/gha-yarn-cache@v2
+
+      - name: Install Project Dependencies
         run: |
           yarn install
+
+      - name: Build Members JSON and Members IMG
+        run: |
+          yarn run members-update
+
+      - name: Commit members JSON update
+        if: always()
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_message: CI updates 😎
+
+      - name: Build website
+        run: |
           yarn build
           yarn export
           cp CNAME .nojekyll out/
 
-      - name: Deployment
+      - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           branch: gh-pages # The branch the action should deploy to.
