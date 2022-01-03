@@ -1,23 +1,5 @@
 module.exports = [
   {
-    "full_name": "Ronald Dosunmu",
-    "username": "Iamronaldosunmu",
-    "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
-    "short_description": "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
-    "role": "Full Stack Developer",
-    "links": {
-      "website_or_extra": "",
-      "github": "https://github.com/Iamronaldosunmu",
-      "twitter": "https://www.twitter.com/IamRonald05",
-      "linkedin": "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
-    },
-    "location": {
-      "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
     "full_name": "Abibola Oworu-Chima",
     "username": "Abibola",
     "image_url": "https://i.ibb.co/K7gmBQF/abibola.jpg",
@@ -64,6 +46,42 @@ module.exports = [
       "github": "https://github.com/eni4sure",
       "twitter": "https://twitter.com/eni4sure",
       "linkedin": "https://www.linkedin.com/in/eniola-osabiya"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Sherifdeen Adebayo",
+    "username": "herdeybayor",
+    "image_url": "https://avatars.githubusercontent.com/u/71196743?v=4",
+    "short_description": "I am a 17 years old Full Stack Web Developer (MERN). I started learning to code when I was 11 beacause I wanted to create my own Graphic Designing Website, I have gained a wealth of experience creating websites😊",
+    "role": "Full Stack Developer (MERN)",
+    "links": {
+      "website_or_extra": "http://herdeybayor.github.io/dPrince",
+      "github": "https://github.com/herdeybayor",
+      "twitter": "https://www.twitter.com/dprincegraphics",
+      "linkedin": "https://www.linkedin.com/in/dprinceprime"
+    },
+    "location": {
+      "state": "Kwara",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Ronald Dosunmu",
+    "username": "Iamronaldosunmu",
+    "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
+    "short_description": "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/Iamronaldosunmu",
+      "twitter": "https://www.twitter.com/IamRonald05",
+      "linkedin": "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
     },
     "location": {
       "state": "Lagos",
