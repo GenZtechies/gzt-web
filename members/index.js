@@ -77,7 +77,7 @@ module.exports = [
     isActive: true
   },
   {
-    "full name": "Famakinwa Anuoluwapo",
+    full_name: "Famakinwa Anuoluwapo",
     username: "mercyjae",
     image_url: "https://avatars.githubusercontent.com/u/83911888?v=4",
     short_description:
