@@ -1,287 +1,270 @@
 module.exports = [
   {
-    full_name: "Ronald Dosunmu",
-    username: "Iamronaldosunmu",
-    image_url:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
-    short_description:
-      "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
-    role: "Full Stack Developer",
-    links: {
-      website_or_extra: "",
-      github: "https://github.com/Iamronaldosunmu",
-      twitter: "https://www.twitter.com/IamRonald05",
-      linkedin: "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
+    "full_name": "Ronald Dosunmu",
+    "username": "Iamronaldosunmu",
+    "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
+    "short_description": "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/Iamronaldosunmu",
+      "twitter": "https://www.twitter.com/IamRonald05",
+      "linkedin": "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Abibola Oworu-Chima",
-    username: "Abibola",
-    image_url: "https://i.ibb.co/K7gmBQF/abibola.jpg",
-    short_description:
-      "I started my coding journey in 2020. I love music and books.",
-    role: "F.E Developer & Designer",
-    links: {
-      website_or_extra: "",
-      github: "https://github.com/PhoenixAqua",
-      twitter: "https://www.twitter.com/abbie_bola",
-      linkedin: "https://www.linkedin.com/in/ifunanyachi-oworu-chima-998435210"
+    "full_name": "Abibola Oworu-Chima",
+    "username": "Abibola",
+    "image_url": "https://i.ibb.co/K7gmBQF/abibola.jpg",
+    "short_description": "I started my coding journey in 2020. I love music and books.",
+    "role": "F.E Developer & Designer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/PhoenixAqua",
+      "twitter": "https://www.twitter.com/abbie_bola",
+      "linkedin": "https://www.linkedin.com/in/ifunanyachi-oworu-chima-998435210"
     },
-    location: {
-      state: "England",
-      country: "UK"
+    "location": {
+      "state": "England",
+      "country": "UK"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Caleb Areeveso",
-    username: "calebareeveso",
-    image_url: "https://avatars.githubusercontent.com/u/58891908?v=4",
-    short_description:
-      "I build and provide innovative Solutions that transform businesses and lives",
-    role: "Full Stack Developer",
-    links: {
-      website_or_extra: "https://linktr.ee/calebareeveso",
-      github: "https://github.com/calebareeveso",
-      twitter: "https://www.twitter.com/calebareeveso",
-      linkedin: "https://www.linkedin.com/in/calebareeveso"
+    "full_name": "Caleb Areeveso",
+    "username": "calebareeveso",
+    "image_url": "https://avatars.githubusercontent.com/u/58891908?v=4",
+    "short_description": "I build and provide innovative Solutions that transform businesses and lives",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "https://linktr.ee/calebareeveso",
+      "github": "https://github.com/calebareeveso",
+      "twitter": "https://www.twitter.com/calebareeveso",
+      "linkedin": "https://www.linkedin.com/in/calebareeveso"
     },
-    location: {
-      state: "Lgos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lgos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Eniola Osabiya",
-    username: "eni4sure",
-    image_url: "https://avatars.githubusercontent.com/u/52782730?v=4",
-    short_description:
-      "I started my coding journey in 2016, when I was 12yrs Old. I have an obsession for *clean* and structured code 😊",
-    role: "Full Stack Developer",
-    links: {
-      website_or_extra: "https://eniolaosabiya.com",
-      github: "https://github.com/eni4sure",
-      twitter: "https://twitter.com/eni4sure",
-      linkedin: "https://www.linkedin.com/in/eniola-osabiya"
+    "full_name": "Eniola Osabiya",
+    "username": "eni4sure",
+    "image_url": "https://avatars.githubusercontent.com/u/52782730?v=4",
+    "short_description": "I started my coding journey in 2016, when I was 12yrs Old. I have an obsession for *clean* and structured code 😊",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "https://eniolaosabiya.com",
+      "github": "https://github.com/eni4sure",
+      "twitter": "https://twitter.com/eni4sure",
+      "linkedin": "https://www.linkedin.com/in/eniola-osabiya"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
     "full name": "Famakinwa Anuoluwapo",
-    username: "mercyjae",
-    image_url: "https://avatars.githubusercontent.com/u/83911888?v=4",
-    short_description:
-      "I'm a software developer who is passionate in writing clean codes and learning new things, I'm also an educator",
-    role: "Mobile Developer",
-    links: {
-      github: "https://github.com/famakinwamercy",
-      twitter: "https://twitter.com/MercyJae",
-      linkedin: "https://www.linkedin.com/in/famakinwa-anuoluwapo-994659225"
+    "username": "mercyjae",
+    "image_url": "https://avatars.githubusercontent.com/u/83911888?v=4",
+    "short_description": "I'm a software developer who is passionate in writing clean codes and learning new things, I'm also an educator",
+    "role": "Mobile Developer",
+    "links": {
+      "github": "https://github.com/famakinwamercy",
+      "twitter": "https://twitter.com/MercyJae",
+      "linkedin": "https://www.linkedin.com/in/famakinwa-anuoluwapo-994659225"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Ikram Babs-Lawal",
-    username: "Code_Quinn",
-    image_url:
-      "https://citizennewshub.files.wordpress.com/2021/02/img-20210208-wa0072.jpg?w=200",
-    short_description:
-      "I started my coding journey when I was 11yrs Old. I am obsessed with cats, chocolate and coding 😊",
-    role: "Frontend Developer",
-    links: {
-      github: "https://github.com/hikky08",
-      twitter: "https://twitter.com/code_quinn",
-      linkedin: "https://www.linkedin.com/in/ikram-babs-lawal"
+    "full_name": "Ikram Babs-Lawal",
+    "username": "Code_Quinn",
+    "image_url": "https://citizennewshub.files.wordpress.com/2021/02/img-20210208-wa0072.jpg?w=200",
+    "short_description": "I started my coding journey when I was 11yrs Old. I am obsessed with cats, chocolate and coding 😊",
+    "role": "Frontend Developer",
+    "links": {
+      "github": "https://github.com/hikky08",
+      "twitter": "https://twitter.com/code_quinn",
+      "linkedin": "https://www.linkedin.com/in/ikram-babs-lawal"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Adetunji Adeyinka",
-    username: "itzadetunji",
-    image_url: "https://avatars.githubusercontent.com/u/55273527?v=4",
-    short_description:
-      "I'm a web developer who is 16 years old. I enjoy coding, working on myself, and striving to be the best I can be. I also love photography 😎.",
-    role: "Backend Developer",
-    links: {
-      website_or_extra:
-        "https://drive.google.com/file/d/1EjIjq9bk7b7KX0es87Xah9cqoeWRoFrp/view?usp=sharing",
-      github: "https://github.com/itzadetunji",
-      twitter: "https://www.twitter.com/itzadetunji1",
-      linkedin: "https://www.linkedin.com/in/adetunji-adeyinka-8aa5311b9/"
+    "full_name": "Adetunji Adeyinka",
+    "username": "itzadetunji",
+    "image_url": "https://avatars.githubusercontent.com/u/55273527?v=4",
+    "short_description": "I'm a web developer who is 16 years old. I enjoy coding, working on myself, and striving to be the best I can be. I also love photography 😎.",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "https://drive.google.com/file/d/1EjIjq9bk7b7KX0es87Xah9cqoeWRoFrp/view?usp=sharing",
+      "github": "https://github.com/itzadetunji",
+      "twitter": "https://www.twitter.com/itzadetunji1",
+      "linkedin": "https://www.linkedin.com/in/adetunji-adeyinka-8aa5311b9/"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "John Oseni",
-    username: "johnoseni1",
-    image_url: "https://avatars.githubusercontent.com/u/75910251?v=4",
-    short_description: "#Unique & #impact",
-    role: "Block-chain Developer",
-    links: {
-      website_or_extra: "https://linktr.ee/johnoseni",
-      github: "https://github.com/johnoseni1",
-      twitter: "https://www.twitter.com/johnoseni4",
-      linkedin: "https://www.linkedin.com/in/john-oseni-4b8b001b0/"
+    "full_name": "John Oseni",
+    "username": "johnoseni1",
+    "image_url": "https://avatars.githubusercontent.com/u/75910251?v=4",
+    "short_description": "#Unique & #impact",
+    "role": "Block-chain Developer",
+    "links": {
+      "website_or_extra": "https://linktr.ee/johnoseni",
+      "github": "https://github.com/johnoseni1",
+      "twitter": "https://www.twitter.com/johnoseni4",
+      "linkedin": "https://www.linkedin.com/in/john-oseni-4b8b001b0/"
     },
-    location: {
-      state: "Ondo State",
-      country: "Nigeria"
+    "location": {
+      "state": "Ondo State",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Ayanfeoluwa Edun",
-    username: "Ayanfe",
-    image_url: "https://i.ibb.co/K5NyJPr/img-20201223-123049-946.png",
-    short_description:
-      "I’m a generalist with interests in business strategy, human behaviour, design, systems thinking, and science in general.",
-    role: "Product Management",
-    links: {
-      website_or_extra: "https://ayanfeedun.substack.com",
-      github: "",
-      twitter: "https://www.twitter.com/ayanfeedun",
-      linkedin: "https://www.linkedin.com/in/ayanfeoluwa-edun-522982190"
+    "full_name": "Ayanfeoluwa Edun",
+    "username": "Ayanfe",
+    "image_url": "https://i.ibb.co/K5NyJPr/img-20201223-123049-946.png",
+    "short_description": "I’m a generalist with interests in business strategy, human behaviour, design, systems thinking, and science in general.",
+    "role": "Product Management",
+    "links": {
+      "website_or_extra": "https://ayanfeedun.substack.com",
+      "github": "",
+      "twitter": "https://www.twitter.com/ayanfeedun",
+      "linkedin": "https://www.linkedin.com/in/ayanfeoluwa-edun-522982190"
     },
-    location: {
-      state: "Ogun",
-      country: "Nigeria"
+    "location": {
+      "state": "Ogun",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Okpe Onoja",
-    username: "onoja123",
-    image_url:
-      "https://cdn.hashnode.com/res/hashnode/image/upload/v1599345517785/CTo_08ERw.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress",
-    short_description:
-      "A 16 years old Fullstack developer based in Nigeria. I strive to develop new products that make life easier and flexible😊",
-    role: "Full Stack Developer",
-    links: {
-      website_or_extra: "https://okpeonoja.netlify.app/",
-      github: "https://github.com/onoja123",
-      twitter: "https://twitter.com/okpe_onoja",
-      linkedin: "https://www.linkedin.com/in/okpe-godwin-onoja-5814311b5/"
+    "full_name": "Okpe Onoja",
+    "username": "onoja123",
+    "image_url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1599345517785/CTo_08ERw.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress",
+    "short_description": "A 16 years old Fullstack developer based in Nigeria. I strive to develop new products that make life easier and flexible😊",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "https://okpeonoja.netlify.app/",
+      "github": "https://github.com/onoja123",
+      "twitter": "https://twitter.com/okpe_onoja",
+      "linkedin": "https://www.linkedin.com/in/okpe-godwin-onoja-5814311b5/"
     },
-    location: {
-      state: "Kaduna",
-      country: "Nigeria"
+    "location": {
+      "state": "Kaduna",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Emmanuel Idoko",
-    username: "Pidoxy",
-    image_url: "https://avatars.githubusercontent.com/u/56538561?v=4",
-    short_description:
-      "I love thinking, converting designs to code, writing beautifully thought logics and now deep learning",
-    role: "Frontend and ML Developer",
-    links: {
-      website_or_extra: "https://pidoxy.dev/",
-      github: "https://github.com/pidoxy",
-      twitter: "https://twitter.com/home",
-      linkedin: "https://www.linkedin.com/in/emmanuelidoko/"
+    "full_name": "Emmanuel Idoko",
+    "username": "Pidoxy",
+    "image_url": "https://avatars.githubusercontent.com/u/56538561?v=4",
+    "short_description": "I love thinking, converting designs to code, writing beautifully thought logics and now deep learning",
+    "role": "Frontend and ML Developer",
+    "links": {
+      "website_or_extra": "https://pidoxy.dev/",
+      "github": "https://github.com/pidoxy",
+      "twitter": "https://twitter.com/home",
+      "linkedin": "https://www.linkedin.com/in/emmanuelidoko/"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Precious Johnson",
-    username: "pgirl",
-    image_url: "https://avatars.githubusercontent.com/u/45792786?v=4",
-    short_description: "I am passionate about using tech to solve problems",
-    role: "Designer x Front-end Developer",
-    links: {
-      website_or_extra: "",
-      github: "https://github.com/preciousjohn",
-      twitter: "https://www.twitter.com/precioussjohn",
-      linkedin: "https://www.linkedin.com/in/preciousjohn"
+    "full_name": "Precious Johnson",
+    "username": "pgirl",
+    "image_url": "https://avatars.githubusercontent.com/u/45792786?v=4",
+    "short_description": "I am passionate about using tech to solve problems",
+    "role": "Designer x Front-end Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/preciousjohn",
+      "twitter": "https://www.twitter.com/precioussjohn",
+      "linkedin": "https://www.linkedin.com/in/preciousjohn"
     },
-    location: {
-      state: "Kigali",
-      country: "Rwanda"
+    "location": {
+      "state": "Kigali",
+      "country": "Rwanda"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Ilyas Rufai",
-    username: "rufilboy",
-    image_url: "https://avatars.githubusercontent.com/u/69714197?v=4",
-    short_description:
-      "I started my coding journey in 2019, I've in view of helping big companies and startups deliver better software.",
-    role: "DevOps Engineer",
-    links: {
-      website_or_extra: "https://github.com/rufilboy",
-      github: "https://github.com/rufilboy",
-      twitter: "https://twitter.com/IlyasRufai",
-      linkedin: "https://www.linkedin.com/in/ilyas-rufai"
+    "full_name": "Ilyas Rufai",
+    "username": "rufilboy",
+    "image_url": "https://avatars.githubusercontent.com/u/69714197?v=4",
+    "short_description": "I started my coding journey in 2019, I've in view of helping big companies and startups deliver better software.",
+    "role": "DevOps Engineer",
+    "links": {
+      "website_or_extra": "https://github.com/rufilboy",
+      "github": "https://github.com/rufilboy",
+      "twitter": "https://twitter.com/IlyasRufai",
+      "linkedin": "https://www.linkedin.com/in/ilyas-rufai"
     },
-    location: {
-      state: "Ibadan",
-      country: "Nigeria"
+    "location": {
+      "state": "Ibadan",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "Sumayah Adegbite",
-    username: "summydev",
-    image_url: "https://avatars.githubusercontent.com/u/66903624?v=4",
-    short_description:
-      "I am a 14-year-old Software Developer from Lagos Nigeria. When I am not coding, then I am creating technical contents. I love pizza 🍕 and playing dart 🎯 ",
-    role: "Backend Developer",
-    links: {
-      website_or_extra: "",
-      github: " https://summydev.github.io/summydev/ ",
-      twitter: "https://www.twitter.com/summydev",
-      linkedin: "https://www.linkedin.com/in/sumayah-adegbite-32894a202"
+    "full_name": "Sumayah Adegbite",
+    "username": "summydev",
+    "image_url": "https://avatars.githubusercontent.com/u/66903624?v=4",
+    "short_description": "I am a 14-year-old Software Developer from Lagos Nigeria. When I am not coding, then I am creating technical contents. I love pizza 🍕 and playing dart 🎯 ",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": " https://summydev.github.io/summydev/ ",
+      "twitter": "https://www.twitter.com/summydev",
+      "linkedin": "https://www.linkedin.com/in/sumayah-adegbite-32894a202"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   },
   {
-    full_name: "John Olatubosun",
-    username: "toluolatubosun",
-    image_url: "https://avatars.githubusercontent.com/u/64479657?v=4",
-    short_description:
-      "I enjoy working on new project ideas. Also I am a crypto enthusiast 😎",
-    role: "Full Stack Developer",
-    links: {
-      website_or_extra: "https://n-timee.web.app/",
-      github: "https://github.com/toluolatubosun",
-      twitter: "https://twitter.com/king_tolu_7",
-      linkedin: "https://www.linkedin.com/in/john-olatubosun/"
+    "full_name": "John Olatubosun",
+    "username": "toluolatubosun",
+    "image_url": "https://avatars.githubusercontent.com/u/64479657?v=4",
+    "short_description": "I enjoy working on new project ideas. Also I am a crypto enthusiast 😎",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "https://n-timee.web.app/",
+      "github": "https://github.com/toluolatubosun",
+      "twitter": "https://twitter.com/king_tolu_7",
+      "linkedin": "https://www.linkedin.com/in/john-olatubosun/"
     },
-    location: {
-      state: "Lagos",
-      country: "Nigeria"
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
-    isActive: true
+    "isActive": true
   }
 ];
