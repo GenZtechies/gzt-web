@@ -54,6 +54,23 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Famakinwa Anuoluwapo",
+    "username": "mercyjae",
+    "image_url": "https://avatars.githubusercontent.com/u/83911888?v=4",
+    "short_description": "I'm a software developer who is passionate in writing clean codes and learning new things, I'm also an educator",
+    "role": "Mobile Developer",
+    "links": {
+      "github": "https://github.com/famakinwamercy",
+      "twitter": "https://twitter.com/MercyJae",
+      "linkedin": "https://www.linkedin.com/in/famakinwa-anuoluwapo-994659225"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Sherifdeen Adebayo",
     "username": "herdeybayor",
     "image_url": "https://avatars.githubusercontent.com/u/71196743?v=4",
@@ -92,7 +109,7 @@ module.exports = [
   {
     "full_name": "Ikram Babs-Lawal",
     "username": "Code_Quinn",
-    "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/fr/cp0/e15/q65/241872053_388537542797135_3797128416203328467_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=hqquoe3LEXYAX__VpAG&_nc_ht=scontent-lga3-2.xx&oh=00_AT_su8DpbAQ2WIWIGj_bfckRZx5-_B7J6s4vLpyAVvNOIw&oe=61D2BCDD",
+    "image_url": "https://citizennewshub.files.wordpress.com/2021/02/img-20210208-wa0072.jpg?w=200",
     "short_description": "I started my coding journey when I was 11yrs Old. I am obsessed with cats, chocolate and coding 😊",
     "role": "Frontend Developer",
     "links": {
@@ -199,7 +216,7 @@ module.exports = [
   {
     "full_name": "Precious Johnson",
     "username": "pgirl",
-    "image_url": "https://res.cloudinary.com/preshjohn/image/upload/v1641084926/DSC_0761_biua30.jpg",
+    "image_url": "https://avatars.githubusercontent.com/u/45792786?v=4",
     "short_description": "I am passionate about using tech to solve problems",
     "role": "Designer x Front-end Developer",
     "links": {
