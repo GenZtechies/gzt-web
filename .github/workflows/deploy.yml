@@ -29,16 +29,11 @@ jobs:
         run: |
           yarn run members-update
 
-      - name: Commit members JSON update
-        uses: stefanzweifel/git-auto-commit-action@v4.1.2
-        with:
-          commit_message: CI updates 😎
-
-      - name: Prettify code
+      - name: Prettify and commit code
         uses: creyD/prettier_action@v3.1
         with:
           prettier_options: --write **/*.{js,md}
-          commit_message: Prettier Action
+          commit_message: CI 🚀
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -50,8 +45,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Use cached node_modules
+        uses: c-hive/gha-yarn-cache@v2
+
       - name: Build website
         run: |
+          yarn install
           yarn build
           yarn export
           cp CNAME .nojekyll out/
