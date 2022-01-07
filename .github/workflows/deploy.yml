@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  build_and_prettify:
     runs-on: ubuntu-latest
 
     steps:
@@ -47,6 +47,14 @@ jobs:
           commit_message: Prettier Action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs: build_and_prettify
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.7
