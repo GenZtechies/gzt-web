@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_and_prettify:
+  build_members_and_prettify:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,12 +34,6 @@ jobs:
         with:
           commit_message: CI updates 😎
 
-      - name: Build website
-        run: |
-          yarn build
-          yarn export
-          cp CNAME .nojekyll out/
-
       - name: Prettify code
         uses: creyD/prettier_action@v3.1
         with:
@@ -49,12 +43,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
-    needs: build_and_prettify
+    needs: build_members_and_prettify
 
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Build website
+        run: |
+          yarn build
+          yarn export
+          cp CNAME .nojekyll out/
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.7
