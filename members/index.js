@@ -39,6 +39,25 @@ module.exports = [
     isActive: true
   },
   {
+    full_name: "Mukhtar Onifade",
+    username: "Basfar",
+    image_url: "https://avatars.githubusercontent.com/u/72737041?v=4",
+    short_description:
+      "I enjoy constantly learning and improving my skills with the technologies that keep evolving in this ever-changing field",
+    role: "Full Stack Developer",
+    links: {
+      website_or_extra: "mukhtar.vercel.app",
+      github: "https://github.com/basfar",
+      twitter: "https://www.twitter.com/mukhtar_onif",
+      linkedin: "https://www.linkedin.com/mukhtar-o-37b98613b"
+    },
+    location: {
+      state: "Lagos",
+      country: "Nigeria"
+    },
+    isActive: true
+  },
+  {
     full_name: "Caleb Areeveso",
     username: "calebareeveso",
     image_url: "https://avatars.githubusercontent.com/u/58891908?v=4",
