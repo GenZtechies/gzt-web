@@ -56,8 +56,8 @@ module.exports = [
   {
     "full_name": "Ifemide Cole",
     "username": "dastardlycole",
-    "image_url": "https://github.com/dastardlycole.png?size=460",
-    "short_description": "Started in 2020. Love learning new things and solving problems.",
+    "image_url": "https://avatars.githubusercontent.com/u/72579767?v=4",
+    "short_description": "Started in 2020 at 18 years old. Love learning new things and solving problems.",
     "role": "Backend Developer",
     "links": {
       "website_or_extra": "https://vigilant-heyrovsky-7636df.netlify.app/",
