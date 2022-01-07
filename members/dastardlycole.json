@@ -1,0 +1,18 @@
+{
+    "full_name": "Ifemide Cole",
+    "username": "dastardlycole",
+    "image_url": "https://github.com/dastardlycole.png?size=460",
+    "short_description": "Started in 2020. Love learning new things and solving problems.",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "https://vigilant-heyrovsky-7636df.netlify.app/",
+      "github": "https://github.com/dastardlycole",
+      "twitter": "https://www.twitter.com/dastardlywork",
+      "linkedin": "https://www.linkedin.com/in/ifemide-cole/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  }
