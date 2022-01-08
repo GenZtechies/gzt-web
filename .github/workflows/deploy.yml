@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_members_and_prettify:
+  CI_Pipeline:
     runs-on: ubuntu-latest
 
     steps:
