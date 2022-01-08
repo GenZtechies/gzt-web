@@ -208,6 +208,25 @@ module.exports = [
     isActive: true
   },
   {
+    full_name: "Olamilekan Azeez",
+    username: "azeezdot123",
+    image_url: "https://avatars.githubusercontent.com/u/60788985?v=4",
+    short_description:
+      "I love solving problems and working on projects with people. My love for cloud make me go into DevOps",
+    role: "Backend Developer and DevOps Engineer",
+    links: {
+      website_or_extra: "https://olamilekan.herokuapp.com",
+      github: "https://github.com/azeezdot123",
+      twitter: "https://twitter.com/codewithola",
+      linkedin: "https://www.linkedin.com/in/olamilekan123"
+    },
+    location: {
+      state: "Lagos",
+      country: "Nigeria"
+    },
+    isActive: true
+  },
+  {
     full_name: "Okpe Onoja",
     username: "onoja123",
     image_url:
