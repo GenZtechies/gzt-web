@@ -1,0 +1,18 @@
+{
+  "full_name": "Samuel Ajala",
+  "username": "samuelajala01",
+  "image_url": "https://avatars.githubusercontent.com/u/66500541?v=4",
+  "short_description": "I'm a Techie passionate about improving lives with Technology",
+  "role": "Full Stack Developer",
+  "links": {
+    "website_or_extra": "https://linktr.ee/samuelajala01",
+    "github": "https://github.com/samuelajala01",
+    "twitter": "https://www.twitter.com/samuelajala01",
+    "linkedin": "https://www.linkedin.com/in/samuelajala01"
+  },
+  "location": {
+    "state": "Lagos",
+    "country": "Nigeria"
+  },
+  "isActive": true
+}
