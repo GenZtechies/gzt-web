@@ -41,11 +41,3 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: out # The folder the action should deploy.
           clean: false
-
-      - name: Prettify and commit code
-        uses: creyD/prettier_action@v3.1
-        with:
-          prettier_options: --write **/*.{js,md}
-          commit_message: CI 🚀
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
