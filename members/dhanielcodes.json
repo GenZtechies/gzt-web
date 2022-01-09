@@ -1,0 +1,18 @@
+{
+    "full_name": "Daniel Adekoya",
+    "username": "dhanielcodes",
+    "image_url": "https://res.cloudinary.com/devdaniel/image/upload/v1641740315/photo_2022-01-09_15-57-22_v3l7vu.jpg",
+    "short_description": "I help build scalable frontend applications",
+    "role": "Frontend Engineer",
+    "links": {
+        "website_or_extra": "dhaniel.xyz",
+        "github": "https://github.com/dhanielcodes",
+        "twitter": "https://www.twitter.com/daniel_adekoya_",
+        "linkedin": "https://www.linkedin.com/in/daniel-adekoya-010810192/"
+    },
+    "location": {
+        "state": "Lagos",
+        "country": "Nigeria"
+    },
+    "isActive": true
+}
