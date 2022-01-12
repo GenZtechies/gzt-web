@@ -1,0 +1,18 @@
+{
+  "full_name": "Gbolahan Balogun",
+  "username": "justsolomon",
+  "image_url": "https://avatars.githubusercontent.com/u/55158465?v=4",
+  "short_description": "Building cool stuff for the web",
+  "role": "Full Stack Developer",
+  "links": {
+    "website_or_extra": "https://justsolomon.netlify.app",
+    "github": "https://github.com/justsolomon",
+    "twitter": "https://www.twitter.com/gbsolomon1",
+    "linkedin": "https://www.linkedin.com/in/gbolahan-balogun-71357b1b9"
+  },
+  "location": {
+    "state": "Lagos",
+    "country": "Nigeria"
+  },
+  "isActive": true
+}
