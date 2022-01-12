@@ -9,23 +9,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  CI_Pipeline:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          # Make sure the actual branch is checked out when running on pull requests
           ref: ${{ github.head_ref }}
-
-      - name: Prettify code
-        uses: creyD/prettier_action@v3.1
-        with:
-          prettier_options: --write **/*.{js,md}
-          commit_message: Prettier Action
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Use cached node_modules
         uses: c-hive/gha-yarn-cache@v2
@@ -37,12 +28,6 @@ jobs:
       - name: Build Members JSON and Members IMG
         run: |
           yarn run members-update
-
-      - name: Commit members JSON update
-        if: always()
-        uses: stefanzweifel/git-auto-commit-action@v4.1.2
-        with:
-          commit_message: CI updates 😎
 
       - name: Build website
         run: |
