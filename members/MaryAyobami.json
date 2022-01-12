@@ -1,0 +1,18 @@
+{
+  "full_name": "Mary Ayobami",
+  "username": "MaryAyobami",
+  "image_url": "https://avatars.githubusercontent.com/u/89839780?v=4",
+  "short_description": "I love solving problems with codes",
+  "role": "Backend Developer",
+  "links": {
+    "website_or_extra": "YOUR_WEBSITE_URL",
+    "github": "https://github.com/MaryAyobami",
+    "twitter": "https://www.twitter.com/blessedwithjoy_",
+    "linkedin": "https://www.linkedin.com/in/mary-ayobami-8a85141b0"
+  },
+  "location": {
+    "state": "Akure",
+    "country": "Nigeria"
+  },
+  "isActive": true
+}
