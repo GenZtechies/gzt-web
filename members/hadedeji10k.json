@@ -1,0 +1,18 @@
+{
+    "full_name": "Adedeji Yusuf Yinka",
+    "username": "hadedeji10k",
+    "image_url": "https://drive.google.com/file/d/1IZrwKdG77gPa53EMus8eWhwe_IcSSayN/view?usp=drivesdk",
+    "short_description": "I'm a full stack developer, nodeJS has been my best friend, love coding 😎 and solving problems 😎",
+    "role": "Full Stack developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/hadedeji10k",
+      "twitter": "https://www.twitter.com/AdedejiYusufYi1",
+      "linkedin": "https://www.linkedin.com/in/adedeji-yusuf-9762151bb"
+    },
+    "location": {
+      "state": "Borno",
+      "country": "Nigeria"
+    },
+    "isActive": true
+}
