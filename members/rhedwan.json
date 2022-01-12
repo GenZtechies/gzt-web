@@ -1,0 +1,18 @@
+{
+  "full_name": "Adeyemo Ridwan",
+  "username": "rhedwan",
+  "image_url": "https://avatars.githubusercontent.com/u/48237269?v=4",
+  "short_description": "I love learning and documenting my process. I'm love automation.",
+  "role": "Frontend Developer",
+  "links": {
+    "website_or_extra": "https://rhedwanresume.netlify.app/",
+    "github": "https://github.com/rhedwan",
+    "twitter": "https://twitter.com/_rhedwan",
+    "linkedin": "https://www.linkedin.com/in/ridwan-adeyemo-a12032200"
+  },
+  "location": {
+    "state": "Lagos",
+    "country": "Nigeria"
+  },
+  "isActive": true
+}
