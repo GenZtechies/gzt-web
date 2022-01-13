@@ -1,4 +1,4 @@
-# Our Name
+# GenZtechies
 
 > GenZTechie (GZT)
 
