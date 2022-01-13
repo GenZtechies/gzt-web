@@ -520,6 +520,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Tijani Ayomide Lukman",
+    "username": "Tijan",
+    "image_url": "https://media-exp1.licdn.com/dms/image/C4E03AQHN_3NK6IVKeA/profile-displayphoto-shrink_800_800/0/1631488765678?e=1647475200&v=beta&t=nZUXqXgxjqfvYdyA6ibPOch_gmGeunVOrrwruXOoNXw",
+    "short_description": "Software Developer. Technical Writer✍️. Developer Advocate🥑. Mobile Dev Enthusiasts📱",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/TijanAyo",
+      "twitter": "https://www.twitter.com/nobletijan",
+      "linkedin": "https://www.linkedin.com/in/tijanayo"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "John Olatubosun",
     "username": "toluolatubosun",
     "image_url": "https://avatars.githubusercontent.com/u/64479657?v=4",
