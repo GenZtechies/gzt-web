@@ -1,41 +1,5 @@
 module.exports = [
   {
-    "full_name": "Ronald Dosunmu",
-    "username": "Iamronaldosunmu",
-    "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
-    "short_description": "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
-    "role": "Full Stack Developer",
-    "links": {
-      "website_or_extra": "",
-      "github": "https://github.com/Iamronaldosunmu",
-      "twitter": "https://www.twitter.com/IamRonald05",
-      "linkedin": "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
-    },
-    "location": {
-      "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
-    "full_name": "Mary Ayobami",
-    "username": "MaryAyobami",
-    "image_url": "https://avatars.githubusercontent.com/u/89839780?v=4",
-    "short_description": "I love solving problems with codes",
-    "role": "Backend Developer",
-    "links": {
-      "website_or_extra": "YOUR_WEBSITE_URL",
-      "github": "https://github.com/MaryAyobami",
-      "twitter": "https://www.twitter.com/blessedwithjoy_",
-      "linkedin": "https://www.linkedin.com/in/mary-ayobami-8a85141b0"
-    },
-    "location": {
-      "state": "Akure",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
     "full_name": "Abdulrazaq Salihu",
     "username": "abdrzqsalihu",
     "image_url": "https://github.com/abdrzqsalihu.png",
@@ -162,6 +126,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "JEJE OLUWAYANFUNMI",
+    "username": "Dubjay18",
+    "image_url": "https://res.cloudinary.com/dubinx/image/upload/v1642031100/20210816_172105_dv65bg.jpg",
+    "short_description": "I am a passionate web developer who loves tech.",
+    "role": "Full-Stack Developer",
+    "links": {
+      "website_or_extra": "https://jatfolio.vercel.app/",
+      "github": "https://github.com/Dubjay18",
+      "twitter": "https://www.twitter.com/YanfunmiJ",
+      "linkedin": "https://www.linkedin.com/in/oluwayanfunmi-jeje-a023b2210"
+    },
+    "location": {
+      "state": "Osun",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Eniola Osabiya",
     "username": "eni4sure",
     "image_url": "https://avatars.githubusercontent.com/u/52782730?v=4",
@@ -251,6 +233,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Ronald Dosunmu",
+    "username": "Iamronaldosunmu",
+    "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
+    "short_description": "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/Iamronaldosunmu",
+      "twitter": "https://www.twitter.com/IamRonald05",
+      "linkedin": "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Ikram Babs-Lawal",
     "username": "Code_Quinn",
     "image_url": "https://citizennewshub.files.wordpress.com/2021/02/img-20210208-wa0072.jpg?w=200",
@@ -317,6 +317,24 @@ module.exports = [
     },
     "location": {
       "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Mary Ayobami",
+    "username": "MaryAyobami",
+    "image_url": "https://avatars.githubusercontent.com/u/89839780?v=4",
+    "short_description": "I love solving problems with codes",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "YOUR_WEBSITE_URL",
+      "github": "https://github.com/MaryAyobami",
+      "twitter": "https://www.twitter.com/blessedwithjoy_",
+      "linkedin": "https://www.linkedin.com/in/mary-ayobami-8a85141b0"
+    },
+    "location": {
+      "state": "Akure",
       "country": "Nigeria"
     },
     "isActive": true
