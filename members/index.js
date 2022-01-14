@@ -144,6 +144,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Destiny Aigbe",
+    "username": "Destiny-01",
+    "image_url": "https://avatars.githubusercontent.com/u/75917333?v=4",
+    "short_description": "Backend Developer transitioning into blockchain. Loves coding a lot",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "https://github.com/Destiny-01",
+      "github": "https://github.com/Destiny-01",
+      "twitter": "https://www.twitter.com/aigbe_1",
+      "linkedin": "https://www.linkedin.com/in/aigbe-1"
+    },
+    "location": {
+      "state": "Rivers State",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Daniel Adekoya",
     "username": "dhanielcodes",
     "image_url": "https://res.cloudinary.com/devdaniel/image/upload/v1641740315/photo_2022-01-09_15-57-22_v3l7vu.jpg",
@@ -350,24 +368,6 @@ module.exports = [
       "github": "https://github.com/justsolomon",
       "twitter": "https://www.twitter.com/gbsolomon1",
       "linkedin": "https://www.linkedin.com/in/gbolahan-balogun-71357b1b9"
-    },
-    "location": {
-      "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
-    "full_name": "Emmanuel Tanimowo",
-    "username": "mannuel25",
-    "image_url": "https://avatars.githubusercontent.com/u/68563757?v=4",
-    "short_description": "I am a back-end developer and Open Source enthusiast.",
-    "role": "Back-end Developer",
-    "links": {
-      "website_or_extra": "",
-      "github": "https://github.com/mannuel25",
-      "twitter": "https://twitter.com/emma_tanimowo",
-      "linkedin": "https://www.linkedin.com/in/emmanuel-tanimowo-6122291aa"
     },
     "location": {
       "state": "Lagos",
