@@ -1,0 +1,18 @@
+{
+  "full_name": "Oyero Habibulah",
+  "username": "oyerohabib",
+  "image_url": "https://avatars.githubusercontent.com/u/48946023?v=4",
+  "short_description": "I love problem-solving, working within a team, and bouncing ideas off each other to find a solution. I love those exciting moments when a plan comes together or when I finally solve a problem.",
+  "role": "Full Stack Developer",
+  "links": {
+    "website_or_extra": "https://oyerohabib.tech/",
+    "github": "https://github.com/oyerohabib",
+    "twitter": "https://twitter.com/HabibOyero",
+    "linkedin": "https://www.linkedin.com/in/habibulah-oyero-44069a193/"
+  },
+  "location": {
+    "state": "Oyo State",
+    "country": "NIGERIA"
+  },
+  "isActive": true
+}
