@@ -1,0 +1,22 @@
+{
+    "name":"Gnztechies",
+    "short_name":"Gnztech",
+    "description":"A community that connects different techies in Nigeria together",
+    "theme_color":"#3331C4",
+    "background_color":"#3331C4",
+    "start_url":".",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"./techie.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"./techie.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+ 
+}
