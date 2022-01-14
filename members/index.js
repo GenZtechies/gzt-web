@@ -18,6 +18,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Abdulsalam Baruwa",
+    "username": "de_mystical_coder",
+    "image_url": "",
+    "short_description": "I started learning to write codes in 2018. Now, I solve problems and create useful products.",
+    "role": "Frontend Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/Abdulsalam-Baruwa",
+      "twitter": "https://www.twitter.com/dmystical_coder",
+      "linkedin": "https://www.linkedin.com/in/abdulsalam-baruwa"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Abibola Oworu-Chima",
     "username": "Abibola",
     "image_url": "https://i.ibb.co/K7gmBQF/abibola.jpg",
@@ -90,6 +108,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Trssure Ajefu",
+    "username": "cybergeni",
+    "image_url": "https://avatars.githubusercontent.com/u/70205370?v=4",
+    "short_description": "A teenage frontend developer with keen interest for details, and implementation of pixel perfect designs",
+    "role": "Frontend Developer",
+    "links": {
+      "website_or_extra": "https://linktr.ee/cybergenie",
+      "github": "https://github.com/cybergeni",
+      "twitter": "https://www.twitter.com/cybergenie_",
+      "linkedin": "https://www.linkedin.com/in/treasure_ajefu"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Ifemide Cole",
     "username": "dastardlycole",
     "image_url": "https://avatars.githubusercontent.com/u/72579767?v=4",
@@ -103,6 +139,24 @@ module.exports = [
     },
     "location": {
       "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Destiny Aigbe",
+    "username": "Destiny-01",
+    "image_url": "https://avatars.githubusercontent.com/u/75917333?v=4",
+    "short_description": "Backend Developer transitioning into blockchain. Loves coding a lot",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "https://github.com/Destiny-01",
+      "github": "https://github.com/Destiny-01",
+      "twitter": "https://www.twitter.com/aigbe_1",
+      "linkedin": "https://www.linkedin.com/in/aigbe-1"
+    },
+    "location": {
+      "state": "Rivers State",
       "country": "Nigeria"
     },
     "isActive": true
@@ -376,6 +430,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Olayinka Adeyemi",
+    "username": "Olayinkagenius",
+    "image_url": "https://avatars.githubusercontent.com/u/64863320?v=4",
+    "short_description": "I am a dexterous teen dev with a deep interest in Physics and Engineering",
+    "role": "Fullstack Developer",
+    "links": {
+      "website_or_extra": "https://bit.ly/DanielStudios",
+      "github": "https://github.com/Olayinkagenius",
+      "twitter": "https://www.twitter.com/olayinkagenius7",
+      "linkedin": "https://www.linkedin.com/in/adeyemi-olayinka-6209451a2/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Okpe Onoja",
     "username": "onoja123",
     "image_url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1599345517785/CTo_08ERw.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress",
@@ -390,6 +462,24 @@ module.exports = [
     "location": {
       "state": "Kaduna",
       "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Oyero Habibulah",
+    "username": "oyerohabib",
+    "image_url": "https://avatars.githubusercontent.com/u/48946023?v=4",
+    "short_description": "I love problem-solving, working within a team, and bouncing ideas off each other to find a solution. I love those exciting moments when a plan comes together or when I finally solve a problem.",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "https://oyerohabib.tech/",
+      "github": "https://github.com/oyerohabib",
+      "twitter": "https://twitter.com/HabibOyero",
+      "linkedin": "https://www.linkedin.com/in/habibulah-oyero-44069a193/"
+    },
+    "location": {
+      "state": "Oyo State",
+      "country": "NIGERIA"
     },
     "isActive": true
   },
