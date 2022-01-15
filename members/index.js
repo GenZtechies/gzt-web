@@ -1,23 +1,5 @@
 module.exports = [
   {
-    "full_name": "Abdulrazaq Salihu",
-    "username": "abdrzqsalihu",
-    "image_url": "https://github.com/abdrzqsalihu.png",
-    "short_description": "I love problem-solving, working within a team, and bouncing ideas off each other to find a solution. I love those exciting moments when a plan comes together or when I finally solve a problem.",
-    "role": "Full Stack Developer",
-    "links": {
-      "website_or_extra": "https://abdrzqsalihu.netlify.app/",
-      "github": "https://github.com/abdrzqsalihu",
-      "twitter": "https://www.twitter.com/abdrzqsalihu",
-      "linkedin": "https://www.linkedin.com/in/abdrzqsalihu"
-    },
-    "location": {
-      "state": "Federal Capital Territory",
-      "country": "NIGERIA"
-    },
-    "isActive": true
-  },
-  {
     "full_name": "Abdulsalam Baruwa",
     "username": "de_mystical_coder",
     "image_url": "",
@@ -32,6 +14,150 @@ module.exports = [
     "location": {
       "state": "Lagos",
       "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Destiny Aigbe",
+    "username": "Destiny-01",
+    "image_url": "https://avatars.githubusercontent.com/u/75917333?v=4",
+    "short_description": "Backend Developer transitioning into blockchain. Loves coding a lot",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "https://github.com/Destiny-01",
+      "github": "https://github.com/Destiny-01",
+      "twitter": "https://www.twitter.com/aigbe_1",
+      "linkedin": "https://www.linkedin.com/in/aigbe-1"
+    },
+    "location": {
+      "state": "Rivers State",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "JEJE OLUWAYANFUNMI",
+    "username": "Dubjay18",
+    "image_url": "https://res.cloudinary.com/dubinx/image/upload/v1642031100/20210816_172105_dv65bg.jpg",
+    "short_description": "I am a passionate web developer who loves tech.",
+    "role": "Full-Stack Developer",
+    "links": {
+      "website_or_extra": "https://jatfolio.vercel.app/",
+      "github": "https://github.com/Dubjay18",
+      "twitter": "https://www.twitter.com/YanfunmiJ",
+      "linkedin": "https://www.linkedin.com/in/oluwayanfunmi-jeje-a023b2210"
+    },
+    "location": {
+      "state": "Osun",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Ronald Dosunmu",
+    "username": "Iamronaldosunmu",
+    "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
+    "short_description": "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/Iamronaldosunmu",
+      "twitter": "https://www.twitter.com/IamRonald05",
+      "linkedin": "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Mary Ayobami",
+    "username": "MaryAyobami",
+    "image_url": "https://avatars.githubusercontent.com/u/89839780?v=4",
+    "short_description": "I love solving problems with codes",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "YOUR_WEBSITE_URL",
+      "github": "https://github.com/MaryAyobami",
+      "twitter": "https://www.twitter.com/blessedwithjoy_",
+      "linkedin": "https://www.linkedin.com/in/mary-ayobami-8a85141b0"
+    },
+    "location": {
+      "state": "Akure",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Olayinka Adeyemi",
+    "username": "Olayinkagenius",
+    "image_url": "https://avatars.githubusercontent.com/u/64863320?v=4",
+    "short_description": "I am a dexterous teen dev with a deep interest in Physics and Engineering",
+    "role": "Fullstack Developer",
+    "links": {
+      "website_or_extra": "https://bit.ly/DanielStudios",
+      "github": "https://github.com/Olayinkagenius",
+      "twitter": "https://www.twitter.com/olayinkagenius7",
+      "linkedin": "https://www.linkedin.com/in/adeyemi-olayinka-6209451a2/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Precious Egwuenu",
+    "username": "Preshpie",
+    "image_url": "https://avatars.githubusercontent.com/u/80992383?v=4",
+    "short_description": "I love coding",
+    "role": "Front-end Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/preshpi",
+      "twitter": "https://twitter.com/egwuenu_presh",
+      "linkedin": "https://www.linkedin.com/in/preshpi-22/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Tijani Ayomide Lukman",
+    "username": "Tijan",
+    "image_url": "https://media-exp1.licdn.com/dms/image/C4E03AQHN_3NK6IVKeA/profile-displayphoto-shrink_800_800/0/1631488765678?e=1647475200&v=beta&t=nZUXqXgxjqfvYdyA6ibPOch_gmGeunVOrrwruXOoNXw",
+    "short_description": "Software Developer. Technical Writer✍️. Developer Advocate🥑. Mobile Dev Enthusiasts📱",
+    "role": "Backend Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/TijanAyo",
+      "twitter": "https://www.twitter.com/nobletijan",
+      "linkedin": "https://www.linkedin.com/in/tijanayo"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Abdulrazaq Salihu",
+    "username": "abdrzqsalihu",
+    "image_url": "https://github.com/abdrzqsalihu.png",
+    "short_description": "I love problem-solving, working within a team, and bouncing ideas off each other to find a solution. I love those exciting moments when a plan comes together or when I finally solve a problem.",
+    "role": "Full Stack Developer",
+    "links": {
+      "website_or_extra": "https://abdrzqsalihu.netlify.app/",
+      "github": "https://github.com/abdrzqsalihu",
+      "twitter": "https://www.twitter.com/abdrzqsalihu",
+      "linkedin": "https://www.linkedin.com/in/abdrzqsalihu"
+    },
+    "location": {
+      "state": "Federal Capital Territory",
+      "country": "NIGERIA"
     },
     "isActive": true
   },
@@ -144,24 +270,6 @@ module.exports = [
     "isActive": true
   },
   {
-    "full_name": "Destiny Aigbe",
-    "username": "Destiny-01",
-    "image_url": "https://avatars.githubusercontent.com/u/75917333?v=4",
-    "short_description": "Backend Developer transitioning into blockchain. Loves coding a lot",
-    "role": "Backend Developer",
-    "links": {
-      "website_or_extra": "https://github.com/Destiny-01",
-      "github": "https://github.com/Destiny-01",
-      "twitter": "https://www.twitter.com/aigbe_1",
-      "linkedin": "https://www.linkedin.com/in/aigbe-1"
-    },
-    "location": {
-      "state": "Rivers State",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
     "full_name": "Daniel Adekoya",
     "username": "dhanielcodes",
     "image_url": "https://res.cloudinary.com/devdaniel/image/upload/v1641740315/photo_2022-01-09_15-57-22_v3l7vu.jpg",
@@ -175,24 +283,6 @@ module.exports = [
     },
     "location": {
       "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
-    "full_name": "JEJE OLUWAYANFUNMI",
-    "username": "Dubjay18",
-    "image_url": "https://res.cloudinary.com/dubinx/image/upload/v1642031100/20210816_172105_dv65bg.jpg",
-    "short_description": "I am a passionate web developer who loves tech.",
-    "role": "Full-Stack Developer",
-    "links": {
-      "website_or_extra": "https://jatfolio.vercel.app/",
-      "github": "https://github.com/Dubjay18",
-      "twitter": "https://www.twitter.com/YanfunmiJ",
-      "linkedin": "https://www.linkedin.com/in/oluwayanfunmi-jeje-a023b2210"
-    },
-    "location": {
-      "state": "Osun",
       "country": "Nigeria"
     },
     "isActive": true
@@ -287,24 +377,6 @@ module.exports = [
     "isActive": true
   },
   {
-    "full_name": "Ronald Dosunmu",
-    "username": "Iamronaldosunmu",
-    "image_url": "https://media-exp1.licdn.com/dms/image/C4D03AQHrZzvVSGQaHA/profile-displayphoto-shrink_800_800/0/1636403300127?e=1646265600&v=beta&t=H4Uv7F9L1CawXWtnfuwHoDqJE5BEMBGSay1oEHWv0J4",
-    "short_description": "I started my coding journey in 2018. I love building beautiful web applications that solve problems.",
-    "role": "Full Stack Developer",
-    "links": {
-      "website_or_extra": "",
-      "github": "https://github.com/Iamronaldosunmu",
-      "twitter": "https://www.twitter.com/IamRonald05",
-      "linkedin": "https://www.linkedin.com/in/ronald-dosunmu-2b3a77202/"
-    },
-    "location": {
-      "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
     "full_name": "Ikram Babs-Lawal",
     "username": "Code_Quinn",
     "image_url": "https://citizennewshub.files.wordpress.com/2021/02/img-20210208-wa0072.jpg?w=200",
@@ -376,19 +448,19 @@ module.exports = [
     "isActive": true
   },
   {
-    "full_name": "Mary Ayobami",
-    "username": "MaryAyobami",
-    "image_url": "https://avatars.githubusercontent.com/u/89839780?v=4",
-    "short_description": "I love solving problems with codes",
-    "role": "Backend Developer",
+    "full_name": "Emmanuel Tanimowo",
+    "username": "mannuel25",
+    "image_url": "https://avatars.githubusercontent.com/u/68563757?v=4",
+    "short_description": "I am a back-end developer and Open Source enthusiast.",
+    "role": "Back-end Developer",
     "links": {
-      "website_or_extra": "YOUR_WEBSITE_URL",
-      "github": "https://github.com/MaryAyobami",
-      "twitter": "https://www.twitter.com/blessedwithjoy_",
-      "linkedin": "https://www.linkedin.com/in/mary-ayobami-8a85141b0"
+      "website_or_extra": "",
+      "github": "https://github.com/mannuel25",
+      "twitter": "https://twitter.com/emma_tanimowo",
+      "linkedin": "https://www.linkedin.com/in/emmanuel-tanimowo-6122291aa"
     },
     "location": {
-      "state": "Akure",
+      "state": "Lagos",
       "country": "Nigeria"
     },
     "isActive": true
@@ -430,24 +502,6 @@ module.exports = [
     "isActive": true
   },
   {
-    "full_name": "Olayinka Adeyemi",
-    "username": "Olayinkagenius",
-    "image_url": "https://avatars.githubusercontent.com/u/64863320?v=4",
-    "short_description": "I am a dexterous teen dev with a deep interest in Physics and Engineering",
-    "role": "Fullstack Developer",
-    "links": {
-      "website_or_extra": "https://bit.ly/DanielStudios",
-      "github": "https://github.com/Olayinkagenius",
-      "twitter": "https://www.twitter.com/olayinkagenius7",
-      "linkedin": "https://www.linkedin.com/in/adeyemi-olayinka-6209451a2/"
-    },
-    "location": {
-      "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
     "full_name": "Okpe Onoja",
     "username": "onoja123",
     "image_url": "https://cdn.hashnode.com/res/hashnode/image/upload/v1599345517785/CTo_08ERw.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress",
@@ -478,7 +532,7 @@ module.exports = [
       "linkedin": "https://www.linkedin.com/in/habibulah-oyero-44069a193/"
     },
     "location": {
-      "state": "Oyo State",
+      "state": "Ogun State",
       "country": "NIGERIA"
     },
     "isActive": true
@@ -602,24 +656,6 @@ module.exports = [
       "github": " https://summydev.github.io/summydev/ ",
       "twitter": "https://www.twitter.com/summydev",
       "linkedin": "https://www.linkedin.com/in/sumayah-adegbite-32894a202"
-    },
-    "location": {
-      "state": "Lagos",
-      "country": "Nigeria"
-    },
-    "isActive": true
-  },
-  {
-    "full_name": "Tijani Ayomide Lukman",
-    "username": "Tijan",
-    "image_url": "https://media-exp1.licdn.com/dms/image/C4E03AQHN_3NK6IVKeA/profile-displayphoto-shrink_800_800/0/1631488765678?e=1647475200&v=beta&t=nZUXqXgxjqfvYdyA6ibPOch_gmGeunVOrrwruXOoNXw",
-    "short_description": "Software Developer. Technical Writer✍️. Developer Advocate🥑. Mobile Dev Enthusiasts📱",
-    "role": "Backend Developer",
-    "links": {
-      "website_or_extra": "",
-      "github": "https://github.com/TijanAyo",
-      "twitter": "https://www.twitter.com/nobletijan",
-      "linkedin": "https://www.linkedin.com/in/tijanayo"
     },
     "location": {
       "state": "Lagos",
