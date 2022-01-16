@@ -1,7 +1,20 @@
 import Head from "next/head";
 import "../styles/globals.css";
-
+import {useEffect} from "react";
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+ 
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+   
+  }, [])
+
   return (
     <>
       <Head>
@@ -15,14 +28,21 @@ function MyApp({ Component, pageProps }) {
           name="title"
           content="GenZtechies - Connecting Teen Techies Across Nigeria"
         />
+          <link rel="manifest" href="/manifest.json"/>
+          <meta name='theme_color' content='#3331C4' />
+          
         <meta
           name="description"
           content="Connecting Teen Techies Across Nigeria"
         />
 
-        {/* <!-- Open Graph / Facebook --> */}
+        {/* <!--check if servoce worker is supported--> */}
+
+         
+            
+        {/*   <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://genztechies.com/" />
+        <meta  property="og:url" content="https://genztechies.com/" />
         <meta
           property="og:title"
           content="GenZtechies - Connecting Teen Techies Across Nigeria"
