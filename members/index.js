@@ -108,7 +108,7 @@ module.exports = [
     "isActive": true
   },
   {
-    "full_name": "Trssure Ajefu",
+    "full_name": "Treasure Ajefu",
     "username": "cybergeni",
     "image_url": "https://avatars.githubusercontent.com/u/70205370?v=4",
     "short_description": "A teenage frontend developer with keen interest for details, and implementation of pixel perfect designs",
@@ -412,6 +412,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "MUHIZ AKANNI",
+    "username": "MUAKONE",
+    "image_url": "https://i.ibb.co/nfmxsjX/Muhiz-Akanni-Web-development-2.jpg",
+    "short_description": "I'm a front-end developer who's interested in getting better ",
+    "role": "Front-End Developer",
+    "links": {
+      "website_or_extra": "https://muakone.github.io/planet_react",
+      "github": "https://github.com/muakone",
+      "twitter": "https://www.twitter.com/Muhiz_akanni",
+      "linkedin": "https://www.linkedin.com/in/muhiz-akanni-46595b21a"
+    },
+    "location": {
+      "state": "LAGOS STATE",
+      "country": "NIGERIA"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Ayanfeoluwa Edun",
     "username": "Ayanfe",
     "image_url": "https://i.ibb.co/K5NyJPr/img-20201223-123049-946.png",
@@ -656,6 +674,24 @@ module.exports = [
       "github": " https://summydev.github.io/summydev/ ",
       "twitter": "https://www.twitter.com/summydev",
       "linkedin": "https://www.linkedin.com/in/sumayah-adegbite-32894a202"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Temitope Adebayo",
+    "username": "tas",
+    "image_url": "https://avatars.githubusercontent.com/u/58995510?v=4",
+    "short_description": "Software Developer",
+    "role": "Software Development",
+    "links": {
+      "website_or_extra": "https://doyin.xyz",
+      "github": "https://github.com/devnjade",
+      "twitter": "https://www.twitter.com/tasxzd",
+      "linkedin": "https://www.linkedin.com/in/tasxzd"
     },
     "location": {
       "state": "Lagos",
