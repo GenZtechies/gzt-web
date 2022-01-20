@@ -20,7 +20,7 @@ module.exports = [
   {
     "full_name": "Abdulsalam Baruwa",
     "username": "de_mystical_coder",
-    "image_url": "",
+    "image_url": "https://avatars.githubusercontent.com/u/63591055?v=4",
     "short_description": "I started learning to write codes in 2018. Now, I solve problems and create useful products.",
     "role": "Frontend Developer",
     "links": {
@@ -376,6 +376,24 @@ module.exports = [
     "isActive": true
   },
   {
+    "full_name": "Emmanuel Tanimowo",
+    "username": "mannuel25",
+    "image_url": "https://avatars.githubusercontent.com/u/68563757?v=4",
+    "short_description": "I am a back-end developer and Open Source enthusiast.",
+    "role": "Back-end Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/mannuel25",
+      "twitter": "https://twitter.com/emma_tanimowo",
+      "linkedin": "https://www.linkedin.com/in/emmanuel-tanimowo-6122291aa"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
     "full_name": "Mary Ayobami",
     "username": "MaryAyobami",
     "image_url": "https://avatars.githubusercontent.com/u/89839780?v=4",
@@ -407,6 +425,24 @@ module.exports = [
     },
     "location": {
       "state": "Ogun",
+      "country": "Nigeria"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Joshua Odelola",
+    "username": "odelolajosh",
+    "image_url": "https://res.cloudinary.com/joocloud/image/upload/v1642253717/me/IMG_20210715_174133_xbkdcq.jpg",
+    "short_description": "I build for web and mobile. In my spare time, I consider developing effective algorithms.",
+    "role": "Fullstack developer",
+    "links": {
+      "website_or_extra": "https://odelolajosh.netlify.app/",
+      "github": "https://github.com/odelolajosh",
+      "twitter": "https://twitter.com/OTolamise?t=PXa5nsxT8pSLp2ZlmaDgEQ&s=09",
+      "linkedin": "https://www.linkedin.com/in/tolamise-joshua-odelola-407181196/"
+    },
+    "location": {
+      "state": "Lagos",
       "country": "Nigeria"
     },
     "isActive": true
@@ -478,7 +514,7 @@ module.exports = [
       "linkedin": "https://www.linkedin.com/in/habibulah-oyero-44069a193/"
     },
     "location": {
-      "state": "Oyo State",
+      "state": "Ogun State",
       "country": "NIGERIA"
     },
     "isActive": true
@@ -516,6 +552,24 @@ module.exports = [
     "location": {
       "state": "Kigali",
       "country": "Rwanda"
+    },
+    "isActive": true
+  },
+  {
+    "full_name": "Precious Egwuenu",
+    "username": "Preshpie",
+    "image_url": "https://avatars.githubusercontent.com/u/80992383?v=4",
+    "short_description": "I love coding",
+    "role": "Front-end Developer",
+    "links": {
+      "website_or_extra": "",
+      "github": "https://github.com/preshpi",
+      "twitter": "https://twitter.com/egwuenu_presh",
+      "linkedin": "https://www.linkedin.com/in/preshpi-22/"
+    },
+    "location": {
+      "state": "Lagos",
+      "country": "Nigeria"
     },
     "isActive": true
   },
