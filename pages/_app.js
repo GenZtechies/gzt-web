@@ -1,18 +1,8 @@
 import Head from "next/head";
 import Script from "next/script";
 import "../styles/globals.css";
-import { useEffect } from "react";
-function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    // Check that service workers are supported
-    if ("serviceWorker" in navigator) {
-      // Use the window load event to keep the page load performant
-      window.addEventListener("load", () => {
-        navigator.serviceWorker.register("/sw.js");
-      });
-    }
-  }, []);
 
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -33,8 +23,6 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="Connecting Teen Techies Across Nigeria"
         />
-
-        {/* <!--check if servoce worker is supported--> */}
 
         {/*   <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
