@@ -1,19 +1,17 @@
 import Head from "next/head";
+import Script from "next/script";
 import "../styles/globals.css";
-import {useEffect} from "react";
+import { useEffect } from "react";
 function MyApp({ Component, pageProps }) {
-
   useEffect(() => {
- 
     // Check that service workers are supported
-    if ('serviceWorker' in navigator) {
+    if ("serviceWorker" in navigator) {
       // Use the window load event to keep the page load performant
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js');
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js");
       });
     }
-   
-  }, [])
+  }, []);
 
   return (
     <>
@@ -28,9 +26,9 @@ function MyApp({ Component, pageProps }) {
           name="title"
           content="GenZtechies - Connecting Teen Techies Across Nigeria"
         />
-          <link rel="manifest" href="/manifest.json"/>
-          <meta name='theme_color' content='#3331C4' />
-          
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme_color" content="#3331C4" />
+
         <meta
           name="description"
           content="Connecting Teen Techies Across Nigeria"
@@ -38,11 +36,9 @@ function MyApp({ Component, pageProps }) {
 
         {/* <!--check if servoce worker is supported--> */}
 
-         
-            
         {/*   <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta  property="og:url" content="https://genztechies.com/" />
+        <meta property="og:url" content="https://genztechies.com/" />
         <meta
           property="og:title"
           content="GenZtechies - Connecting Teen Techies Across Nigeria"
@@ -74,6 +70,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
+
+      <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-6EQSEBDPM6" />
+      <Script strategy="lazyOnload" src="/assets/js/analytics.js" />
     </>
   );
 }
