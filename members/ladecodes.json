@@ -1,0 +1,19 @@
+{
+  "full_name": "Naomi Bamgbose",
+  "username": "Ladecodes",
+  "image_url": "https://avatars.githubusercontent.com/u/75337145?v=4",
+  "short_description": "I am a 15-year-old self-taught developer from Lagos, Nigeria. I love to code for fun, learn new things and experiment.
+
+She is passion",
+  "role": "Front-end Developer",
+  "links": {
+    "github": "https://github.com/Coconaomi2006",
+    "twitter": "https://www.twitter.com/Ladecodes",
+    "linkedin": "https://www.linkedin.com/in/naomi-bamgbose-289932209/"
+  },
+  "location": {
+    "state": "Lagos",
+    "country": "Nigeria"
+  },
+  "isActive": true
+}
