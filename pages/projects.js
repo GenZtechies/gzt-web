@@ -1,14 +1,13 @@
 import gsap from "gsap";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Layout, Breadcrum } from "../components";
 
 function Projects() {
   // GSAP Animation Config
   const el = React.useRef();
   const q = gsap.utils.selector(el);
-  const tl = React.useRef();
+  let tl = React.useRef();
 
   React.useEffect(() => {
     tl = gsap.timeline();

@@ -8,7 +8,7 @@ function Members() {
   // GSAP Animation Config
   const el = React.useRef();
   const q = gsap.utils.selector(el);
-  const tl = React.useRef();
+  let tl = React.useRef();
 
   React.useEffect(() => {
     tl = gsap.timeline();
