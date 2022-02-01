@@ -25,10 +25,6 @@ jobs:
         run: |
           yarn install
 
-      - name: Build Members JSON and Members IMG
-        run: |
-          yarn run members-update
-
       - name: Build website
         run: |
           yarn build

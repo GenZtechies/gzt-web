@@ -55,9 +55,13 @@ function Footer({ overlayBg }) {
             </Link>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full">
-            <Link href="/members">
-              <a className="block p-3">Members</a>
-            </Link>
+            <a
+              href="http://members.genztechies.com/"
+              target="_blank"
+              className="block p-3"
+            >
+              Members
+            </a>
             <a href="mailto:hello@genztechies.com" className="block p-3">
               Contact Us
             </a>

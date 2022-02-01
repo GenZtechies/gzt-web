@@ -43,16 +43,16 @@ function Navbar() {
                   About
                 </a>
               </Link>
-              <Link href="/members">
-                <a
-                  className={[
-                    "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
-                    router.pathname === "/members" && "text-yellow-500"
-                  ].join(" ")}
-                >
-                  Members
-                </a>
-              </Link>
+              <a
+                href="http://members.genztechies.com/"
+                target="_blank"
+                className={[
+                  "p-3 text-white lg:block hidden uppercase hover:text-yellow-500",
+                  router.pathname === "/members" && "text-yellow-500"
+                ].join(" ")}
+              >
+                Members
+              </a>
               <Link href="/projects">
                 <a
                   className={[
@@ -109,11 +109,13 @@ function Navbar() {
                   About
                 </a>
               </Link>
-              <Link href="/members">
-                <a className="p-5 w-full float-left text-white uppercase">
-                  Members
-                </a>
-              </Link>
+              <a
+                href="http://members.genztechies.com/"
+                target="_blank"
+                className="p-5 w-full float-left text-white uppercase"
+              >
+                Members
+              </a>
               <Link href="/projects">
                 <a className="p-5 w-full float-left text-white uppercase">
                   Projects
