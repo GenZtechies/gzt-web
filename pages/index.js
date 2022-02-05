@@ -44,7 +44,7 @@ function Index() {
               </h1>
               <div className="mt-8 transition duration-150 ease-in-out hover:scale-105">
                 <a
-                  href="https://forms.gle/W4JgHYBjw9U9WmrCA"
+                  href="https://apply.genztechies.com"
                   className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400 text-base transition duration-150 ease-in-out hover:bg-yellow-500 hover:scale-105"
                 >
                   Join The Community
