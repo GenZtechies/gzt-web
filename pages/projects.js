@@ -56,7 +56,7 @@ function Projects() {
           <ProjectInfo
             projectName="GenZ-Meet"
             projectDesc="Premium Meetings free for everyone 🤘🏾. Create a More secure, more flexible, and completely free video conference"
-            projectLanguage="NextJS-Jitsi Meet SDk"
+            projectLanguage="Vue-Jitsi Meet SDk"
             projectLink="https://meet.genztechies.com"
           />
         </Project>
