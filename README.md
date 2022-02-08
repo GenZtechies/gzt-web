@@ -25,25 +25,19 @@
 
 # Technologies Used
 
-- Next JS
-- HTML
+- NextJS
 - TailWindCSS
-
-# Features
-
-- We have
-- To put some
-- Stuff here
 
 # Project Status
 
 > To be launched with Elon Musk's next rocket
 
-# Acknowledgements
-
-- I acknowledge myself!!
-- Honestly, I do not know who to ackowledge, we will work on this
-
 # Contact Us
 
 > Our Email: hello@genztechies.com
+
+<br />
+
+<a target="_blank" href="https://www.vercel.com?utm_source=genztechies&utm_marketing=oss">
+  <img src="./public/powered-by-vercel.svg" alt="Powered by vercel">
+</a>

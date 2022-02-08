@@ -40,10 +40,26 @@ function Footer({ overlayBg }) {
         <div className="w-64 m-auto text-center">
           <img
             src="./assets/footer/nav-logo.svg"
-            className=" m-auto"
+            className="m-auto"
             alt="logo"
           />
+          <br className="block lg:hidden" />
         </div>
+
+        <div className="w-64 m-auto text-center">
+          <a
+            href="https://www.vercel.com?utm_source=genztechies&utm_marketing=oss"
+            className="m-auto"
+            target="_blank"
+          >
+            <img
+              src="/powered-by-vercel.svg"
+              className="m-auto"
+              alt="powered-by-vercel"
+            />
+          </a>
+        </div>
+
         <div className="flex flex-wrap flex-grow px-auto mt-10 text-center">
           <div className="lg:w-1/2" />
           <div className="lg:w-1/4 md:w-1/2 w-full">
@@ -74,9 +90,7 @@ function Footer({ overlayBg }) {
           Copyright &copy; {new Date().getFullYear()} GenzTechies. All rights
           reserved
         </p>
-        <Link href="/credits">
-          <a className="text-sm text-center p-5 lg:p-0 mx-auto">Credits</a>
-        </Link>
+
         <p className="text-sm text-center p-5 lg:p-0 lg:ml-auto">
           <a href="https://github.com/GenZtechies" target="_blank">
             <img
