@@ -2,6 +2,9 @@ import gsap from "gsap";
 import React from "react";
 import Image from "next/image";
 import { Layout, Breadcrum } from "../components";
+import Project from "../components/Projects/Project";
+import ProjectBanner from "../components/Projects/ProjectBanner";
+import ProjectInfo from "../components/Projects/ProjectInfo";
 
 function Projects() {
   // GSAP Animation Config
@@ -44,49 +47,35 @@ function Projects() {
         {/* Change this to the current Active Page */}
         <Breadcrum currentPage="Projects" />
 
-        <div className="container flex flex-col px-6 py-5 mx-auto space-y-6 lg:h-128 lg:py-16 lg:flex-row lg:items-center">
-          <div className="flex banner items-center justify-center w-full lg:w-1/2 mx-auto">
-            <span className="object-contain w-full h-full max-w-2xl rounded-3xl">
-              <Image
-                width={379}
-                height={288}
-                layout="responsive"
-                src="/assets/projects/p-genztechies.svg"
-                alt="p-genztechies"
-              />
-            </span>
-          </div>
+        <Project>
+          <ProjectBanner
+            bannerSrc="/assets/projects/genz-meet-site-preview.png"
+            bannerAlt="p-genz-meet"
+          />
+          {/* Separate Each Project language with a dash or hyphen asin (-) */}
+          <ProjectInfo
+            projectName="GenZ-Meet"
+            projectDesc="Premium Meetings free for everyone 🤘🏾. Create a More secure, more flexible, and completely free video conference"
+            projectLanguage="Vue-Jitsi Meet SDk"
+            projectLink="https://meet.genztechies.com"
+          />
+        </Project>
 
-          <div className="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
-            <div className="max-w-lg lg:mx-12 lg:order-2">
-              <h1 className="text-3xl header-1 font-black tracking-wide text-yellow-400 lg:text-4xl">
-                GenZtechies
-              </h1>
-              <p className="mt-4 text text-gray-400 dark:text-gray-300">
-                A website that brings together teen developers and innovators
-                from around Nigeria to exchange networking opportunities and get
-                to know one another.
-              </p>
-              <div className="flex text-2 flex-wrap flex-row space-x-5 text-yellow-400 my-3">
-                <span>NextJS</span>
-                <span>TailwindCSS</span>
-              </div>
-              <div className="my-6 button">
-                <a
-                  href="https://genztechies.com"
-                  className="bg-white p-4 font-light rounded-full text-[#29279B]"
-                >
-                  View Live Site
-                  <img
-                    className="inline-block w-9"
-                    src="/assets/projects/arrow.svg"
-                    alt="directional arrow"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Project>
+          <ProjectBanner
+            bannerSrc="/assets/projects/p-genztechies.svg"
+            bannerAlt="p-genztechies"
+          />
+          {/* Separate Each Project language with a dash or hyphen asin (-) */}
+          <ProjectInfo
+            projectName="GenZtechies"
+            projectDesc="A website that brings together teen developers and innovators from
+          around Nigeria to exchange networking opportunities and get to know
+          one another."
+            projectLanguage="NextJS-TailwindCSS"
+            projectLink="https://genztechies.com"
+          />
+        </Project>
       </main>
     </Layout>
   );
