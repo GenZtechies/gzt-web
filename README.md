@@ -38,6 +38,6 @@
 
 <br />
 
-<a target="_blank" href="https://www.vercel.com?utm_source=genztechies&utm_marketing=oss">
+<a target="_blank" href="https://www.vercel.com?utm_source=genztechies&utm_campaign=oss">
   <img src="./public/powered-by-vercel.svg" alt="Powered by vercel">
 </a>

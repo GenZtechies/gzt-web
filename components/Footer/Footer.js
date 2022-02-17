@@ -48,7 +48,7 @@ function Footer({ overlayBg }) {
 
         <div className="w-64 m-auto text-center">
           <a
-            href="https://www.vercel.com?utm_source=genztechies&utm_marketing=oss"
+            href="https://www.vercel.com?utm_source=genztechies&utm_campaign=oss"
             className="m-auto"
             target="_blank"
           >
