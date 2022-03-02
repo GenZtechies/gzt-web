@@ -64,7 +64,7 @@ function Navbar() {
                 </a>
               </Link>
               <a
-                href="https://apply.genztechies.com"
+                href="https://bit.ly/3IuLo5I"
                 target="_blank"
                 className="text-[#3331C4] hidden md:block"
               >
