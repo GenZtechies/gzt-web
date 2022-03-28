@@ -69,8 +69,8 @@ function Projects() {
           {/* Separate Each Project language with a dash or hyphen asin (-) */}
           <ProjectInfo
             projectName="GenZtechies"
-            projectDesc="A website that brings together teen developers and innovators from
-          around Nigeria to exchange networking opportunities and get to know
+            projectDesc="A website that brings together GenZ developers and innovators from
+          around Africa to exchange networking opportunities and get to know
           one another."
             projectLanguage="NextJS-TailwindCSS"
             projectLink="https://genztechies.com"
