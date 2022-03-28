@@ -63,8 +63,8 @@ function About() {
                       WHO WE ARE
                     </h2>
                     <p className="text-base md:text-lg text-white">
-                      We are a community that connects teenagers in technology
-                      across Nigeria to share opportunities within the network
+                      We are a community that connects GenZs in technology
+                      across Africa to share opportunities within the network
                       and foster quality connections.
                     </p>
                   </div>
@@ -127,8 +127,8 @@ function About() {
                         />
                       </div>
                       <div className="col-span-2 lg:col-span-4 text-base md:text-3xl lg:text-5xl text-white">
-                        Our mission is to connect teens involved in technology
-                        across Nigeria to share ideas and access new
+                        Our mission is to connect GenZs involved in technology
+                        across Africa to share ideas and access new
                         opportunities.
                       </div>
                     </div>

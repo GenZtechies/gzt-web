@@ -38,9 +38,9 @@ function Index() {
           <div className="mx-auto mt-[26vh] lg:mt-[24vh] z-20 translate-y-[7rem]  sm:translate-y-[5rem] md:translate-y-[10rem] xl:translate-y-[25rem]">
             <div className="text-center justify-center">
               <h1 className="font-black bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-pink-500 text-4xl lg:text-7xl">
-                <span className="text-white">Connecting</span> Teen
+                <span className="text-white">Connecting</span> GenZ
                 <br /> Techies <span className="text-white">Across</span>
-                <br /> Nigeria
+                <br /> Africa
               </h1>
               <div className="mt-8 transition duration-150 ease-in-out hover:scale-105">
                 <a
@@ -106,8 +106,8 @@ function Index() {
                   WHO WE ARE
                 </h2>
                 <p className="text-base md:text-lg text-white">
-                  We are a community that connects teenagers in technology
-                  across Nigeria to share opportunities within the network and
+                  We are a community that connects GenZs in technology
+                  across Africa to share opportunities within the network and
                   foster quality connections.
                 </p>
               </div>
@@ -162,8 +162,8 @@ function Index() {
                     />
                   </div>
                   <div className="col-span-2 lg:col-span-4 text-xl md:text-3xl lg:text-5xl text-white">
-                    Our mission is to connect teens involved in technology
-                    across Nigeria to share ideas and access new opportunities.
+                    Our mission is to connect GenZs involved in technology
+                    across Africa to share ideas and access new opportunities.
                   </div>
                 </div>
               </div>
@@ -215,8 +215,8 @@ function Index() {
                   GenZtechies
                 </h1>
                 <p className="mt-4 text-gray-400 dark:text-gray-300">
-                  A website that brings together teen developers and innovators
-                  from around Nigeria to exchange networking opportunities and
+                  A website that brings together GenZ developers and innovators
+                  from around Africa to exchange networking opportunities and
                   get to know one another.
                 </p>
                 <div className="flex flex-wrap flex-row space-x-5 text-yellow-400 my-3">

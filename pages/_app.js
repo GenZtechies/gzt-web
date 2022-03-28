@@ -11,17 +11,17 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* <!-- Primary Meta Tags --> */}
-        <title>GenZtechies - Connecting Teen Techies Across Nigeria</title>
+        <title>GenZtechies - Connecting GenZ Techies Across Africa</title>
         <meta
           name="title"
-          content="GenZtechies - Connecting Teen Techies Across Nigeria"
+          content="GenZtechies - Connecting GenZ Techies Across Africa"
         />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme_color" content="#3331C4" />
 
         <meta
           name="description"
-          content="Connecting Teen Techies Across Nigeria"
+          content="Connecting GenZ Techies Across Africa"
         />
 
         {/*   <!-- Open Graph / Facebook --> */}
@@ -29,11 +29,11 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:url" content="https://genztechies.com/" />
         <meta
           property="og:title"
-          content="GenZtechies - Connecting Teen Techies Across Nigeria"
+          content="GenZtechies - Connecting GenZ Techies Across Africa"
         />
         <meta
           property="og:description"
-          content="Connecting Teen Techies Across Nigeria"
+          content="Connecting GenZ Techies Across Africa"
         />
         <meta
           property="og:image"
@@ -45,11 +45,11 @@ function MyApp({ Component, pageProps }) {
         <meta property="twitter:url" content="https://genztechies.com/" />
         <meta
           property="twitter:title"
-          content="GenZtechies - Connecting Teen Techies Across Nigeria"
+          content="GenZtechies - Connecting GenZ Techies Across Africa"
         />
         <meta
           property="twitter:description"
-          content="Connecting Teen Techies Across Nigeria"
+          content="Connecting GenZ Techies Across Africa"
         />
         <meta
           property="twitter:image"
