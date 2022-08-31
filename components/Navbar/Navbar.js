@@ -64,7 +64,7 @@ function Navbar() {
                 </a>
               </Link>
               <a
-                href="https://bit.ly/3IuLo5I"
+                href="https://linktr.ee/genztechies"
                 target="_blank"
                 className="text-[#3331C4] hidden md:block"
               >

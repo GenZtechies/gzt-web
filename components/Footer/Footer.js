@@ -24,7 +24,7 @@ function Footer({ overlayBg }) {
               </h2>
               {/* <p className="my-5">Join Us In Our Community</p> */}
               <a
-                href="https://bit.ly/3IuLo5I"
+                href="https://linktr.ee/genztechies"
                 target="_blank"
                 className="text-[#3331C4]"
               >
