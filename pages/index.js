@@ -44,7 +44,7 @@ function Index() {
               </h1>
               <div className="mt-8 transition duration-150 ease-in-out hover:scale-105">
                 <a
-                  href="https://bit.ly/3IuLo5I"
+                  href="https://bit.ly/join-gzt"
                   className="px-10 py-3 text-[#3331C4] rounded-full bg-yellow-400 text-base transition duration-150 ease-in-out hover:bg-yellow-500 hover:scale-105"
                 >
                   Join The Community
@@ -106,9 +106,9 @@ function Index() {
                   WHO WE ARE
                 </h2>
                 <p className="text-base md:text-lg text-white">
-                  We are a community that connects GenZs in technology
-                  across Africa to share opportunities within the network and
-                  foster quality connections.
+                  We are a community that connects GenZs in technology across
+                  Africa to share opportunities within the network and foster
+                  quality connections.
                 </p>
               </div>
               <div>
