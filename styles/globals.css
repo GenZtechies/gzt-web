@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+/* Tailwind Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Lexend", sans-serif;
-}
-html {
-  overflow-x: hidden;
+/* Specify default font below */
+@layer base {
+    html {
+        font-family: "Sora", sans-serif;
+    }
 }
