@@ -4,16 +4,30 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                // Add color schemes
+                primary: "#5D5CD6",
+                secondary: "#FFB800",
+                tertiary: "#28B567"
             },
             fontFamily: {
                 // Add custom fonts
             }
-        }
+        },
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: '1rem',
+                sm: '3rem',
+                lg: "5rem",
+                xl: '5rem',
+                '2xl': '9rem'
+
+
+            },
+        },
     },
     plugins: [require("daisyui")],
     daisyui: {
-        styled: false,
+        styled: true,
         themes: false,
         base: true,
         utils: true,

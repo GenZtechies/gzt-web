@@ -9,3 +9,8 @@
         font-family: "Sora", sans-serif;
     }
 }
+
+html,
+body {
+    overflow-x: hidden;
+}

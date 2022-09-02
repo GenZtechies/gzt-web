@@ -6,9 +6,14 @@ import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import Navbar from "../components/Sections/Navbar";
+import Footer from "../components/Sections/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
     const [queryClient] = React.useState(() => new QueryClient({ defaultOptions: { queries: { retry: false, refetchOnWindowFocus: false } } }));
+
+    const router = useRouter();
 
     return (
         <>
@@ -37,8 +42,9 @@ function MyApp({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
+                {/* <Navbar /> */}
                 <Component {...pageProps} />
-
+                <Footer />
                 <ReactQueryDevtools initialIsOpen={false} />
             </QueryClientProvider>
         </>
