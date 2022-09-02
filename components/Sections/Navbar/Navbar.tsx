@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
             <ul className="hidden md:flex items-center space-x-5">
                 {NavLinks.map((link: NavLinksType, index: number) => (
-                    <li>
+                    <li key={link.url}>
                         <Link href={link.url}>
                             <a>
                                 <button className="btn btn-ghost hover:bg-transparent gap-2">

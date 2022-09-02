@@ -62,11 +62,13 @@ const Footer = () => {
                 </div>
                 <div className="space-y-10">
                     <h1 className="font-bold text-primary text-lg uppercase">quick links</h1>
-                    <ul className="space-y-5">
+                    <ul className="space-y-2">
                         {NavLinks.map((link: NavLinksType, index: number) => (
                             <li key={link.url}>
                                 <Link href={link.url}>
-                                    <a>{link.title}</a>
+                                    <a>
+                                        <button className="btn btn-ghost capitalize hover:bg-transparent">{link.title}</button>
+                                    </a>
                                 </Link>
                             </li>
                         ))}
