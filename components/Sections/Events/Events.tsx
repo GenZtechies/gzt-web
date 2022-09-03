@@ -6,7 +6,7 @@ const Events = () => {
         <section className="bg-slate-100 my-10 min-h-screen py-10 md:p-10">
             <div className="container w-full">
                 <h1 className="text-tertiary uppercase font-semibold text-lg">events</h1>
-                <p className="text-slate-900 text-3xl font-bold my-5 md:w-1/5">Check out the last event we held.</p>
+                <p className="text-slate-900 text-3xl font-bold my-5">Check out the last event we held.</p>
                 <div className="w-full h-screen flex flex-col md:flex-row justify-between flex-wrap">
                     <div className="relative h-[60%] md:h-4/5 w-full md:w-8/12 overflow-hidden rounded-3xl">
                         <Image src="/images/hackfest2022.png" layout="fill" className="object-cover" />

@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import Navbar from "../components/Sections/Navbar";
 import Footer from "../components/Sections/Footer";
 import Join from "../components/Sections/Join";
+import Loading from "../components/Loading";
 
 function MyApp({ Component, pageProps }: AppProps) {
     const [queryClient] = React.useState(() => new QueryClient({ defaultOptions: { queries: { retry: false, refetchOnWindowFocus: false } } }));
