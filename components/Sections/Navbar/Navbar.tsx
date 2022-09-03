@@ -9,7 +9,7 @@ export type NavLinksType = {
 };
 
 export const NavLinks: NavLinksType[] = [
-    { title: "About Us", url: "#", drop: [{ title: "Who we are?", url: "#" }] },
+    { title: "About Us", url: "/about", drop: [{ title: "Who we are?", url: "#" }] },
     { title: "Contact Us", url: "#" },
     { title: "Projects", url: "#" },
     { title: "FAQs", url: "#" }
