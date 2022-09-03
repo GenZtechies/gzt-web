@@ -19,7 +19,11 @@ const Navbar = () => {
     return (
         <nav className="container py-4 flex items-center justify-between ">
             <div>
-                <Logo />
+                <Link href="/">
+                    <a>
+                        <Logo />
+                    </a>
+                </Link>
             </div>
             <ul className="hidden md:flex items-center space-x-5">
                 {NavLinks.map((link: NavLinksType, index: number) => (
