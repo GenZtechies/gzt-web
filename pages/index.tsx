@@ -4,6 +4,8 @@ import type { NextPage } from "next";
 import Loading from "../components/Loading";
 import Hero from "../components/Sections/Hero";
 import Engagements from "../components/Sections/Engagements";
+import Events from "../components/Sections/Events";
+import Projects from "../components/Sections/Projects";
 const Home: NextPage = () => {
     return (
         <>
@@ -16,7 +18,7 @@ const Home: NextPage = () => {
                 </div>
                 <Engagements />
             </section>
-            <section className="bg-[url('/images/bg-quote.svg')] bg-cover bg-center p-5 flex flex-col md:flex-row items-center  justify-center space-x-4 ">
+            <section className="bg-[url('/images/bg-quote.svg')] bg-cover bg-bottom p-5 md:py-14 flex flex-col md:flex-row items-center  justify-center space-x-4 ">
                 <img src="/images/left-quote.png" alt="" className="w-14 h-14 md:w-24 md:h-24 self-start" />
                 <div className="w-full md:w-1/2 py-3 md:py-10">
                     <h1 className="uppercase text-primary font-semibold">Our mission</h1>
@@ -24,6 +26,8 @@ const Home: NextPage = () => {
                 </div>
                 <img src="/images/right-quote.png" alt="" className="w-14 h-14 md:w-24 md:h-24 self-end" />
             </section>
+            <Events />
+            <Projects />
         </>
     );
 };

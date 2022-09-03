@@ -9,6 +9,7 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import Navbar from "../components/Sections/Navbar";
 import Footer from "../components/Sections/Footer";
+import Join from "../components/Sections/Join";
 
 function MyApp({ Component, pageProps }: AppProps) {
     const [queryClient] = React.useState(() => new QueryClient({ defaultOptions: { queries: { retry: false, refetchOnWindowFocus: false } } }));
@@ -44,6 +45,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <QueryClientProvider client={queryClient}>
                 {/* <Navbar /> */}
                 <Component {...pageProps} />
+                <Join />
                 <Footer />
                 <ReactQueryDevtools initialIsOpen={false} />
             </QueryClientProvider>
