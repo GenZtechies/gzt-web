@@ -9,10 +9,12 @@ export type NavLinksType = {
 };
 
 export const NavLinks: NavLinksType[] = [
-    { title: "About Us", url: "/about", drop: [{ title: "Who we are?", url: "#" }] },
-    { title: "Contact Us", url: "#" },
-    { title: "Projects", url: "#" },
-    { title: "FAQs", url: "#" }
+    { title: "Home", url: "/" },
+    { title: "Our Initiatives", url: "#" },
+    { title: "Donate", url: "#" },
+    { title: "Store", url: "#" },
+    { title: "Press", url: "#" },
+    { title: "Contact Us", url: "#" }
 ];
 
 const Navbar = () => {
@@ -25,12 +27,12 @@ const Navbar = () => {
                     </a>
                 </Link>
             </div>
-            <ul className="hidden md:flex items-center space-x-5">
+            <ul className="hidden md:flex items-center space-x-1">
                 {NavLinks.map((link: NavLinksType, index: number) => (
                     <li key={link.title}>
                         <Link href={link.url}>
                             <a>
-                                <button className="btn btn-ghost hover:bg-transparent gap-2">
+                                <button className="no-animation btn btn-ghost hover:bg-transparent gap-2">
                                     <>
                                         {link.title}{" "}
                                         {link.drop ? (
@@ -45,7 +47,7 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-            <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none hidden md:block">Know More</button>
+            <button className="no-animation btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none hidden md:block">Join the Community</button>
             <button className="btn btn-circle btn-outline text-primary hover:text-white md:hidden hover:border-primary border-primary hover:bg-primary">
                 <svg width="25" height="19" viewBox="0 0 25 19" className="h-6 w-6" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line x1="0.285645" y1="1.89285" x2="24.2856" y2="1.89285" stroke="currentColor" strokeWidth="2.5" />
