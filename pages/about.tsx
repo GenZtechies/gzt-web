@@ -2,7 +2,6 @@ import React from "react";
 import { NextPage } from "next";
 import Navbar from "../components/Sections/Navbar";
 import Image from "next/image";
-import Engagements from "../components/Sections/Engagements";
 
 const About: NextPage = () => {
     return (
@@ -15,7 +14,7 @@ const About: NextPage = () => {
                         <p className="text-[#0B0A29] text-xl ">We're a community that connects young techies across Nigeria to exchange opportunities, engage on projects.</p>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-end">
-                        <Image src="/images/happy-man.png" width={450} height={500} />
+                        <Image src="/images/happy-man.png" alt="Happy man" width={450} height={500} />
                     </div>
                 </div>
             </main>
@@ -35,7 +34,6 @@ const About: NextPage = () => {
                         <h1 className="text-lg text-primary font-semibold">ABOUT US — WHAT WE DO</h1>
                         <p className="text-[#0B0A29] text-2xl font-bold ">What we engage in as a community.</p>
                     </div>
-                    <Engagements className="md:space-x-10" contentClassName="flex-col space-x-0 space-y-5" />
                 </div>
             </section>
         </>

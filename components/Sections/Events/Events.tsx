@@ -9,7 +9,7 @@ const Events = () => {
                 <p className="text-slate-900 text-3xl font-bold my-5">Find out what GenZtechies are up to</p>
                 <div className="w-full h-screen flex flex-col md:flex-row justify-between flex-wrap">
                     <div className="relative h-[60%] md:h-4/5 w-full md:w-8/12 overflow-hidden rounded-3xl">
-                        <Image src="/images/hackfest2022.png" layout="fill" className="object-cover" />
+                        <Image src="/images/hackfest2022.png" layout="fill" className="object-cover" alt="Hackfest 2022" />
                         <div className="absolute bottom-0 left-0 p-5 flex items-center space-x-3">
                             <button className="btn btn-circle btn-ghost">
                                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ const Events = () => {
                         </div>
                     </div>
                     <div className="relative h-[30%] md:h-4/5 w-full md:w-[30%] overflow-hidden rounded-3xl">
-                        <Image src="/images/paystacktour.png" layout="fill" className="object-cover" />
+                        <Image src="/images/paystacktour.png" layout="fill" className="object-cover" alt="PayStack Tour 2022" />
                         <div className="absolute bottom-0 left-0 p-5 flex items-center space-x-3">
                             <button className="btn btn-circle btn-ghost">
                                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">

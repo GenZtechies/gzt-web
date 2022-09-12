@@ -21,7 +21,7 @@ const Home: NextPage = () => {
                         <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none text-sm">Join the Community</button>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image src={"/images/group-img.png"} width={500} height={500} className="" />
+                        <Image alt="team members" src={"/images/group-img.png"} width={500} height={500} className="" />
                     </div>
                 </div>
             </main>
