@@ -14,3 +14,9 @@ html,
 body {
     overflow-x: hidden;
 }
+
+@layer components {
+    .btn {
+            @apply capitalize
+        }
+}
