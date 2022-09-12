@@ -282,8 +282,8 @@ const Join = () => {
                 </div>
             </section>
             <section className="min-h-fit py-10  bg-slate-100 ">
-                <div className="container ">
-                    <div className="bg-[url('/images/bg-join.png')] bg-cover bg-center h-fit  rounded-2xl flex flex-col justify-between items-center">
+                <div className="container">
+                    <div className="bg-[url('/images/bg-join.png')] bg-cover bg-center h-fit md:h-[60vh] rounded-2xl flex flex-col justify-center items-center">
                         <div className="flex flex-col items-center justify-around p-10 space-y-5 mx-auto md:w-8/12">
                             <h1 className="text-2xl md:text-4xl text-white text-center font-semibold">{"Looking to connect with other GenZ’s in tech across Africa?"}</h1>
                             <button className="btn bg-white text-primary hover:text-white hover:bg-primary border-none">Join The Community</button>
