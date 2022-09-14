@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     return (
         <>
             {/* Hero section starts */}
-            <main className="flex flex-col justify-bey items-center min-h-screen w-screen bg-[url('/images/bg-hero.svg')]  bg-cover bg-top ">
+            <main className="flex flex-col justify-between items-center min-h-screen w-screen bg-[url('/images/bg-hero.svg')]  bg-cover bg-top ">
                 <Navbar />
                 <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start">

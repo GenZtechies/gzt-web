@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
-import Navbar from "../components/Sections/Navbar";
+// import Navbar from "../components/Sections/Navbar";
 import Footer from "../components/Sections/Footer";
 import Join from "../components/Sections/Join";
 import Loading from "../components/Loading";
@@ -44,7 +44,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
             <QueryClientProvider client={queryClient}>
-                {/* <Navbar /> */}
                 <Component {...pageProps} />
                 <Join />
                 <Footer />
