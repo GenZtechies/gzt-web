@@ -47,7 +47,7 @@ const Initiatives = () => {
             {/* Hero ends here */}
             {/* Event cards starts here */}
             <section className="bg-light py-10">
-                <div className="container grid grid-cols-1 lg:grid-cols-2 min-h-screen justify-items-center justify-center items-center gap-5">
+                <div className="container grid grid-cols-1 lg:grid-cols-2 min-h-screen justify-items-center justify-center items-center gap-8">
                     {events.map((evt: EventsType, index: number) => (
                         <Card key={evt.title} {...evt} />
                     ))}
