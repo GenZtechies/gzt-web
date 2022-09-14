@@ -14,7 +14,7 @@ export const NavLinks: NavLinksType[] = [
     { title: "Donate", url: "#" },
     { title: "Store", url: "#" },
     { title: "Press", url: "#" },
-    { title: "Contact Us", url: "#" }
+    { title: "Contact Us", url: "/contact" }
 ];
 
 const Navbar = () => {
