@@ -8,7 +8,8 @@ module.exports = {
                 "primary-dark": "#151452",
                 "primary-light": "#D6D6F5",
                 secondary: "#FFB800",
-                tertiary: "#28B567"
+                tertiary: "#28B567",
+                light: "#F7F7FD"
             },
             fontFamily: {
                 // Add custom fonts

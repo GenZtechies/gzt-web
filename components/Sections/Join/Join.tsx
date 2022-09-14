@@ -4,7 +4,7 @@ const Join = () => {
     return (
         <>
             <section className="container">
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-5 justify-center content-center items-center py-10">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-5 justify-items-center justify-center content-center items-center py-10">
                     <div className="flex items-center justify-center w-full">
                         <svg width="113" height="97" viewBox="0 0 113 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -223,7 +223,7 @@ const Join = () => {
                         </svg>
                     </div>
                     {/*  */}
-                    <div className="flex items-center justify-center w-full">
+                    <div className="flex items-center justify-center w-full col-span-2 md:col-span-1">
                         <svg width="193" height="21" viewBox="0 0 193 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_303_16770)">
                                 <path
