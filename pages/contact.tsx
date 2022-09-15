@@ -44,7 +44,7 @@ const Contact = () => {
                             <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none w-fit px-8">Send Message</button>
                         </div>
                     </div>
-                    <div>
+                    <div className="w-full col-span-2 md:col-span-1">
                         <div className="p-5 h-full bg-[url('/images/img-contact.svg')] bg-cover bg-center rounded-xl min-h-[523px] space-y-5">
                             <h1 className="text-white text-2xl font-semibold">Contact Information</h1>
                             <p className="text-white text-base">Fill up the form and our team will get back to you within 24 hours</p>
