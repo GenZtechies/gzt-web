@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import TextField from "../../TextField";
 import { NavLinks, NavLinksType } from "../Navbar/Navbar";
 
 const Footer = () => {
@@ -132,14 +133,9 @@ const Footer = () => {
 
                 <div className="space-y-10 w-full md:w-2/5">
                     <h1 className="font-bold text-primary text-xl uppercase">Subscribe to our Newsletter</h1>
-                    <div className="form-control border-none ring-0 w-full max-w-xs">
-                        <label className="label">
-                            <span className="label-text">Email Address</span>
-                        </label>
-                        <div className="flex space-x-3">
-                            <input type="text" placeholder="johndoe@mail.com" className="input border border-primary" />
-                            <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none">Subscribe</button>
-                        </div>
+                    <div className="flex items-end justify-between space-x-3 w-full">
+                        <TextField label="Email Address" name="email" type="email" placeholder="johndoe@mail.com" containerClass="flex-grow" />
+                        <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none">Subscribe</button>
                     </div>
                 </div>
             </div>

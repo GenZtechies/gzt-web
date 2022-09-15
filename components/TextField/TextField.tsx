@@ -11,9 +11,11 @@ export type TextFieldTypes = {
 const TextField = ({ label, placeholder, type = "text", containerClass, ...props }: TextFieldTypes) => {
     return (
         <div className={`form-control w-full ${containerClass}`}>
-            <label className="label">
-                <span className="label-text">{label}</span>
-            </label>
+            {label && (
+                <label className="label">
+                    <span className="label-text">{label}</span>
+                </label>
+            )}
             <input {...props} type={type} placeholder={placeholder} className="input input-bordered w-full  focus-within:outline-none focus:outline-none" />
         </div>
     );
