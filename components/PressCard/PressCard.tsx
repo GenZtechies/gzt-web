@@ -18,7 +18,7 @@ const PressCard = ({ title, image, subtitle, tags, date }: PressCardType) => {
             <div className="flex items-center justify-between w-full md:w-9/12">
                 <div className="flex items-center space-x-1">
                     {tags?.map((tag: string, index: number) => (
-                        <button key={tag} className="capitalize bg-primary-light px-2 py-1 rounded-lg text-primary text-sm">
+                        <button key={tag} className="capitalize bg-primary-light px-2 py-1 rounded-md text-primary text-sm">
                             {tag}
                         </button>
                     ))}
