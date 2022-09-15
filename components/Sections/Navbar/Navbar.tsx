@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import Logo from "../../../icons/Logo";
 
@@ -18,6 +19,7 @@ export const NavLinks: NavLinksType[] = [
 ];
 
 const Navbar = () => {
+    const router = useRouter();
     return (
         <nav className="container py-4 flex items-center justify-between ">
             <div>
@@ -32,7 +34,7 @@ const Navbar = () => {
                     <li key={link.title}>
                         <Link href={link.url}>
                             <a>
-                                <button className="no-animation btn btn-ghost hover:bg-transparent gap-2 capitalize">
+                                <button className={`no-animation btn btn-ghost hover:bg-transparent gap-2 capitalize ${router.pathname === link.url ? "font-semibold0" : "font-normal"}`}>
                                     <>
                                         {link.title}
                                         {link.drop ? (
