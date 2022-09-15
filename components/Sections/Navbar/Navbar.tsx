@@ -13,7 +13,7 @@ export const NavLinks: NavLinksType[] = [
     { title: "Our Initiatives", url: "/initiatives" },
     { title: "Donate", url: "#" },
     { title: "Store", url: "#" },
-    { title: "Press", url: "#" },
+    { title: "Press", url: "/press" },
     { title: "Contact Us", url: "/contact" }
 ];
 
