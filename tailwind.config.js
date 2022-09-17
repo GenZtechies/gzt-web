@@ -9,7 +9,9 @@ module.exports = {
                 "primary-light": "#D6D6F5",
                 secondary: "#FFB800",
                 tertiary: "#28B567",
-                light: "#F7F7FD"
+                light: "#F7F7FD",
+                lighter: "#D2D4D7",
+
             },
             fontFamily: {
                 // Add custom fonts

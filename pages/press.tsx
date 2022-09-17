@@ -44,10 +44,9 @@ const Press = () => {
             <main className="flex flex-col justify-between items-center min-h-screen w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
                 <Navbar />
                 <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4">
+                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
                         <h1 className="text-primary">Press and Media</h1>
-                        <p className="block md:hidden text-3xl  text-center  font-semibold">How the world see’s the community</p>
-                        <p className="hidden md:block text-5xl  font-semibold">How the world see’s the community</p>
+                        <p className="text-3xl md:text-5xl  md:text-left">Catch the latest buzz from GenZtechies</p>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center items-center">
                         <Image alt="team members" src={"/images/hero-press.svg"} width={500} height={550} className="" />

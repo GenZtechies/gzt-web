@@ -15,13 +15,11 @@ const Home: NextPage = () => {
             <main className="flex flex-col justify-between items-center min-h-screen w-screen bg-[url('/images/bg-hero.svg')]  bg-cover bg-top ">
                 <Navbar />
                 <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start">
-                        <p className="block md:hidden leading-relaxed text-center text-3xl font-semibold w-full md:w-4/5">
+                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-4">
+                        <p className="leading-loose md:leading-relaxed  text-3xl md:text-5xl md:text-left font-semibold w-full md:w-4/5">
                             {"Africa's"} largest network for <span className="text-primary">{"GenZ’s "}</span> in tech
                         </p>
-                        <p className="hidden md:block leading-normal text-5xl font-semibold w-full md:w-4/5">
-                            {"Africa's"} largest network for <span className="text-primary">{"GenZ’s "}</span> in tech
-                        </p>
+
                         <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none text-sm">Join the Community</button>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center items-center">
@@ -37,7 +35,7 @@ const Home: NextPage = () => {
                         <img src="/images/left-quote.png" alt="" className="w-14 h-14 md:w-24 md:h-24 self-start" />
                         <div className="md:w-3/5">
                             <h1 className="uppercase text-primary font-semibold">WE ARE GENZTECHIES</h1>
-                            <p className="text-primary-dark font-semibold">Our mission is to connect {"Gen Z’s"} involved in technology across Africa to share ideas and access new opportunities.</p>
+                            <p className="text-primary-dark font-semibold">Where GenZ developers, founders, designers, and techies across Africa connect, learn, and discover life-changing opportunites.</p>
                         </div>
                         <img src="/images/right-quote.png" alt="" className="w-14 h-14 md:w-24 md:h-24 self-end" />
                     </div>
@@ -55,7 +53,7 @@ const Home: NextPage = () => {
                         <div className={`flex flex-col items-start space-y-5`}>
                             <Image src="/images/membership.png" alt="Membership Icon" width={100} height={100} />
                             <h1 className="text-2xl font-bold text-white">Membership</h1>
-                            <p className="text-primary-light text-sm">A website that brings together teen developers and innovators from around Nigeria in one place.</p>
+                            <p className="text-primary-light text-sm">Collaborate with young makers, developers, innovators, hackers, and founders now.</p>
                             <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2">
                                 Join Us
                                 <span className="bg-primary-light p-2 rounded-full text-white bg-opacity-40">
@@ -66,7 +64,7 @@ const Home: NextPage = () => {
                         <div className={`flex flex-col items-start space-y-5`}>
                             <Image src="/images/partnership.png" alt="Parnership Icon" width={100} height={100} />
                             <h1 className="text-2xl font-bold text-white">Partner With Us</h1>
-                            <p className="text-primary-light text-sm">A website that brings together teen developers and innovators from around Nigeria in one place.</p>
+                            <p className="text-primary-light text-sm">Get involved in some of our initiatives either as a sponsor or a partner.</p>
                             <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2">
                                 Partner
                                 <span className="bg-primary-light p-2 rounded-full text-white bg-opacity-40">
@@ -77,7 +75,7 @@ const Home: NextPage = () => {
                         <div className={`flex flex-col items-start space-y-5`}>
                             <Image src="/images/support.png" alt="Support Icon" width={100} height={100} />
                             <h1 className="text-2xl font-bold text-white">Support Us</h1>
-                            <p className="text-primary-light text-sm">A website that brings together teen developers and innovators from around Nigeria in one place.</p>
+                            <p className="text-primary-light text-sm">Help us further our cause with a tax-deductible donation, every $1 goes a long way.</p>
                             <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2">
                                 Support
                                 <span className="bg-primary-light p-2 rounded-full text-white bg-opacity-40">

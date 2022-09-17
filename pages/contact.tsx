@@ -4,6 +4,7 @@ import React from "react";
 import Card from "../components/Card";
 
 import Navbar from "../components/Sections/Navbar";
+import QuestionsSection from "../components/Sections/QuestionsSection";
 import TextField from "../components/TextField";
 
 const Contact = () => {
@@ -13,10 +14,9 @@ const Contact = () => {
             <main className="flex flex-col justify-between items-center min-h-screen w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
                 <Navbar />
                 <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4">
-                        <h1 className="text-primary">Get In Touch</h1>
-                        <p className="block md:hidden text-3xl  text-center  font-semibold">Any question or remark just write us a message</p>
-                        <p className="hidden md:block text-5xl  font-semibold">Any question or remark just write us a message</p>
+                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
+                        <h1 className="text-primary md:text-left">Get In Touch</h1>
+                        <p className="text-3xl md:text-5xl  md:text-left">Got any questions or concerns? </p>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center items-center">
                         <Image alt="team members" src={"/images/hero-contact.svg"} width={500} height={550} className="" />
@@ -145,6 +145,10 @@ const Contact = () => {
                 </div>
             </section>
             {/* Form  ends here */}
+            {/* Questions Starts here */}
+            <section className="bg-light py-10">
+                <QuestionsSection />
+            </section>
         </>
     );
 };
