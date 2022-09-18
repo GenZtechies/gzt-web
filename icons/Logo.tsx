@@ -1,6 +1,6 @@
 import React from "react";
 
-const Logo = () => {
+const Logo = ({ className }: { className?: string }) => {
     return (
         <svg width="72" height="41" viewBox="0 0 72 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

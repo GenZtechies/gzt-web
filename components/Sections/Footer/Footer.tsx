@@ -92,7 +92,15 @@ const Footer = () => {
             </div>
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 <p className="text-gray-500">GenzTechies | All Rights Reserved — @{new Date().getFullYear()}</p>
-                <p className="text-gray-500">Brand Guide | The Press </p>
+                <p className="text-gray-500 space-x-4">
+                    <Link href={"/brand"}>
+                        <a>Brand Guide</a>
+                    </Link>
+                    <span>|</span>
+                    <Link href={"press"}>
+                        <a>The Press</a>
+                    </Link>
+                </p>
             </div>
         </footer>
     );

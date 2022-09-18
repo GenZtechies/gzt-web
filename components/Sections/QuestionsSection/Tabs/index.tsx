@@ -1,6 +1,8 @@
 import { useRouter } from "next/router";
 import React from "react";
 import GenZTechiesTab from "./GenZTechiesTab";
+import PartnershipTab from "./PartnershipTab";
+import SponsorshipTab from "./SponsorshipTab";
 
 type SectionsType = {
     title: string;
@@ -22,10 +24,21 @@ const sections: SectionsType[] = [
     }
 ];
 
+const TabsComponent: any = {
+    genztechies: GenZTechiesTab,
+    partnership: PartnershipTab,
+    sponsorship: SponsorshipTab
+};
+
 const TabsIndex = () => {
     const router = useRouter();
 
-    const currentTab = React.useMemo(() => router.query.tab || sections[0].query, [router.query]);
+    const currentTab: any = React.useMemo(() => router.query.tab || sections[0].query, [router.query]);
+
+    const Component = React.useCallback(() => {
+        const TabComponent = TabsComponent[currentTab];
+        return <TabComponent />;
+    }, [currentTab]);
 
     const handleChange = (tab: string) => {
         router.push(
@@ -52,7 +65,7 @@ const TabsIndex = () => {
                     </a>
                 ))}
             </div>
-            <GenZTechiesTab />
+            <Component />
         </div>
     );
 };

@@ -11,6 +11,7 @@ module.exports = {
                 tertiary: "#28B567",
                 light: "#F7F7FD",
                 lighter: "#D2D4D7",
+                warning: "#FEC658"
 
             },
             fontFamily: {
