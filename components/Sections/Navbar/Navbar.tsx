@@ -10,7 +10,6 @@ export type NavLinksType = {
 };
 
 export const NavLinks: NavLinksType[] = [
-    { title: "Home", url: "/" },
     { title: "Our Initiatives", url: "/initiatives" },
     { title: "Donate", url: "#" },
     { title: "Store", url: "#" },
