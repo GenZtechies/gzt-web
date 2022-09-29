@@ -1,25 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import Card from "../components/Card";
 
-import Navbar from "../components/Sections/Navbar";
-import QuestionsSection from "../components/Sections/QuestionsSection";
-import TextField from "../components/TextField";
+import { Navbar, QuestionsSection, TextField } from "../components";
 
 const Contact = () => {
     return (
         <>
             {/* Hero starts here */}
-            <main className="flex flex-col justify-between items-center min-h-screen w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
+            <main className="flex flex-col justify-between items-center h-fit w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
                 <Navbar />
-                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
+                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
-                        <h1 className="text-primary md:text-left">Get In Touch</h1>
-                        <p className="text-3xl md:text-5xl  md:text-left">Got any questions or concerns? </p>
+                        <h1 className="text-primary md:text-left md:text-xl">Get In Touch</h1>
+                        <p className="text-3xl md:text-6xl md:text-left font-semibold">Got any questions or concerns? </p>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image alt="team members" src={"/images/hero-contact.svg"} width={500} height={550} className="" />
+                        <Image alt="team members" src={"/images/hero-contact.svg"} width={400} height={450} className="" />
                     </div>
                 </div>
             </main>

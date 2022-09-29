@@ -7,10 +7,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
-// import Navbar from "../components/Sections/Navbar";
-import Footer from "../components/Sections/Footer";
-import Join from "../components/Sections/Join";
-import Loading from "../components/Loading";
+import { Footer, Join, Loading } from "../components";
 
 function MyApp({ Component, pageProps }: AppProps) {
     const [queryClient] = React.useState(() => new QueryClient({ defaultOptions: { queries: { retry: false, refetchOnWindowFocus: false } } }));

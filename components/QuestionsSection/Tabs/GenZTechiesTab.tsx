@@ -19,7 +19,7 @@ const GenZTechiesTab = () => {
                 <div key={index} tabIndex={0} className="bg-light collapse collapse-arrow border border-lighter  rounded-box">
                     <div className="collapse-title text-xl font-medium text-black">{question.title}</div>
                     <div className="collapse-content">
-                        <p>{question.content}</p>
+                        <p className="mt-5">{question.content}</p>
                     </div>
                 </div>
             ))}

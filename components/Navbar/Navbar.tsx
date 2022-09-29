@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import Logo from "../../../icons/Logo";
+import Logo from "../../icons/Logo";
 
 export type NavLinksType = {
     title: string;

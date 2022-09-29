@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Card from "../components/Card";
+
 import { EventsType } from "../components/Card/Card";
-import Navbar from "../components/Sections/Navbar";
+import { Navbar, Card } from "../components";
 
 const events: EventsType[] = [
     {
@@ -31,22 +31,22 @@ const Initiatives = () => {
     return (
         <>
             {/* Hero starts here */}
-            <main className="flex flex-col justify-between items-center min-h-screen w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
+            <main className="flex flex-col justify-between items-center h-fit w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
                 <Navbar />
-                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
+                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full h-fit">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
-                        <h1 className="text-primary">Events & Initiatives</h1>
-                        <p className="text-3xl md:text-5xl md:text-left  ">Projects, events and activities we work on as a community</p>
+                        <h1 className="text-primary md:text-3xl">Events & Initiatives</h1>
+                        <p className="text-3xl md:text-5xl md:text-left font-semibold">Projects, events and activities we work on as a community</p>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image alt="team members" src={"/images/hero-initiatives.svg"} width={500} height={550} className="" />
+                        <Image alt="team members" src={"/images/hero-initiatives.svg"} width={400} height={450} className="" />
                     </div>
                 </div>
             </main>
             {/* Hero ends here */}
             {/* Event cards starts here */}
-            <section className="bg-light py-10">
-                <div className="container grid grid-cols-1 lg:grid-cols-2 min-h-screen justify-items-center justify-center gap-8">
+            <section className="bg-light py-20">
+                <div className="container grid grid-cols-1 lg:grid-cols-3 min-h-screen justify-items-center justify-center gap-12">
                     {events.map((evt: EventsType, index: number) => (
                         <Card key={evt.title} {...evt} />
                     ))}

@@ -4,7 +4,7 @@ const Join = () => {
     return (
         <>
             <section className="container">
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-5 justify-items-center justify-center content-center items-center py-10">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-16 justify-items-center justify-center content-center items-center py-20">
                     <div className="flex items-center justify-center w-full">
                         <svg width="113" height="97" viewBox="0 0 113 97" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -281,7 +281,7 @@ const Join = () => {
                     </div>
                 </div>
             </section>
-            <section className="min-h-fit py-10  bg-slate-100 ">
+            <section className="min-h-fit  py-20  bg-slate-100 ">
                 <div className="container">
                     <div className="bg-[url('/images/bg-join.png')] bg-cover bg-center h-fit md:h-[60vh] rounded-2xl flex flex-col justify-center items-center">
                         <div className="flex flex-col items-center justify-around p-10 space-y-5 mx-auto md:w-8/12">

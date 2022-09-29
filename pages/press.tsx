@@ -1,10 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Card from "../components/Card";
 
-import PressCard from "../components/PressCard";
+import { Navbar, PressCard } from "../components";
 import { PressCardType } from "../components/PressCard/PressCard";
-import Navbar from "../components/Sections/Navbar";
 
 const events: PressCardType[] = [
     {
@@ -41,22 +39,22 @@ const Press = () => {
     return (
         <>
             {/* Hero starts here */}
-            <main className="flex flex-col justify-between items-center min-h-screen w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
+            <main className="flex flex-col justify-between items-center h-fit w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
                 <Navbar />
-                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
+                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
-                        <h1 className="text-primary">Press and Media</h1>
-                        <p className="text-3xl md:text-5xl  md:text-left">Catch the latest buzz from GenZtechies</p>
+                        <h1 className="text-primary md:text-xl">Press and Media</h1>
+                        <p className="text-3xl md:text-6xl md:text-left font-semibold">Catch the latest buzz from GenZtechies</p>
                     </div>
                     <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image alt="team members" src={"/images/hero-press.svg"} width={500} height={550} className="" />
+                        <Image alt="team members" src={"/images/hero-press.svg"} width={400} height={450} className="" />
                     </div>
                 </div>
             </main>
             {/* Hero ends here */}
             {/* Event cards starts here */}
             <section className="bg-light py-10">
-                <div className="container grid grid-cols-1 lg:grid-cols-2 min-h-screen justify-items-center justify-center gap-8">
+                <div className="container grid grid-cols-1 lg:grid-cols-3 min-h-screen justify-items-center justify-center gap-8">
                     {events.map((evt: PressCardType, index: number) => (
                         <PressCard key={evt.title} {...evt} />
                     ))}

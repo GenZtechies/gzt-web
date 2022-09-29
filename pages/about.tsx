@@ -1,6 +1,6 @@
 import React from "react";
 import { NextPage } from "next";
-import Navbar from "../components/Sections/Navbar";
+import { Navbar } from "../components";
 import Image from "next/image";
 
 const About: NextPage = () => {

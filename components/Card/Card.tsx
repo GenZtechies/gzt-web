@@ -10,7 +10,7 @@ export type EventsType = {
 const Card = ({ title, image, subtitle }: EventsType) => {
     return (
         <div className="w-full flex flex-col items-center space-y-4">
-            <div className="relative h-96 w-full md:w-8/12 overflow-hidden rounded-3xl">
+            <div className="relative h-96 w-full  overflow-hidden rounded-3xl">
                 <Image src={image} layout="fill" className="object-cover" alt="Hackfest 2022" />
                 <div className="absolute bottom-0 left-0 p-5 flex items-center space-x-3 w-full overflow-hidden">
                     <button className="btn btn-circle btn-ghost">
@@ -25,7 +25,7 @@ const Card = ({ title, image, subtitle }: EventsType) => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-start w-full md:w-8/12 md:p-1">
+            <div className="flex flex-col items-start w-full  md:p-1">
                 <h1 className="text-xl text-black font-semibold cursor-pointer">{title}</h1>
                 <p className="text-justify text-sm">{subtitle}</p>
             </div>

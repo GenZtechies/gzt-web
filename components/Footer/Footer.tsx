@@ -1,13 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import Logo from "../../../icons/Logo";
-import TextField from "../../TextField";
+import Logo from "../../icons/Logo";
+import TextField from "../TextField";
 import { NavLinks, NavLinksType } from "../Navbar/Navbar";
 
 const Footer = () => {
     return (
-        <footer className="container py-4 space-y-10">
-            <div className="flex flex-col space-y-10 md:flex-row md:space-y-0 justify-between border-b border-gray-200 pb-10">
+        <footer className="bg-slate-100">
+            <div className=" py-10 container flex flex-col space-y-10 md:flex-row md:space-y-0 justify-between border-b border-gray-200 pb-10">
                 <div className="space-y-10 w-full md:w-1/4">
                     <Logo />
                     <h1 className="text-gray-500">Genz Techies is nonprofit. Registered as a 501(c)(3) charitable organisation under U.S. federal law (c)</h1>
@@ -99,7 +99,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="container flex flex-col md:flex-row justify-between items-center py-8 space-y-4 md:space-y-0">
                 <p className="text-gray-500">GenzTechies | All Rights Reserved — @{new Date().getFullYear()}</p>
                 <p className="text-gray-500 space-x-4">
                     <Link href={"/brand"}>

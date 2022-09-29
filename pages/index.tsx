@@ -1,8 +1,6 @@
 import React from "react";
 import type { NextPage } from "next";
-
-import Loading from "../components/Loading";
-import Navbar from "../components/Sections/Navbar";
+import { Navbar } from "../components";
 import Image from "next/image";
 import ChevronRight from "../icons/ChevronRight";
 import Link from "next/link";
@@ -16,7 +14,7 @@ const Home: NextPage = () => {
                 <Navbar />
                 <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-4">
-                        <p className="leading-loose md:leading-relaxed  text-3xl md:text-5xl md:text-left font-semibold w-full md:w-4/5">
+                        <p className="text-3xl md:text-6xl md:text-left font-semibold w-full md:w-4/5">
                             {"Africa's"} largest network for <span className="text-primary">{"GenZ’s "}</span> in tech
                         </p>
 
@@ -35,7 +33,7 @@ const Home: NextPage = () => {
                         <img src="/images/left-quote.png" alt="" className="w-14 h-14 md:w-24 md:h-24 self-start" />
                         <div className="md:w-3/5">
                             <h1 className="uppercase text-primary font-semibold">WE ARE GENZTECHIES</h1>
-                            <p className="text-primary-dark font-semibold">Where GenZ developers, founders, designers, and techies across Africa connect, learn, and discover life-changing opportunites.</p>
+                            <p className="text-primary-dark font-semibold md:text-2xl">Where GenZ developers, founders, designers, and techies across Africa connect, learn, and discover life-changing opportunites.</p>
                         </div>
                         <img src="/images/right-quote.png" alt="" className="w-14 h-14 md:w-24 md:h-24 self-end" />
                     </div>
@@ -49,7 +47,7 @@ const Home: NextPage = () => {
                         <h1 className="text-white text-3xl md:text-4xl text-center">Spread the super power with us</h1>
                         <p className="text-white text-center text-lg">Aside from building and launching things, we take pride in bridging the gaps in the tech in Africa through workshops, hackathons, events, mentorship programs, and more…</p>
                     </div>
-                    <div className={`grid grid-cols-1 md:grid-cols-3 gap-5 w-full`}>
+                    <div className={`grid grid-cols-1 md:grid-cols-3 gap-5 w-full pb-14`}>
                         <div className={`flex flex-col items-start space-y-5`}>
                             <Image src="/images/membership.png" alt="Membership Icon" width={100} height={100} />
                             <h1 className="text-2xl font-bold text-white">Membership</h1>
@@ -88,19 +86,19 @@ const Home: NextPage = () => {
             </section>
             {/* Features section ends */}
             {/* Supporters section starts */}
-            <section className="container min-h-screen py-10">
+            <section className="container min-h-screen space-y-10 py-20 flex flex-col justify-around">
                 <h1 className="font-bold text-2xl md:text-4xl text-black text-center">Some of our amazing supporters</h1>
-                <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-start gap-5 w-full py-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-start gap-16 w-full py-10">
                     {supporters.map((supporter: string, index: number) => (
                         <div key={supporter} className="flex items-center justify-center w-full">
-                            <Image src={`/images/${supporter}.svg`} height={80} width={300} alt="Supporters Image" />
+                            <Image src={`/images/${supporter}.svg`} height={50} width={250} alt="Supporters Image" />
                         </div>
                     ))}
                 </div>
             </section>
             {/* Supporters section ends */}
             {/* Events section starts */}
-            <section className="bg-slate-100 min-h-screen py-10 md:p-10">
+            <section className="bg-slate-100 min-h-screen py-20 md:px-10">
                 <div className="container w-full">
                     <h1 className="text-tertiary uppercase font-semibold text-lg">OUR INITIATIVES</h1>
                     <p className="text-slate-900 text-3xl font-bold my-5">Find out what GenZtechies are up to</p>
