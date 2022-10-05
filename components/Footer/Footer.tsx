@@ -10,7 +10,7 @@ const Footer = () => {
             <div className=" py-10 container flex flex-col space-y-10 md:flex-row md:space-y-0 justify-between border-b border-gray-200 pb-10">
                 <div className="space-y-10 w-full md:w-1/4">
                     <Logo />
-                    <h1 className="text-gray-500">Genz Techies is nonprofit. Registered as a 501(c)(3) charitable organisation under U.S. federal law (c)</h1>
+                    <h1 className="text-gray-500 text-sm leading-relaxed">GenZtechies is a nonprofit community fiscally sponsored by The Hack Foundation Nonprofit EIN: 81-2908499</h1>
                 </div>
                 <div className="space-y-10">
                     <h1 className="font-bold text-primary text-lg uppercase">quick links</h1>
@@ -30,6 +30,20 @@ const Footer = () => {
                     <div className="flex flex-col space-y-5">
                         <Link href="#">
                             <a className="text-primary gap-2 flex items-center">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.6429 0.928799C17.8905 1.45953 17.0574 1.86546 16.1758 2.13094C15.7025 1.58684 15.0737 1.2012 14.3741 1.02617C13.6746 0.85114 12.9382 0.895167 12.2645 1.1523C11.5908 1.40943 11.0124 1.86726 10.6074 2.46386C10.2024 3.06047 9.99037 3.76706 10 4.48809V5.2738C8.61925 5.3096 7.25104 5.00337 6.01726 4.38236C4.78348 3.76136 3.72243 2.84487 2.92861 1.71451C2.92861 1.71451 -0.214251 8.78594 6.85718 11.9288C5.23902 13.0272 3.31137 13.578 1.35718 13.5002C8.42861 17.4288 17.0715 13.5002 17.0715 4.46451C17.0707 4.24566 17.0497 4.02734 17.0086 3.81237C17.8105 3.02154 18.3764 2.02307 18.6429 0.928799Z"
+                                        fill="currentColor"
+                                        stroke="currentColor"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                    />
+                                </svg>
+                                <span>Twitter</span>
+                            </a>
+                        </Link>
+                        <Link href="#">
+                            <a className="text-primary gap-2 flex items-center">
                                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.3571 1.64258H5.49998C3.33029 1.64258 1.57141 3.40146 1.57141 5.57115V13.4283C1.57141 15.598 3.33029 17.3569 5.49998 17.3569H13.3571C15.5268 17.3569 17.2857 15.598 17.2857 13.4283V5.57115C17.2857 3.40146 15.5268 1.64258 13.3571 1.64258Z" fill="#5D5CD6" stroke="#EFEFFB" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                                     <path
@@ -44,20 +58,6 @@ const Footer = () => {
                                 </svg>
 
                                 <span>Instagram</span>
-                            </a>
-                        </Link>
-                        <Link href="#">
-                            <a className="text-primary gap-2 flex items-center">
-                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M18.6429 0.928799C17.8905 1.45953 17.0574 1.86546 16.1758 2.13094C15.7025 1.58684 15.0737 1.2012 14.3741 1.02617C13.6746 0.85114 12.9382 0.895167 12.2645 1.1523C11.5908 1.40943 11.0124 1.86726 10.6074 2.46386C10.2024 3.06047 9.99037 3.76706 10 4.48809V5.2738C8.61925 5.3096 7.25104 5.00337 6.01726 4.38236C4.78348 3.76136 3.72243 2.84487 2.92861 1.71451C2.92861 1.71451 -0.214251 8.78594 6.85718 11.9288C5.23902 13.0272 3.31137 13.578 1.35718 13.5002C8.42861 17.4288 17.0715 13.5002 17.0715 4.46451C17.0707 4.24566 17.0497 4.02734 17.0086 3.81237C17.8105 3.02154 18.3764 2.02307 18.6429 0.928799Z"
-                                        fill="currentColor"
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    />
-                                </svg>
-                                <span>Twitter</span>
                             </a>
                         </Link>
                         <Link href="#">
@@ -81,7 +81,7 @@ const Footer = () => {
                         </Link>
                         <Link href="#">
                             <a className="text-primary gap-2 flex items-center">
-                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="16px" height="16px">
+                                <svg fill="currentColor" className="w-6 h-6 -ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="16px" height="16px">
                                     <path d="M 11.5 3 C 10.119 3 9 4.119 9 5.5 C 9 6.881 10.119 8 11.5 8 L 14 8 L 14 5.5 C 14 4.119 12.881 3 11.5 3 z M 17.5 3 C 16.119 3 15 4.119 15 5.5 L 15 11.5 C 15 12.881 16.119 14 17.5 14 C 18.881 14 20 12.881 20 11.5 L 20 5.5 C 20 4.119 18.881 3 17.5 3 z M 5.5 9 C 4.119 9 3 10.119 3 11.5 C 3 12.881 4.119 14 5.5 14 L 11.5 14 C 12.881 14 14 12.881 14 11.5 C 14 10.119 12.881 9 11.5 9 L 5.5 9 z M 23.5 9 C 22.119 9 21 10.119 21 11.5 L 21 14 L 23.5 14 C 24.881 14 26 12.881 26 11.5 C 26 10.119 24.881 9 23.5 9 z M 5.5 15 C 4.119 15 3 16.119 3 17.5 C 3 18.881 4.119 20 5.5 20 C 6.881 20 8 18.881 8 17.5 L 8 15 L 5.5 15 z M 11.5 15 C 10.119 15 9 16.119 9 17.5 L 9 23.5 C 9 24.881 10.119 26 11.5 26 C 12.881 26 14 24.881 14 23.5 L 14 17.5 C 14 16.119 12.881 15 11.5 15 z M 17.5 15 C 16.119 15 15 16.119 15 17.5 C 15 18.881 16.119 20 17.5 20 L 23.5 20 C 24.881 20 26 18.881 26 17.5 C 26 16.119 24.881 15 23.5 15 L 17.5 15 z M 15 21 L 15 23.5 C 15 24.881 16.119 26 17.5 26 C 18.881 26 20 24.881 20 23.5 C 20 22.119 18.881 21 17.5 21 L 15 21 z" />
                                 </svg>
 
@@ -94,7 +94,7 @@ const Footer = () => {
                 <div className="space-y-10 w-full md:w-2/5">
                     <h1 className="font-bold text-primary text-xl uppercase">Subscribe to our Newsletter</h1>
                     <div className="flex items-end justify-between space-x-3 w-full">
-                        <TextField label="Email Address" name="email" type="email" placeholder="johndoe@mail.com" containerClass="flex-grow" />
+                        <TextField className="border-primary bg-transparent" label={<span className="text-primary">Email Address</span>} name="email" type="email" placeholder="johndoe@mail.com" containerClass="flex-grow" />
                         <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none">Subscribe</button>
                     </div>
                 </div>
