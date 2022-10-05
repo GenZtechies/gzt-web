@@ -100,13 +100,13 @@ const Footer = () => {
                 </div>
             </div>
             <div className="container flex flex-col md:flex-row justify-between items-center py-8 space-y-4 md:space-y-0">
-                <p className="text-gray-500">GenzTechies | All Rights Reserved — @{new Date().getFullYear()}</p>
+                <p className="text-gray-500">Copyright (c) {new Date().getFullYear()} GenZtechies | All rights reserved.</p>
                 <p className="text-gray-500 space-x-4">
                     <Link href={"/brand"}>
                         <a>Brand Guide</a>
                     </Link>
                     <span>|</span>
-                    <Link href={"press"}>
+                    <Link href={"/press"}>
                         <a>The Press</a>
                     </Link>
                 </p>
