@@ -5,8 +5,32 @@ import Image from "next/image";
 import ChevronRight from "../icons/ChevronRight";
 import Link from "next/link";
 
+import { motion, useInView } from "framer-motion";
+
+const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2
+        }
+    }
+};
+
+const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1
+    }
+};
+
 const supporters: string[] = ["vercel", "paystack", "lazerpay", "filecoin", "sail", "spheron", "ifg", "technext", "klas", "zeddpay", "techsteroid", "devtranet"];
 const Home: NextPage = () => {
+    const ref = React.useRef(null);
+    const inView = useInView(ref);
     return (
         <>
             {/* Hero section starts */}
@@ -14,15 +38,39 @@ const Home: NextPage = () => {
                 <Navbar />
                 <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-4">
-                        <p className="text-3xl md:text-6xl md:text-left font-semibold w-full md:w-4/5">
-                            {"Africa's"} largest network for <span className="text-primary">{"GenZ’s "}</span> in tech
+                        <p className="text-3xl md:text-5xl md:text-left font-semibold w-full md:w-4/5 text-black md:leading-normal leading-normal">
+                            {"Africa's"} largest network for <span className="text-primary text-4xl">Gen-Zs</span> in tech
                         </p>
 
                         <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none text-sm">Join the Community</button>
                     </div>
-                    <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image alt="team members" src={"/images/group-img.png"} width={500} height={550} className="" />
-                    </div>
+                    <motion.div variants={container} initial="hidden" animate="visible" className="w-full md:w-1/2  justify-center items-center grid grid-cols-3 gap-5">
+                        <div className="-mb-28 space-y-3">
+                            <motion.div variants={item}>
+                                <Image alt="team members" src={"/images/img1.png"} width={170} height={245} className="" />
+                            </motion.div>
+                            <motion.div variants={item}>
+                                <Image alt="team members" src={"/images/img2.png"} width={170} height={245} className="" />
+                            </motion.div>
+                        </div>
+                        <div className="space-y-3">
+                            <motion.div variants={item}>
+                                <Image alt="team members" src={"/images/img3.png"} width={170} height={245} className="" />
+                            </motion.div>
+                            <motion.div variants={item}>
+                                <Image alt="team members" src={"/images/img4.png"} width={170} height={245} className="" />
+                            </motion.div>
+                        </div>
+                        <div className="-mb-28 space-y-3">
+                            <motion.div variants={item}>
+                                <Image alt="team members" src={"/images/img5.png"} width={170} height={245} className="" />
+                            </motion.div>
+                            <motion.div variants={item}>
+                                <Image alt="team members" src={"/images/img6.png"} width={170} height={245} className="" />
+                            </motion.div>
+                        </div>
+                        {/* <Image alt="team members" src={"/images/group-img.png"} width={500} height={550} className="" /> */}
+                    </motion.div>
                 </div>
             </main>
             {/* Hero section ends */}
@@ -41,40 +89,40 @@ const Home: NextPage = () => {
             </section>
             {/* Mission section ends */}
             {/* Features section starts */}
-            <section className="bg-primary min-h-screen -mt-32 md:-mt-0 flex flex-col py-10">
+            <section className="bg-primary min-h-screen -mt-32 md:-mt-0 flex flex-col py-16">
                 <div className="container pt-[20vh] min-h-full flex flex-col  flex-grow space-y-16">
                     <div className="space-y-2 flex flex-col justify-center">
-                        <h1 className="text-white text-3xl md:text-4xl text-center">Spread the super power with us</h1>
+                        <h1 className="text-white text-3xl md:text-4xl text-center font-bold">Spread the super power with us</h1>
                         <p className="text-white text-center text-lg">Aside from building and launching things, we take pride in bridging the gaps in the tech in Africa through workshops, hackathons, events, mentorship programs, and more…</p>
                     </div>
-                    <div className={`grid grid-cols-1 md:grid-cols-3 gap-5 w-full pb-14`}>
-                        <div className={`flex flex-col items-start space-y-5`}>
+                    <div className={`grid grid-cols-1 md:grid-cols-3 gap-5 w-full pb-14 md:divide-x`}>
+                        <div className={`flex flex-col items-start space-y-5 pl-5`}>
                             <Image src="/images/membership.png" alt="Membership Icon" width={100} height={100} />
                             <h1 className="text-2xl font-bold text-white">Membership</h1>
                             <p className="text-primary-light text-sm">Collaborate with young makers, developers, innovators, hackers, and founders now.</p>
-                            <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2">
+                            <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2 rounded-2xl">
                                 Join Us
                                 <span className="bg-primary-light p-2 rounded-full text-white bg-opacity-40">
                                     <ChevronRight className="opacity-100" />
                                 </span>
                             </button>
                         </div>
-                        <div className={`flex flex-col items-start space-y-5`}>
+                        <div className={`flex flex-col items-start space-y-5 pl-5`}>
                             <Image src="/images/partnership.png" alt="Parnership Icon" width={100} height={100} />
                             <h1 className="text-2xl font-bold text-white">Partner With Us</h1>
                             <p className="text-primary-light text-sm">Get involved in some of our initiatives either as a sponsor or a partner.</p>
-                            <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2">
+                            <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2 rounded-2xl">
                                 Partner
                                 <span className="bg-primary-light p-2 rounded-full text-white bg-opacity-40">
                                     <ChevronRight className="opacity-100" />
                                 </span>
                             </button>
                         </div>
-                        <div className={`flex flex-col items-start space-y-5`}>
+                        <div className={`flex flex-col items-start space-y-5 pl-5`}>
                             <Image src="/images/support.png" alt="Support Icon" width={100} height={100} />
                             <h1 className="text-2xl font-bold text-white">Support Us</h1>
                             <p className="text-primary-light text-sm">Help us further our cause with a tax-deductible donation, every $1 goes a long way.</p>
-                            <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2">
+                            <button className="btn btn-ghost border border-primary-light  text-primary-light hover:bg-transparent hover:border hover:border-primary-light gap-2 rounded-2xl">
                                 Support
                                 <span className="bg-primary-light p-2 rounded-full text-white bg-opacity-40">
                                     <ChevronRight className="opacity-100" />
@@ -86,22 +134,26 @@ const Home: NextPage = () => {
             </section>
             {/* Features section ends */}
             {/* Supporters section starts */}
-            <section className="container min-h-screen space-y-10 py-20 flex flex-col justify-around">
+
+            <section ref={ref} className="container min-h-screen space-y-10 py-20 flex flex-col justify-around">
                 <h1 className="font-bold text-2xl md:text-4xl text-black text-center">Some of our amazing supporters</h1>
-                <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-start gap-16 w-full py-10">
-                    {supporters.map((supporter: string, index: number) => (
-                        <div key={supporter} className="flex items-center justify-center w-full">
-                            <Image src={`/images/${supporter}.svg`} height={50} width={250} alt="Supporters Image" />
-                        </div>
-                    ))}
-                </div>
+                {inView && (
+                    <motion.div className="grid grid-cols-1 md:grid-cols-3 justify-center items-start gap-16 w-full py-10">
+                        {supporters.map((supporter: string, index: number) => (
+                            <motion.div variants={item} key={supporter} className="flex items-center justify-center w-full">
+                                <Image src={`/images/${supporter}.svg`} height={50} width={250} alt="Supporters Image" />
+                            </motion.div>
+                        ))}
+                    </motion.div>
+                )}
             </section>
+
             {/* Supporters section ends */}
             {/* Events section starts */}
             <section className="bg-slate-100 min-h-screen py-20 md:px-10">
                 <div className="container w-full">
                     <h1 className="text-tertiary uppercase font-semibold text-lg">OUR INITIATIVES</h1>
-                    <p className="text-slate-900 text-3xl font-bold my-5">Find out what GenZtechies are up to</p>
+                    <p className="text-primary-dark text-3xl md:text-[40px] font-bold my-5 md:w-1/2">Find out what GenZtechies are up to</p>
                     <div className="w-full h-screen flex flex-col md:flex-row justify-between flex-wrap">
                         <div className="relative h-[60%] md:h-4/5 w-full md:w-8/12 overflow-hidden rounded-3xl">
                             <Image src="/images/hackfest2022.png" layout="fill" className="object-cover" alt="Hackfest 2022" />
