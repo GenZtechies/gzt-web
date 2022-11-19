@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="space-y-10">
                     <h1 className="font-bold text-primary text-lg uppercase">Connect</h1>
                     <div className="flex flex-col space-y-5">
-                        <Link href="#">
+                        <Link href="https://twitter.com/genztechies">
                             <a className="text-primary gap-2 flex items-center">
                                 <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -42,7 +42,7 @@ const Footer = () => {
                                 <span>Twitter</span>
                             </a>
                         </Link>
-                        <Link href="#">
+                        <Link href="https://www.instagram.com/genztechies/">
                             <a className="text-primary gap-2 flex items-center">
                                 <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.3571 1.64258H5.49998C3.33029 1.64258 1.57141 3.40146 1.57141 5.57115V13.4283C1.57141 15.598 3.33029 17.3569 5.49998 17.3569H13.3571C15.5268 17.3569 17.2857 15.598 17.2857 13.4283V5.57115C17.2857 3.40146 15.5268 1.64258 13.3571 1.64258Z" fill="#5D5CD6" stroke="#EFEFFB" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <span>Instagram</span>
                             </a>
                         </Link>
-                        <Link href="#">
+                        <Link href="https://linkedin.com/company/genztechies">
                             <a className="text-primary gap-2 flex items-center">
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_302_377)">

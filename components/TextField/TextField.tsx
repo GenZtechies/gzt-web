@@ -2,6 +2,7 @@ import * as React from "react";
 
 export interface TextFieldTypes extends React.HTMLProps<HTMLInputElement> {
     containerClass?: string;
+    label?: string | React.ReactNode | any;
 }
 
 const TextField = ({ containerClass, className, label, ...props }: TextFieldTypes) => {

@@ -91,7 +91,7 @@ const Contact = () => {
                                             <div className="flex flex-col space-y-2">
                                                 <span className="text-primary-light text-sm">Twitter</span>
                                                 <span className="text-white">
-                                                    <Link href={"https://twitter.com/GenZtechies"}>
+                                                    <Link href={"https://twitter.com/genztechies"}>
                                                         <a>GenZtechies</a>
                                                     </Link>
                                                 </span>
@@ -116,7 +116,7 @@ const Contact = () => {
                                             <div className="flex flex-col space-y-2">
                                                 <span className="text-primary-light text-sm">Instgram</span>
                                                 <span className="text-white">
-                                                    <Link href={"https://instgram.com/GenZtechies"}>
+                                                    <Link href={"https://www.instagram.com/genztechies/"}>
                                                         <a>GenZtechies</a>
                                                     </Link>
                                                 </span>
@@ -141,7 +141,7 @@ const Contact = () => {
                                             <div className="flex flex-col space-y-2">
                                                 <span className="text-primary-light text-sm">LinkedIn</span>
                                                 <span className="text-white">
-                                                    <Link href={"https://linkedin.com/GenZtechies"}>
+                                                    <Link href={"https://linkedin.com/company/genztechies"}>
                                                         <a>GenZtechies</a>
                                                     </Link>
                                                 </span>
