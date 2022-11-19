@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full min-h-[90vh]">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left space-y-4">
                         <p className="text-3xl md:text-5xl md:text-left font-semibold w-full md:w-4/5 text-black md:leading-normal leading-normal">
-                            {"Africa's"} largest network for <span className="text-primary text-4xl">Gen-Zs</span> in tech
+                            {"Africa's"} largest network for <span className="text-primary md:text-4xl">Gen-Zs</span> in tech
                         </p>
 
                         <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none text-sm">Join the Community</button>
