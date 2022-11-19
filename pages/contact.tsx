@@ -5,6 +5,13 @@ import React from "react";
 import { Navbar, QuestionsSection, TextField } from "../components";
 
 const Contact = () => {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const form: any = event.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        console.log(data);
+    };
     return (
         <>
             {/* Hero starts here */}
@@ -26,20 +33,24 @@ const Contact = () => {
                 <div className="container grid grid-cols-1 lg:grid-cols-3 min-h-screen justify-between items-start gap-8">
                     <div className="col-span-2">
                         <h1 className="text-3xl">Send a Message.</h1>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                            <TextField name="firstName" label="First Name" placeholder="First Name" containerClass="col-span-2 md:col-span-1" />
-                            <TextField name="lastName" label="Last Name" placeholder="Last Name" containerClass="col-span-2 md:col-span-1" />
-                            <TextField name="email" type="email" label="Email" placeholder="Email" containerClass="col-span-2 md:col-span-1" />
-                            <TextField name="phone" type="number" label="Phone" placeholder="Phone" containerClass="col-span-2 md:col-span-1" />
-                            <TextField name="subject" label="Subject" placeholder="Subject" containerClass="col-span-2" />
-                            <div className="form-control col-span-2 ">
-                                <label className="label">
-                                    <span className="label-text">Message</span>
-                                </label>
-                                <textarea className="textarea textarea-bordered h-32 focus:outline-none" placeholder="Message"></textarea>
+                        <form onSubmit={handleSubmit}>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                                <TextField required name="firstName" label="First Name" placeholder="First Name" containerClass="col-span-2 md:col-span-1" />
+                                <TextField name="lastName" label="Last Name" placeholder="Last Name" containerClass="col-span-2 md:col-span-1" />
+                                <TextField required name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" label="Email" placeholder="Email" containerClass="col-span-2 md:col-span-1" />
+                                <TextField name="phone" type="number" label="Phone" placeholder="Phone" containerClass="col-span-2 md:col-span-1" />
+                                <TextField name="subject" label="Subject" placeholder="Subject" containerClass="col-span-2" />
+                                <div className="form-control col-span-2 ">
+                                    <label className="label">
+                                        <span className="label-text">Message</span>
+                                    </label>
+                                    <textarea required name="message" className="textarea textarea-bordered h-32 focus:outline-none" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none w-fit px-8">
+                                    Send Message
+                                </button>
                             </div>
-                            <button className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none w-fit px-8">Send Message</button>
-                        </div>
+                        </form>
                     </div>
                     <div className="w-full col-span-2 md:col-span-1">
                         <div className="p-5 h-full bg-[url('/images/img-contact.svg')] bg-cover bg-center rounded-xl min-h-[523px] space-y-5">

@@ -9,10 +9,17 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { Footer, Join, Loading } from "../components";
 
+import AOS from "aos";
+
 function MyApp({ Component, pageProps }: AppProps) {
     const [queryClient] = React.useState(() => new QueryClient({ defaultOptions: { queries: { retry: false, refetchOnWindowFocus: false } } }));
 
     const router = useRouter();
+
+    React.useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     return (
         <>

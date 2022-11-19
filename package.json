@@ -13,6 +13,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.2.3",
     "@tanstack/react-query-devtools": "^4.2.3",
+    "aos": "^2.3.4",
     "axios": "^0.27.2",
     "cookies-next": "^2.1.1",
     "daisyui": "^2.24.0",
@@ -24,6 +25,7 @@
     "react-toastify": "^9.0.8"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/node": "18.7.14",
     "@types/react": "18.0.18",
     "cssnano": "^5.1.13",
