@@ -4,14 +4,14 @@
 
 # General Information
 
-> GenZTechies was created by Gen Z's who have a strong passion for technology. We strive
+> GenZTechies was created by Gen-Zs who have a strong passion for technology. We strive
 > to use the tool of technology to make impact bit by bit by creating indigenous solutions
 > to problems, improving existing projects and helping each other.
 >
-> Our main aim is to connect Gen Z's in Tech across Africa to
+> Our main aim is to connect Gen-Zs in Tech across Africa to
 > share new ideas, accelerate innovation and get access to opportunities.
 >
-> In summary, we are Gen Z's! but with a tint of class, passion and determination for
+> In summary, we are Gen-Zs! but with a tint of class, passion and determination for
 > great things.
 
 # Project - Website

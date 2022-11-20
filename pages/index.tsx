@@ -16,7 +16,7 @@ const Home: NextPage = () => {
                     <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 md:py-10 gap-10">
                         <div className="w-full md:w-1/2">
                             <h1 className="text-neutral-900 text-4xl md:text-6xl leading-10 capitalize font-bold my-5" data-aos="fade-up">
-                                Africa's largest network for <span className="text-primary">Gen Z's</span> in tech.
+                                Africa's largest network for <span className="text-primary">Gen-Zs</span> in tech.
                             </h1>
                             <Link href="https://linktr.ee/genztechies" target="_blank" className="btn btn-wide bg-primary hover:bg-primary border-none text-white animate-bounce">
                                 Join the community
