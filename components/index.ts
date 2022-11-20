@@ -1,8 +1,9 @@
-export { default as Card } from "./Card";
-export { default as Navbar } from "./Navbar";
-export { default as Loading } from "./Loading";
-export { default as Join } from "./Join";
-export { default as PressCard } from "./PressCard";
-export { default as QuestionsSection } from "./QuestionsSection";
-export { default as TextField } from "./TextField";
+// All components must be re-exported from this file.
+
 export { default as Footer } from "./Footer";
+export { default as Loading } from "./Loading";
+export { default as FaqAccordion } from "./FaqAccordion";
+export { default as TopNavigationBar } from "./TopNavigationBar";
+
+// Icons
+export { default as ChevronRightIcon } from "./icons/ChevronRight";

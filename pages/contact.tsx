@@ -1,66 +1,116 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { toast } from "react-toastify";
+import { useMutation } from "@tanstack/react-query";
+import axios, { AxiosError, AxiosResponse } from "axios";
 
-import { Navbar, QuestionsSection, TextField } from "../components";
+import { FaqAccordion, Footer, TopNavigationBar } from "../components";
 
-const Contact = () => {
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        const form: any = event.target;
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
-        console.log(data);
+import type { NextPage } from "next";
+
+const Contact: NextPage = () => {
+    const { isLoading, mutate } = useMutation((context: any) => axios.post("/api/contact", context), {
+        onSuccess: async (response: AxiosResponse) => {
+            // Clear form
+            (document.getElementById("contactForm") as any).reset();
+
+            return toast.success("Message sent");
+        },
+        onError: (error: AxiosError<any>) => {
+            // return toast.error(error.response ? error.response.data.error : error.message);
+            return toast.error("An error occured sending message");
+        }
+    });
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        const formData = new FormData(e.target as HTMLFormElement);
+        const formDataToJSON = Object.fromEntries(formData);
+
+        mutate(formDataToJSON);
     };
+
     return (
         <>
-            {/* Hero starts here */}
-            <main className="flex flex-col justify-between items-center h-fit w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
-                <Navbar />
-                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full">
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
-                        <h1 className="text-primary md:text-left md:text-xl">Get In Touch</h1>
-                        <p className="text-3xl md:text-6xl md:text-left font-semibold">Got any questions or concerns? </p>
+            <TopNavigationBar />
+
+            <main>
+                <section className="flex flex-col items-center w-screen bg-[url('/assets/images/general-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
+                    <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 pb-20 md:py-10 gap-10">
+                        <div className="w-full md:w-1/2">
+                            <p className="text-primary text-xl uppercase font-bold my-2">Get In Touch</p>
+                            <h1 className="text-neutral-900 text-3xl md:text-5xl leading-10 font-bold my-5" data-aos="fade-up">
+                                Got any questions or concerns?
+                            </h1>
+                        </div>
+                        <div className="flex justify-center items-center mx-auto">
+                            <Image alt="team members" src={require("../public/assets/images/contact-hero.png")} placeholder="blur" width={400} height={450} data-aos="zoom-in-right" />
+                        </div>
                     </div>
-                    <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image alt="team members" src={"/images/hero-contact.svg"} width={400} height={450} className="" />
-                    </div>
-                </div>
-            </main>
-            {/* Hero ends here */}
-            {/* Form  starts here */}
-            <section className="bg-light py-10">
-                <div className="container grid grid-cols-1 lg:grid-cols-3 min-h-screen justify-between items-start gap-8">
-                    <div className="col-span-2">
-                        <h1 className="text-3xl">Send a Message.</h1>
-                        <form onSubmit={handleSubmit}>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-                                <TextField required name="firstName" label="First Name" placeholder="First Name" containerClass="col-span-2 md:col-span-1" />
-                                <TextField name="lastName" label="Last Name" placeholder="Last Name" containerClass="col-span-2 md:col-span-1" />
-                                <TextField required name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" type="email" label="Email" placeholder="Email" containerClass="col-span-2 md:col-span-1" />
-                                <TextField name="phone" type="number" label="Phone" placeholder="Phone" containerClass="col-span-2 md:col-span-1" />
-                                <TextField name="subject" label="Subject" placeholder="Subject" containerClass="col-span-2" />
-                                <div className="form-control col-span-2 ">
-                                    <label className="label">
-                                        <span className="label-text">Message</span>
-                                    </label>
-                                    <textarea required name="message" className="textarea textarea-bordered h-32 focus:outline-none" placeholder="Message"></textarea>
-                                </div>
-                                <button type="submit" className="btn bg-primary hover:opacity-80 hover:bg-primary text-white border-none w-fit px-8">
-                                    Send Message
-                                </button>
+                </section>
+
+                <section className="flex flex-col items-center bg-slate-100 p-5">
+                    <div className="w-full max-w-7xl py-10">
+                        <div className="flex flex-col md:flex-row justify-between gap-10">
+                            <div className="w-full">
+                                <h2 className="text-neutral-900 text-3xl font-normal my-5">Send us a Message.</h2>
+
+                                <form className="my-5 space-y-3" id="contactForm" onSubmit={handleSubmit}>
+                                    <div>
+                                        <label htmlFor="fullName" className="label">
+                                            <span className="label-text text-base">Full Name</span>
+                                        </label>
+                                        <input type="text" name="fullName" placeholder="John Doe" className="input input-bordered rounded focus:border-primary w-full" required />
+                                    </div>
+
+                                    <div>
+                                        <label htmlFor="phoneNumber" className="label">
+                                            <span className="label-text text-base">Phone Number</span>
+                                        </label>
+                                        <input type="text" name="phoneNumber" placeholder="+23412345678" className="input input-bordered rounded focus:border-primary w-full" required />
+                                    </div>
+
+                                    <div>
+                                        <label htmlFor="email" className="label">
+                                            <span className="label-text text-base">Email Address</span>
+                                        </label>
+                                        <input type="email" name="email" placeholder="genz@mail.com" className="input input-bordered rounded focus:border-primary w-full" required />
+                                    </div>
+
+                                    <div>
+                                        <label htmlFor="subject" className="label">
+                                            <span className="label-text text-base">Subject</span>
+                                        </label>
+                                        <select name="subject" defaultValue="" className="select select-bordered rounded focus:border-primary w-full" required>
+                                            <option value="">Choose a subject</option>
+                                            <option value="General Enquiries">General Enquiries</option>
+                                            <option value="Sponsorship / Partnership">Sponsorship / Partnership</option>
+                                            <option value="Other">Other Reason</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label htmlFor="message" className="label">
+                                            <span className="label-text text-base">Message</span>
+                                        </label>
+                                        <textarea name="message" placeholder="I love your community so much, I want to give you $500,000 and...." className="textarea textarea-bordered rounded focus:border-primary w-full" required />
+                                    </div>
+
+                                    <button type="submit" disabled={isLoading} className={["btn btn-block rounded bg-primary hover:bg-primary border-none text-white no-animation", isLoading && "loading"].join(" ")}>
+                                        Send Message
+                                    </button>
+                                </form>
                             </div>
-                        </form>
-                    </div>
-                    <div className="w-full col-span-2 md:col-span-1">
-                        <div className="p-5 h-full bg-[url('/images/img-contact.svg')] bg-cover bg-center rounded-xl min-h-[523px] space-y-5">
-                            <h1 className="text-white text-2xl font-semibold">Contact Information</h1>
-                            <p className="text-white text-base">Fill up the form and our team will get back to you within 24 hours</p>
-                            <div>
+
+                            <div className="md:w-2/3 rounded-xl bg-[url('/assets/images/contact-side-info-bg.png')] bg-cover bg-center bg-no-repeat space-y-5 p-8">
+                                <h2 className="text-white text-3xl font-bold my-2">Contact Information</h2>
+
+                                <p className="text-white text-base my-1">Fill up the form and our team will get back to you within 24 hours</p>
+
                                 <ul className="space-y-8">
-                                    {/* Email Link */}
-                                    <li className="gap-2 ">
-                                        <div className="flex items-center space-x-3">
+                                    <Link href={"mailto:hello@genztechies.com"} className="list-item">
+                                        <div className="flex items-center gap-4">
                                             <div className="p-3 border border-white rounded-full w-fit">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#D6D6F5" strokeLinecap="round" strokeLinejoin="round" />
@@ -68,18 +118,14 @@ const Contact = () => {
                                                 </svg>
                                             </div>
                                             <div className="flex flex-col space-y-2">
-                                                <span className="text-primary-light text-sm">Email</span>
-                                                <span className="text-white">
-                                                    <Link href={"mailto:hello@genztechies.com"}>
-                                                        <a>hello@genztechies.com</a>
-                                                    </Link>
-                                                </span>
+                                                <span className="text-primary-light text-base">Email</span>
+                                                <span className="text-white text-lg">hello@genztechies.com</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    {/* Twitter Link */}
-                                    <li className="gap-2 ">
-                                        <div className="flex items-center space-x-3">
+                                    </Link>
+
+                                    <Link href="https://twitter.com/genztechies" target="_blank" className="list-item">
+                                        <div className="flex items-center gap-4">
                                             <div className="p-3 border border-white rounded-full w-fit">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -89,18 +135,14 @@ const Contact = () => {
                                                 </svg>
                                             </div>
                                             <div className="flex flex-col space-y-2">
-                                                <span className="text-primary-light text-sm">Twitter</span>
-                                                <span className="text-white">
-                                                    <Link href={"https://twitter.com/genztechies"}>
-                                                        <a>GenZtechies</a>
-                                                    </Link>
-                                                </span>
+                                                <span className="text-primary-light text-base">Twitter</span>
+                                                <span className="text-white text-lg">GenZtechies</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    {/* Instagram Link */}
-                                    <li className="gap-2 ">
-                                        <div className="flex items-center space-x-3">
+                                    </Link>
+
+                                    <Link href="https://www.instagram.com/genztechies" target="_blank" className="list-item">
+                                        <div className="flex items-center gap-4">
                                             <div className="p-3 border border-white rounded-full w-fit">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z" stroke="#D6D6F5" strokeLinecap="round" strokeLinejoin="round" />
@@ -114,18 +156,14 @@ const Contact = () => {
                                                 </svg>
                                             </div>
                                             <div className="flex flex-col space-y-2">
-                                                <span className="text-primary-light text-sm">Instgram</span>
-                                                <span className="text-white">
-                                                    <Link href={"https://www.instagram.com/genztechies/"}>
-                                                        <a>GenZtechies</a>
-                                                    </Link>
-                                                </span>
+                                                <span className="text-primary-light text-base">Instgram</span>
+                                                <span className="text-white text-lg">GenZtechies</span>
                                             </div>
                                         </div>
-                                    </li>
-                                    {/* LinkedIn Link */}
-                                    <li className="gap-2 ">
-                                        <div className="flex items-center space-x-3">
+                                    </Link>
+
+                                    <Link href="https://linkedin.com/company/genztechies" target="_blank" className="list-item">
+                                        <div className="flex items-center gap-4">
                                             <div className="p-3 border border-white rounded-full w-fit">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path
@@ -139,26 +177,38 @@ const Contact = () => {
                                                 </svg>
                                             </div>
                                             <div className="flex flex-col space-y-2">
-                                                <span className="text-primary-light text-sm">LinkedIn</span>
-                                                <span className="text-white">
-                                                    <Link href={"https://linkedin.com/company/genztechies"}>
-                                                        <a>GenZtechies</a>
-                                                    </Link>
-                                                </span>
+                                                <span className="text-primary-light text-base">LinkedIn</span>
+                                                <span className="text-white text-lg">GenZtechies</span>
                                             </div>
                                         </div>
-                                    </li>
+                                    </Link>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            {/* Form  ends here */}
-            {/* Questions Starts here */}
-            <section className="bg-light py-10">
-                <QuestionsSection />
-            </section>
+                </section>
+
+                <section className="flex flex-col items-center bg-white p-5">
+                    <div className="w-full max-w-5xl py-10">
+                        <h2 className="text-center text-neutral-900 text-4xl md:text-5xl font-bold my-2">Maybe we can answer your question?</h2>
+
+                        <div className="grid grid-cols-1 pt-10">
+                            {[
+                                { question: "What is GenZtechies all about?", answer: "Africa’s largest network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." },
+                                { question: "How can i be a part of GenZtechies", answer: "" },
+                                { question: "What does GenZtechies Do ?", answer: "" },
+                                { question: "What are the perks of being a GenZtechie ?", answer: "" },
+                                { question: "Can I partner with GenZtechies ?", answer: "" },
+                                { question: "Can I sponsor with GenZtechies ?", answer: "" }
+                            ].map((faq, index) => (
+                                <FaqAccordion key={index} question={faq.question} answer={faq.answer} />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <Footer />
         </>
     );
 };

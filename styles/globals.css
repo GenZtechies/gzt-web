@@ -3,20 +3,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Specify default font below */
-@layer base {
-    html {
-        font-family: "Sora", sans-serif;
-    }
-}
+@import url("aos/dist/aos.css");
+@import url("react-toastify/dist/ReactToastify.css");
 
-html,
-body {
-    overflow-x: hidden;
+@layer base {
+    /* Specify default font below */
+    html {
+        font-family: "DM Sans", sans-serif;
+    }
+
+    /* Remove daisy ui outline on form elements */
+    .input:focus,
+    .select:focus,
+    .textarea:focus,
+    .file-input:focus {
+        @apply outline-0 !important;
+    }
 }
 
 @layer components {
     .btn {
-            @apply capitalize
-        }
+        @apply capitalize;
+    }
 }

@@ -1,9 +1,16 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
     mode: "jit",
-    content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+    content: [
+        // Break line
+        "./app/**/*.{js,ts,jsx,tsx}",
+        "./pages/**/*.{js,ts,jsx,tsx}",
+        "./components/**/*.{js,ts,jsx,tsx}"
+    ],
     theme: {
         extend: {
             colors: {
+                // Add color schemes
                 primary: "#5D5CD6",
                 "primary-dark": "#151452",
                 "primary-light": "#D6D6F5",
@@ -12,24 +19,11 @@ module.exports = {
                 light: "#F7F7FD",
                 lighter: "#D2D4D7",
                 warning: "#FEC658"
-
             },
             fontFamily: {
                 // Add custom fonts
             }
-        },
-        container: {
-            center: true,
-            padding: {
-                DEFAULT: '1rem',
-                sm: '3rem',
-                lg: "5rem",
-                xl: '5rem',
-                '2xl': '9rem'
-
-
-            },
-        },
+        }
     },
     plugins: [require("daisyui")],
     daisyui: {
@@ -37,7 +31,7 @@ module.exports = {
         themes: false,
         base: true,
         utils: true,
-        logs: true,
+        logs: false,
         rtl: false,
         prefix: "",
         darkTheme: "dark"

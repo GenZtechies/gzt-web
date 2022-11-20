@@ -1,58 +1,69 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
-import { EventsType } from "../components/Card/Card";
-import { Navbar, Card } from "../components";
+import { Footer, TopNavigationBar } from "../components";
 
-const events: EventsType[] = [
-    {
-        image: "/images/hackfest2022.png",
-        title: "#GenZHackfest2022",
-        subtitle: "Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!"
-    },
-    {
-        image: "/images/paystacktour.png",
-        title: "#OfficeTourWIthGenZtechies",
-        subtitle: "At least once every month, interested members of the community will be selected for an office tour to tech companies across the country. (limited spots). It's all about learning, having fun, and networking. We'll have a tour view of the office and chat with the founders and core team members to learn about the day-to-day processes in the company"
-    },
-    {
-        image: "/images/hackfest2022.png",
-        title: "AMA (Ask Me Anything)",
-        subtitle: "Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!"
-    },
-    {
-        image: "/images/paystacktour.png",
-        title: "Gen-Z Meet",
-        subtitle: "At least once every month, interested members of the community will be selected for an office tour to tech companies across the country. (limited spots). It's all about learning, having fun, and networking. We'll have a tour view of the office and chat with the founders and core team members to learn about the day-to-day processes in the company"
-    }
-];
+import type { NextPage } from "next";
 
-const Initiatives = () => {
+const Initiatives: NextPage = () => {
     return (
         <>
-            {/* Hero starts here */}
-            <main className="flex flex-col justify-between items-center h-fit w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
-                <Navbar />
-                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full h-fit">
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
-                        <h1 className="text-primary md:text-3xl">Events & Initiatives</h1>
-                        <p className="text-3xl md:text-5xl md:text-left font-semibold">Projects, events and activities we work on as a community</p>
+            <TopNavigationBar />
+
+            <main>
+                <section className="flex flex-col items-center w-screen bg-[url('/assets/images/general-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
+                    <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 pb-20 md:py-10 gap-10">
+                        <div className="w-full md:w-1/2">
+                            <p className="text-primary text-xl uppercase font-bold my-2">Events & Initiatives</p>
+                            <h1 className="text-neutral-900 text-3xl md:text-5xl leading-10 font-bold my-5" data-aos="fade-up">
+                                Projects, events, and activities we work on as a community
+                            </h1>
+                        </div>
+                        <div className="flex justify-center items-center mx-auto">
+                            <Image alt="team members" src={require("../public/assets/images/initiatives-hero.png")} placeholder="blur" width={400} height={450} data-aos="zoom-in-right" />
+                        </div>
                     </div>
-                    <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image alt="team members" src={"/images/hero-initiatives.svg"} width={400} height={450} className="" />
+                </section>
+
+                <section className="flex flex-col items-center bg-slate-100 p-5">
+                    <div className="w-full max-w-7xl py-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
+                            {[
+                                {
+                                    image: "https://placeimg.com/400/225/arch",
+                                    title: "#GenZHackfest2022",
+                                    description: "Gen Z HackFest 2022 is a three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z-s in tech across Africa. We hosted over 2,500 ambitious Gen-Zs (virtually & in-person) to put their creative and coding skills to test and build solutions to problems in Africa and beyond."
+                                },
+                                {
+                                    image: "https://placeimg.com/400/225/arch",
+                                    title: "#OfficeTourWIthGenZtechies",
+                                    description: "We visit leading tech companies across Africa to learn about their operations and expose GenZtechies to the challenges of developing products for Africa and beyond. Stripe acquired Paystack, an African-based company for $200 million dollars. We were more than excited to be at Paystack's HQ in 2022!"
+                                },
+                                {
+                                    image: "https://placeimg.com/400/225/arch",
+                                    title: "AMA (Ask Me Anything)",
+                                    description: "If GenZtechies aren’t building or launching innovative solutions they’re either featured in the news for raising a million dollars for their new tech startup. AMAs are fun and inspiring, they help us to connect with a GenZ doing something amazing. We get to ask tonnes of about their passion, personal life, and many more."
+                                },
+                                {
+                                    image: "https://placeimg.com/400/225/arch",
+                                    title: "Gen-Z Meet",
+                                    description: "During and post the Covid-19 lockdown, virtual meetings became a thing for everyone. School, work, and a huge part of our lives became virtual. GenZtechies unleashed the hacker in us and spent months building our open-source web conferencing platform serving thousands of users since launch."
+                                }
+                            ].map((initiative, index) => (
+                                <div key={index} data-aos="fade-up">
+                                    <img src={initiative.image} className="w-full aspect-video rounded-2xl" alt="initiative-image" />
+                                    <div className="p-4">
+                                        <h2 className="text-primary text-2xl font-bold my-3">{initiative.title}</h2>
+                                        <p className="text-base font-light">{initiative.description}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
+                </section>
             </main>
-            {/* Hero ends here */}
-            {/* Event cards starts here */}
-            <section className="bg-light py-20">
-                <div className="container grid grid-cols-1 lg:grid-cols-3 min-h-screen justify-items-center justify-center gap-12">
-                    {events.map((evt: EventsType, index: number) => (
-                        <Card key={evt.title} {...evt} />
-                    ))}
-                </div>
-            </section>
-            {/* Event cards ends here */}
+
+            <Footer />
         </>
     );
 };

@@ -1,66 +1,69 @@
-import Image from "next/image";
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
-import { Navbar, PressCard } from "../components";
-import { PressCardType } from "../components/PressCard/PressCard";
+import { ChevronRightIcon, Footer, TopNavigationBar } from "../components";
 
-const events: PressCardType[] = [
-    {
-        image: "/images/hackfest2022.png",
-        title: "What is GenZTechies all about?",
-        subtitle: "We are a Community that connects teen techies accross Nigeria in one place to share opportunites, work on awesome projects and foster quality connections.",
-        tags: ["techcabal"],
-        date: new Date().toDateString()
-    },
-    {
-        image: "/images/paystacktour.png",
-        title: "Blockchain Technology at Gen Z HackFest ",
-        subtitle: "We are a Community that connects teen techies accross Nigeria in one place to share opportunites, work on awesome projects and foster quality connections.",
-        tags: ["blockbuild"],
-        date: new Date().toDateString()
-    },
-    {
-        image: "/images/hackfest2022.png",
-        title: "AMA (Ask Me Anything)",
-        subtitle: "Gen Z HackFest is an annual three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z's in tech on a large scale. It's an event where ambitious Gen Z's come together to put their creative and coding skills to test, build solutions to problems in Africa and showcase what they can do!",
-        tags: ["techcabal"],
-        date: new Date().toDateString()
-    },
-    {
-        image: "/images/paystacktour.png",
-        title: "Gen-Z Meet",
-        subtitle: "At least once every month, interested members of the community will be selected for an office tour to tech companies across the country. (limited spots). It's all about learning, having fun, and networking. We'll have a tour view of the office and chat with the founders and core team members to learn about the day-to-day processes in the company",
-        tags: ["blockbuild"],
-        date: new Date().toDateString()
-    }
-];
+import type { NextPage } from "next";
 
-const Press = () => {
+const Press: NextPage = () => {
     return (
         <>
-            {/* Hero starts here */}
-            <main className="flex flex-col justify-between items-center h-fit w-screen bg-[url('/images/bg-initiatives.svg')]  bg-cover bg-top ">
-                <Navbar />
-                <div className="container flex flex-col md:flex-row justify-around md:justify-between w-full">
-                    <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start space-y-4 text-center md:text-left">
-                        <h1 className="text-primary md:text-xl">Press and Media</h1>
-                        <p className="text-3xl md:text-6xl md:text-left font-semibold">Catch the latest buzz from GenZtechies</p>
+            <TopNavigationBar />
+
+            <main>
+                <section className="flex flex-col items-center w-screen bg-[url('/assets/images/general-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
+                    <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 pb-20 md:py-10 gap-10">
+                        <div className="w-full md:w-1/2">
+                            <p className="text-primary text-xl uppercase font-bold my-2">Press and Media</p>
+                            <h1 className="text-neutral-900 text-3xl md:text-5xl leading-10 font-bold my-5" data-aos="fade-up">
+                                Catch the latest buzz from GenZtechies
+                            </h1>
+                        </div>
+                        <div className="flex justify-center items-center mx-auto">
+                            <Image alt="team members" src={require("../public/assets/images/press-hero.png")} placeholder="blur" width={400} height={450} data-aos="zoom-in-right" />
+                        </div>
                     </div>
-                    <div className="w-full md:w-1/2 flex justify-center items-center">
-                        <Image alt="team members" src={"/images/hero-press.svg"} width={400} height={450} className="" />
+                </section>
+
+                <section className="flex flex-col items-center bg-slate-100 p-5">
+                    <div className="w-full max-w-7xl py-10">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
+                            {[
+                                {
+                                    image: "https://placeimg.com/400/225/arch",
+                                    title: "Blockchain Technology at Gen Z HackFest",
+                                    exerpt: "Gen Z HackFest 2022 is a three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z-s in tech across Africa. We hosted over 2,500 ambitious Gen-Zs (virtually & in-person) to put their creative and coding skills to test and build solutions to problems in Africa and beyond.",
+                                    url: "https://google.com"
+                                },
+                                {
+                                    image: "https://placeimg.com/400/225/arch",
+                                    title: "Blockchain Technology at Gen Z HackFest",
+                                    exerpt: "Gen Z HackFest 2022 is a three-day virtual hackathon and a one-day in-person conference aimed to connect Gen Z-s in tech across Africa. We hosted over 2,500 ambitious Gen-Zs (virtually & in-person) to put their creative and coding skills to test and build solutions to problems in Africa and beyond.",
+                                    url: "https://google.com"
+                                }
+                            ].map((press, index) => (
+                                <div key={index} data-aos="fade-up">
+                                    <img src={press.image} className="w-full aspect-video rounded-2xl" alt="press-image" />
+
+                                    <div className="p-4">
+                                        <h2 className="text-primary text-2xl font-bold my-3">{press.title}</h2>
+                                        <p className="text-base font-light">{press.exerpt}</p>
+                                        <Link href={press.url} target="_blank" className="btn bg-primary hover:bg-primary border-none text-white gap-3 my-5">
+                                            Read more
+                                            <span className="bg-primary-light rounded-full text-white bg-opacity-40 p-1">
+                                                <ChevronRightIcon />
+                                            </span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
+                </section>
             </main>
-            {/* Hero ends here */}
-            {/* Event cards starts here */}
-            <section className="bg-light py-10">
-                <div className="container grid grid-cols-1 lg:grid-cols-3 min-h-screen justify-items-center justify-center gap-8">
-                    {events.map((evt: PressCardType, index: number) => (
-                        <PressCard key={evt.title} {...evt} />
-                    ))}
-                </div>
-            </section>
-            {/* Event cards ends here */}
+
+            <Footer />
         </>
     );
 };

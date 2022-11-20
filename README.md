@@ -2,10 +2,6 @@
 
 > GenZTechies (GZT)
 
-# Website
-
-> Check us out at: https://genztechies.com/
-
 # General Information
 
 > GenZTechies was created by Gen Z's who have a strong passion for technology. We strive
@@ -22,11 +18,6 @@
 
 > This is the website that represents the GenZtechies, it contains information about us an
 > organization, our members and our ongoing projects.
-
-# Technologies Used
-
-- NextJS
-- TailWindCSS
 
 # Contact Us
 

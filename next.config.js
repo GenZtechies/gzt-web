@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
     images: {
         domains: ["assets.genztechies.com"]
     },
-    reactStrictMode: true,
     env: {
-        BACKEND_BASE_URL: process.env.BACKEND_BASE_URL || "http://localhost:4000"
+        EMAIL_PASSWORD: process.env.EMAIL_PASSWORD || "12345"
     }
 };
 
