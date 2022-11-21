@@ -29,20 +29,20 @@ const Footer = () => {
         <>
             <section className="flex flex-col items-center bg-white border-y-4 border-dashed p-5">
                 <div className="w-full max-w-6xl py-8">
-                    <div className="grid grid-cols-5 gap-10">
-                        <Link href="/press" className="p-5 m-auto">
+                    <div className="grid grid-cols-3 md:grid-cols-5 gap-10">
+                        <Link href="/press" className="m-auto">
                             <img src="/assets/images/press-logos/1.png" alt="press-logo" data-aos="zoom-in" />
                         </Link>
-                        <Link href="/press" className="p-5 m-auto">
+                        <Link href="/press" className="m-auto">
                             <img src="/assets/images/press-logos/2.png" alt="press-logo" data-aos="zoom-in" />
                         </Link>
-                        <Link href="/press" className="p-5 m-auto">
+                        <Link href="/press" className="m-auto">
                             <img src="/assets/images/press-logos/3.png" alt="press-logo" data-aos="zoom-in" />
                         </Link>
-                        <Link href="/press" className="p-5 m-auto">
+                        <Link href="/press" className="m-auto hidden md:block">
                             <img src="/assets/images/press-logos/1.png" alt="press-logo" data-aos="zoom-in" />
                         </Link>
-                        <Link href="/press" className="p-5 m-auto">
+                        <Link href="/press" className="m-auto hidden md:block">
                             <img src="/assets/images/press-logos/2.png" alt="press-logo" data-aos="zoom-in" />
                         </Link>
                     </div>
