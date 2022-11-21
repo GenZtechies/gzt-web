@@ -26,3 +26,8 @@
         @apply capitalize;
     }
 }
+
+html,
+body {
+    overflow-x: hidden;
+}
