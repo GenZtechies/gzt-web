@@ -27,7 +27,7 @@ const TopNavigationBar = () => {
                         </button>
                     </div>
 
-                    <div className={["lg:flex flex-col lg:flex-row justify-between my-4 lg:my-0 gap-4 lg:gap-16", isMobileNavExpanded ? "flex w-full lg:w-auto" : "hidden"].join(" ")}>
+                    <div className={["lg:flex flex-col lg:flex-row justify-between my-4 lg:my-0 lg:gap-5", isMobileNavExpanded ? "flex w-full lg:w-auto" : "hidden"].join(" ")}>
                         <Link href="/initiatives" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "initiatives" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
                             our initiatives
                         </Link>
