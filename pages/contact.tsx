@@ -189,7 +189,7 @@ const Contact: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-white p-5">
-                    <div className="w-full max-w-5xl py-10">
+                    <div className="w-full max-w-4xl py-10">
                         <h2 className="text-center text-neutral-900 text-4xl md:text-5xl font-bold my-2">Maybe we can answer your question?</h2>
 
                         <div className="grid grid-cols-1 pt-10">
