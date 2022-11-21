@@ -37,7 +37,7 @@ const Contact: NextPage = () => {
 
             <main>
                 <section className="flex flex-col items-center w-screen bg-[url('/assets/images/general-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
-                    <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 pb-20 md:py-10 gap-10">
+                    <div className="flex flex-col md:flex-row items-center w-full max-w-6xl mt-10 pb-20 md:py-10 gap-10">
                         <div className="w-full md:w-1/2">
                             <p className="text-primary text-xl uppercase font-bold my-2">Get In Touch</p>
                             <h1 className="text-neutral-900 text-3xl md:text-5xl leading-10 font-bold my-5" data-aos="fade-up">
@@ -51,7 +51,7 @@ const Contact: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <div className="flex flex-col md:flex-row justify-between gap-10">
                             <div className="w-full">
                                 <h2 className="text-neutral-900 text-3xl font-normal my-5">Send us a Message.</h2>

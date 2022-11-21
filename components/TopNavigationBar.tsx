@@ -10,7 +10,7 @@ const TopNavigationBar = () => {
     return (
         <>
             <nav className="flex flex-col items-center p-5">
-                <div className="m-auto w-full max-w-7xl flex flex-row lg:flex-row flex-wrap justify-between items-center">
+                <div className="m-auto w-full max-w-6xl flex flex-row lg:flex-row flex-wrap justify-between items-center">
                     <div>
                         <Link href="/">
                             <img className="mx-auto h-12 w-auto" src="https://assets.genztechies.com/logo-coloured.svg" alt="genztechies-logo-icon-text" />

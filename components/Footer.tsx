@@ -28,7 +28,7 @@ const Footer = () => {
     return (
         <>
             <section className="flex flex-col items-center bg-white border-y-4 border-dashed p-5">
-                <div className="w-full max-w-7xl py-8">
+                <div className="w-full max-w-6xl py-8">
                     <div className="grid grid-cols-3 gap-10">
                         <Link href="/press" className="p-5 m-auto">
                             <img src="/assets/images/press-logos/1.png" alt="press-logo" data-aos="zoom-in" />
@@ -44,7 +44,7 @@ const Footer = () => {
             </section>
 
             <footer className="flex flex-col items-center bg-slate-100 p-5">
-                <div className="w-full max-w-7xl py-10">
+                <div className="w-full max-w-6xl py-10">
                     <div className="flex flex-col justify-center items-center rounded-2xl bg-[url('/assets/images/footer-cta-bg.png')] bg-cover bg-center bg-no-repeat px-10 py-32 m-auto">
                         <h2 className="max-w-2xl text-center text-white text-2xl md:text-4xl font-bold my-5">Looking to connect with other Gen Z’s in tech across Africa?</h2>
                         <Link href="https://linktr.ee/genztechies" target="_blank" className="btn btn-wide bg-white hover:bg-primary border-none text-primary hover:text-white animate-bounce">

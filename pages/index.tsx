@@ -13,7 +13,7 @@ const Home: NextPage = () => {
 
             <main>
                 <section className="flex flex-col items-center min-h-screen w-screen bg-[url('/assets/images/home-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
-                    <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 md:py-10 gap-10">
+                    <div className="flex flex-col md:flex-row items-center w-full max-w-6xl mt-10 md:py-10 gap-10">
                         <div className="w-full md:w-1/2">
                             <h1 className="text-neutral-900 text-4xl md:text-6xl leading-10 capitalize font-bold my-5" data-aos="fade-up">
                                 Africa's largest network for <span className="text-primary">Gen-Zs</span> in tech.
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-white p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <h2 className="text-center text-neutral-900 text-4xl md:text-5xl font-bold my-2">Some of our amazing supporters</h2>
                         <p className="text-center text-neutral-900 text-lg font-light my-2">Amazing companies that partnered, sponsored & supported us</p>
 
@@ -122,7 +122,7 @@ const Home: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <p className="text-primary text-lg uppercase font-bold my-2">Our Initiatives</p>
                         <h2 className="text-neutral-900 text-3xl md:text-5xl font-bold my-2">Find out what GenZtechies are up to</h2>
 

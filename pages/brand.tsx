@@ -13,7 +13,7 @@ const Brand: NextPage = () => {
 
             <main>
                 <section className="flex flex-col items-center w-screen bg-[url('/assets/images/general-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
-                    <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 pb-20 md:py-10 gap-10">
+                    <div className="flex flex-col md:flex-row items-center w-full max-w-6xl mt-10 pb-20 md:py-10 gap-10">
                         <div className="w-full md:w-1/2">
                             <p className="text-warning text-xl uppercase font-bold my-2">Brand Guidelines</p>
                             <h1 className="text-neutral-900 text-3xl md:text-5xl leading-10 font-bold my-5" data-aos="fade-up">
@@ -27,7 +27,7 @@ const Brand: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <p className="text-primary text-lg uppercase font-bold my-2">Use Case</p>
                         <h2 className="text-neutral-900 text-3xl md:text-5xl font-bold my-2">Genztechies Logo</h2>
                         <p className="text-neutral-900 text-lg font-light my-2">Our logo is our most important brand asset. Use of our logo in the right way is crucial in establishing our brand’s identity.</p>
@@ -47,7 +47,7 @@ const Brand: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <p className="text-primary text-lg uppercase font-bold my-2">Icons</p>
                         <h2 className="text-neutral-900 text-3xl md:text-5xl font-bold my-2">Icon Variation</h2>
 
@@ -66,7 +66,7 @@ const Brand: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <p className="text-primary text-lg uppercase font-bold my-2">Colours</p>
                         <h2 className="text-neutral-900 text-3xl md:text-5xl font-bold my-2">Primary Colors</h2>
 
@@ -88,7 +88,7 @@ const Brand: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <p className="text-primary text-lg uppercase font-bold my-2">Typography</p>
                         <h2 className="text-neutral-900 text-3xl md:text-5xl font-bold my-2">Font Family</h2>
 
@@ -118,7 +118,7 @@ const Brand: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl rounded-2xl bg-primary-light p-10">
+                    <div className="w-full max-w-6xl rounded-2xl bg-primary-light p-10">
                         <div className="grid grid-cols-1 gap-10 py-10">
                             <h2 className="text-neutral-900 text-3xl md:text-5xl font-bold my-2">Use Of Our Brand Materials</h2>
 

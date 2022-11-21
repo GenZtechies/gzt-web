@@ -12,7 +12,7 @@ const Initiatives: NextPage = () => {
 
             <main>
                 <section className="flex flex-col items-center w-screen bg-[url('/assets/images/general-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
-                    <div className="flex flex-col md:flex-row items-center w-full max-w-7xl mt-10 pb-20 md:py-10 gap-10">
+                    <div className="flex flex-col md:flex-row items-center w-full max-w-6xl mt-10 pb-20 md:py-10 gap-10">
                         <div className="w-full md:w-1/2">
                             <p className="text-primary text-xl uppercase font-bold my-2">Events & Initiatives</p>
                             <h1 className="text-neutral-900 text-3xl md:text-5xl leading-10 font-bold my-5" data-aos="fade-up">
@@ -26,7 +26,7 @@ const Initiatives: NextPage = () => {
                 </section>
 
                 <section className="flex flex-col items-center bg-slate-100 p-5">
-                    <div className="w-full max-w-7xl py-10">
+                    <div className="w-full max-w-6xl py-10">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
                             {[
                                 {
