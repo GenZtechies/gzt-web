@@ -27,7 +27,6 @@ const Contact: NextPage = () => {
         e.preventDefault();
         const formData = new FormData(e.target as HTMLFormElement);
         const formDataToJSON = Object.fromEntries(formData);
-
         mutate(formDataToJSON);
     };
 

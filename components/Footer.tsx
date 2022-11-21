@@ -119,13 +119,13 @@ const Footer = () => {
                                     </Link>
                                     <Link href="https://www.facebook.com/genztechies" target="_blank" className="list-item">
                                         <div className="flex gap-2">
-                                            {/* <img src="/assets/images/social-icons/facebook.svg" alt="social-icon" /> */}
+                                            <img src="/assets/images/social-icons/facebook.svg" alt="social-icon" />
                                             Facebook
                                         </div>
                                     </Link>
                                     <Link href="https://youtube.com/@genztechies" target="_blank" className="list-item">
                                         <div className="flex gap-2">
-                                            {/* <img src="/assets/images/social-icons/youtube.svg" alt="social-icon" /> */}
+                                            <img src="/assets/images/social-icons/youtube.svg" alt="social-icon" />
                                             Youtube
                                         </div>
                                     </Link>
