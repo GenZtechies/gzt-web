@@ -56,48 +56,48 @@ const Home: NextPage = () => {
                         <p className="text-center text-white/80 text-lg font-light my-2">Aside from building and launching things, we take pride in bridging the gaps in the tech in Africa through workshops, hackathons, events, mentorship programs, and more…</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-10 md:pt-20">
-                            <div className="space-y-4">
+                            <div className="flex flex-col items-center md:items-start space-y-4">
                                 <img src="/assets/images/membership-icon.svg" alt="membership-icon" className="h-24 aspect-square" data-aos="zoom-in" />
 
                                 <h3 className="text-white text-3xl font-medium my-2" data-aos="fade-right">
                                     Membership
                                 </h3>
 
-                                <p className="text-white/80 text-lg font-thin">Collaborate with young makers, developers, innovators, hackers, and founders now.</p>
+                                <p className="text-center md:text-left text-white/80 text-lg font-thin">Collaborate with young makers, developers, innovators, hackers, and founders now.</p>
 
-                                <Link href="https://linktr.ee/genztechies" target="_blank" className="btn btn-outline bg-transparent hover:bg-transparent border-white hover:border-white text-white gap-3" data-aos="zoom-in">
+                                <Link href="https://linktr.ee/genztechies" target="_blank" className="btn btn-outline bg-transparent hover:bg-transparent border-white hover:border-white text-white w-full md:w-max gap-3" data-aos="zoom-in">
                                     Join Us
                                     <span className="bg-primary-light rounded-full text-white bg-opacity-40 p-1">
                                         <ChevronRightIcon />
                                     </span>
                                 </Link>
                             </div>
-                            <div className="space-y-4">
+                            <div className="flex flex-col items-center md:items-start space-y-4">
                                 <img src="/assets/images/partnership-icon.svg" alt="partnership-icon" className="h-24 aspect-square" data-aos="zoom-in" />
 
                                 <h3 className="text-white text-3xl font-medium my-2" data-aos="fade-right">
                                     Partner With Us
                                 </h3>
 
-                                <p className="text-white/80 text-lg font-thin">Get involved in some of our initiatives either as a sponsor or a partner.</p>
+                                <p className="text-center md:text-left text-white/80 text-lg font-thin">Get involved in some of our initiatives either as a sponsor or a partner.</p>
 
-                                <Link href="/contact" className="btn btn-outline bg-transparent hover:bg-transparent border-white hover:border-white text-white gap-3" data-aos="zoom-in">
+                                <Link href="/contact" className="btn btn-outline bg-transparent hover:bg-transparent border-white hover:border-white text-white w-full md:w-max gap-3" data-aos="zoom-in">
                                     Partner
                                     <span className="bg-primary-light rounded-full text-white bg-opacity-40 p-1">
                                         <ChevronRightIcon />
                                     </span>
                                 </Link>
                             </div>
-                            <div className="space-y-4">
+                            <div className="flex flex-col items-center md:items-start space-y-4">
                                 <img src="/assets/images/support-icon.svg" alt="support-icon" className="h-24 aspect-square" data-aos="zoom-in" />
 
                                 <h3 className="text-white text-3xl font-medium my-2" data-aos="fade-right">
                                     Support Us
                                 </h3>
 
-                                <p className="text-white/80 text-lg font-thin">Help us further our cause with a tax-deductible donation, every $1 goes a long way.</p>
+                                <p className="text-center md:text-left text-white/80 text-lg font-thin">Help us further our cause with a tax-deductible donation, every $1 goes a long way.</p>
 
-                                <Link href="/donate" className="btn btn-outline bg-transparent hover:bg-transparent border-white hover:border-white text-white gap-3" data-aos="zoom-in">
+                                <Link href="/donate" className="btn btn-outline bg-transparent hover:bg-transparent border-white hover:border-white text-white w-full md:w-max gap-3" data-aos="zoom-in">
                                     Support
                                     <span className="bg-primary-light rounded-full text-white bg-opacity-40 p-1">
                                         <ChevronRightIcon />
