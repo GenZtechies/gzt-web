@@ -4,9 +4,13 @@ import Image from "next/image";
 
 import { ChevronRightIcon, Footer, TopNavigationBar } from "../components";
 
+import ReactPlayer from "react-player";
+
 import type { NextPage } from "next";
+import Modal from "../components/Modal";
 
 const Home: NextPage = () => {
+    const [url, setUrl] = React.useState<string>("");
     return (
         <>
             <TopNavigationBar />
@@ -125,23 +129,55 @@ const Home: NextPage = () => {
                     <div className="w-full max-w-6xl py-10">
                         <p className="text-primary text-lg uppercase font-bold my-2">Our Initiatives</p>
                         <h2 className="text-neutral-900 text-3xl md:text-5xl font-bold my-2">Find out what GenZtechies are up to</h2>
-
                         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 py-10">
-                            <div className="md:col-span-3 bg-black p-10" data-aos="fade-down-right"></div>
-                            <div className="md:col-span-2 bg-black p-10" data-aos="fade-down-zoom-in"></div>
-                        </div>
+                            <div className="relative md:col-span-3 overflow-hidden rounded-3xl md:h-96" data-aos="fade-down-right">
+                                <Image src={"/assets/images/hackfest.jpg"} width="0" height="0" sizes="100vw" className="w-full h-auto" alt="Hackfest 2022" />
+                                <div className="absolute top-0 left-0 h-full p-5 flex items-end space-x-3 w-full overflow-hidden bg-gradient-to-t from-black to-transparent">
+                                    <button onClick={() => setUrl("https://www.youtube.com/watch?v=YQwja2nCLnY")} className="btn btn-circle btn-ghost">
+                                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20.5" r="20" fill="white" />
+                                            <path d="M14.4587 12.7775C14.4356 12.0081 15.2542 11.5021 15.9321 11.8669L29.1514 18.979C29.8293 19.3438 29.8582 20.3056 29.2033 20.7103L16.4344 28.6025C15.7795 29.0072 14.9321 28.5513 14.9091 27.7819L14.4587 12.7775Z" fill="#11113E" />
+                                        </svg>
+                                    </button>
+                                    <div className="w-full">
+                                        <h1 className="text-white text-xl truncate w-4/5">Genz Hackfest 2022</h1>
+                                        <p className="text-gray-400 w-4/5 truncate">Genz Hackfest 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="relative md:col-span-2 overflow-hidden rounded-3xl md:h-96" data-aos="fade-down-zoom-in">
+                                <Image src={"/assets/images/paystack-tour.png"} width="0" height="0" sizes="100vw" className="w-full h-auto object-cover" alt="Hackfest 2022" />
+                                <div className="absolute top-0 left-0 h-full p-5 flex items-end space-x-3 w-full overflow-hidden bg-gradient-to-t from-black to-transparent">
+                                    <button onClick={() => setUrl("https://www.youtube.com/watch?v=h7uCgsaYV9E")} className="btn btn-circle btn-ghost">
+                                        <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="20" cy="20.5" r="20" fill="white" />
+                                            <path d="M14.4587 12.7775C14.4356 12.0081 15.2542 11.5021 15.9321 11.8669L29.1514 18.979C29.8293 19.3438 29.8582 20.3056 29.2033 20.7103L16.4344 28.6025C15.7795 29.0072 14.9321 28.5513 14.9091 27.7819L14.4587 12.7775Z" fill="#11113E" />
+                                        </svg>
+                                    </button>
+                                    <div className="w-full">
+                                        <h1 className="text-white text-xl truncate w-4/5">Genz Hackfest 2022</h1>
+                                        <p className="text-gray-400 w-4/5 truncate">Genz Hackfest 2022</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <Link href="/initiatives" className="btn btn-wide bg-primary hover:bg-primary border-none text-white gap-3">
-                            View all initiatives
-                            <span className="bg-primary-light rounded-full text-white bg-opacity-40 p-1">
-                                <ChevronRightIcon />
-                            </span>
-                        </Link>
+                            <Link href="/initiatives" className="btn btn-wide bg-primary hover:bg-primary border-none text-white gap-3">
+                                View all initiatives
+                                <span className="bg-primary-light rounded-full text-white bg-opacity-40 p-1">
+                                    <ChevronRightIcon />
+                                </span>
+                            </Link>
+                        </div>
                     </div>
                 </section>
             </main>
 
             <Footer />
+            <Modal open={Boolean(url)} onClose={() => setUrl("")}>
+                <div className="aspect-video rounded-3xl overflow-hidden flex flex-col items-center justify-center">
+                    <ReactPlayer url={url} />
+                </div>
+            </Modal>
         </>
     );
 };
