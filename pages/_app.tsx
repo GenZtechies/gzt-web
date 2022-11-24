@@ -7,6 +7,8 @@ import { ToastContainer } from "react-toastify";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
+import { FirstLoadAnimation } from "../components";
+
 import type { AppProps } from "next/app";
 
 function App({ Component, pageProps }: AppProps) {
@@ -42,6 +44,8 @@ function App({ Component, pageProps }: AppProps) {
             </Head>
 
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
+
+            <FirstLoadAnimation timeout={4500} />
 
             <QueryClientProvider client={queryClient}>
                 <Component {...pageProps} />

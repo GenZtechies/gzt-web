@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 @import url("aos/dist/aos.css");
+@import url("./loading.style.css");
 @import url("react-toastify/dist/ReactToastify.css");
 
 @layer base {

@@ -9,7 +9,7 @@ const TopNavigationBar = () => {
 
     return (
         <>
-            <nav className="flex flex-col items-center p-5">
+            <nav className="flex flex-col items-center p-5 bg-white">
                 <div className="m-auto w-full max-w-6xl flex flex-row lg:flex-row flex-wrap justify-between items-center">
                     <div>
                         <Link href="/">
