@@ -1,12 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+/* Tailwind Setup */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: "Lexend", sans-serif;
+@import url("aos/dist/aos.css");
+@import url("./loading.style.css");
+@import url("react-toastify/dist/ReactToastify.css");
+
+@layer base {
+    /* Specify default font below */
+    html {
+        font-family: "DM Sans", sans-serif;
+    }
+
+    /* Remove daisy ui outline on form elements */
+    .input:focus,
+    .select:focus,
+    .textarea:focus,
+    .file-input:focus {
+        @apply outline-0 !important;
+    }
 }
-html {
-  overflow-x: hidden;
+
+@layer components {
+    .btn {
+        @apply normal-case;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
