@@ -130,7 +130,7 @@ const Home: NextPage = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-5 gap-10 py-10">
                             <Link href="https://www.youtube.com/watch?v=YQwja2nCLnY" target="_blank" className="relative md:col-span-3" data-aos="fade-down-zoom-in">
-                                <Image src="/assets/images/initiatives/hackfest.jpg" width={0} height={0} sizes="100" className="w-full h-full aspect-square md:aspect-video object-cover rounded-2xl" alt="initiative-preview" />
+                                <Image src={require("../public/assets/images/initiatives/hackfest.jpg")} placeholder="blur" width={0} height={0} sizes="100" className="w-full h-full aspect-square md:aspect-video object-cover rounded-2xl" alt="initiative-preview" />
 
                                 <div className="flex w-full h-full items-end gap-2 absolute overflow-hidden top-0 left-0 bg-gradient-to-t from-black to-transparent rounded-2xl p-5">
                                     <div className="flex flex-row items-center gap-2">
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
                             </Link>
 
                             <Link href="https://www.youtube.com/watch?v=h7uCgsaYV9E" target="_blank" className="relative md:col-span-2" data-aos="fade-down-zoom-in">
-                                <Image src="/assets/images/initiatives/paystacktour.jpg" width={0} height={0} sizes="100" className="w-full h-full aspect-square md:aspect-video object-cover rounded-2xl" alt="initiative-preview" />
+                                <Image src={require("../public/assets/images/initiatives/paystacktour.jpg")} placeholder="blur" width={0} height={0} sizes="100" className="w-full h-full aspect-square md:aspect-video object-cover rounded-2xl" alt="initiative-preview" />
 
                                 <div className="flex w-full h-full items-end gap-2 absolute overflow-hidden top-0 left-0 bg-gradient-to-t from-black to-transparent rounded-2xl p-5">
                                     <div className="flex flex-row items-center gap-2">
