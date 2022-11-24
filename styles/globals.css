@@ -24,7 +24,7 @@
 
 @layer components {
     .btn {
-        @apply capitalize;
+        @apply normal-case;
     }
 }
 
