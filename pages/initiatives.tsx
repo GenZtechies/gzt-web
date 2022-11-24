@@ -80,8 +80,8 @@ const Initiatives: NextPage = () => {
                                         </div>
                                     </Link>
 
-                                    <div className="p-4">
-                                        <h2 className="text-primary text-2xl font-bold my-3">{initiative.title}</h2>
+                                    <div className="p-4 space-y-5">
+                                        <h2 className="text-primary text-2xl font-bold">{initiative.title}</h2>
                                         <p className="text-base font-light">{initiative.description}</p>
                                     </div>
                                 </div>
