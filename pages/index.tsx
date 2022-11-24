@@ -15,7 +15,7 @@ const Home: NextPage = () => {
                 <section className="flex flex-col items-center min-h-screen w-screen bg-[url('/assets/images/home-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
                     <div className="flex flex-col md:flex-row items-center w-full max-w-6xl mt-10 md:py-10 gap-10">
                         <div className="w-full md:w-1/2">
-                            <h1 className="text-neutral-900 text-4xl md:text-6xl leading-10 capitalize font-bold my-5" data-aos="fade-up">
+                            <h1 className="text-neutral-900 text-4xl md:text-6xl leading-10  font-bold my-5" data-aos="fade-up">
                                 Africa's Largest Network for <span className="text-primary">Gen-Zs</span> in Tech.
                             </h1>
                             <Link href="https://linktr.ee/genztechies" target="_blank" className="btn btn-wide bg-primary hover:bg-primary border-none text-white animate-bounce">
