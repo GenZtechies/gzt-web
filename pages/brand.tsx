@@ -5,10 +5,12 @@ import Image from "next/image";
 import { Footer, TopNavigationBar } from "../components";
 
 import type { NextPage } from "next";
+import Seo from "../components/Seo";
 
 const Brand: NextPage = () => {
     return (
         <>
+            <Seo title="Brand" />
             <TopNavigationBar />
 
             <main>

@@ -5,10 +5,12 @@ import Image from "next/image";
 import { ChevronRightIcon, Footer, TopNavigationBar } from "../components";
 
 import type { NextPage } from "next";
+import Seo from "../components/Seo";
 
 const Home: NextPage = () => {
     return (
         <>
+            <Seo title="Connecting Gen-Zs in Tech Across Africa" />
             <TopNavigationBar />
 
             <main>
