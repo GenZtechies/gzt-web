@@ -111,7 +111,7 @@ const Home: NextPage = () => {
                 <section className="flex flex-col items-center bg-white p-5">
                     <div className="w-full max-w-6xl py-10">
                         <h2 className="text-center text-neutral-900 text-4xl md:text-5xl font-bold my-2">Some of our amazing supporters</h2>
-                        <p className="text-center text-neutral-900 text-lg font-light my-2">Amazing companies that partnered, sponsored & supported us</p>
+                        <p className="text-center text-neutral-900 text-lg font-light my-2">Brands we've loved working with</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
                             {["vercel", "paystack", "lazerpay", "filecoin", "sail", "spheron", "technext", "i4g", "klas", "zeddpay", "techsteroid", "gameverse", "zuri", "abcd-community"].map((supporter) => (
