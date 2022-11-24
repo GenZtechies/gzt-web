@@ -194,7 +194,7 @@ const Contact: NextPage = () => {
                         <div className="grid grid-cols-1 pt-10">
                             {[
                                 { question: "What is GenZtechies all about?", answer: "Africa’s largest network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." },
-                                { question: "How can i be a part of GenZtechies", answer: "" },
+                                { question: "How can I be a part of GenZtechies", answer: "" },
                                 { question: "What does GenZtechies Do ?", answer: "" },
                                 { question: "What are the perks of being a GenZtechie ?", answer: "" },
                                 { question: "Can I partner with GenZtechies ?", answer: "" },

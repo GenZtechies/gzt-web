@@ -32,7 +32,7 @@ const Press: NextPage = () => {
                             {[
                                 {
                                     url: "https://www.gbolamedia.com/startups-in-nigeria-by-gen-z.html",
-                                    title: "Top 10 Startups in Nigeria by Gen-Z to Watch out for",
+                                    title: "Top 10 Startups built by Gen-Zs in Nigeria",
                                     image: "https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80"
                                 },
                                 {
