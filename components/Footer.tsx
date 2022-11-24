@@ -155,9 +155,9 @@ const Footer = () => {
                     <p className="text-black/80">Copyright (c) {new Date().getFullYear()} GenZtechies | All rights reserved.</p>
 
                     <p className="text-black/50 space-x-4">
-                        <Link href="/brand">Brand Guide</Link>
+                        <Link href="/brand">Brand Guidelines</Link>
                         <span>|</span>
-                        <Link href="/press">The Press</Link>
+                        <Link href="/press">Press Features</Link>
                     </p>
                 </div>
             </footer>
