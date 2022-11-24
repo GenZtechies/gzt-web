@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                                 Africa's largest network for <span className="text-primary">Gen-Zs</span> in tech.
                             </h1>
                             <Link href="https://linktr.ee/genztechies" target="_blank" className="btn btn-wide bg-primary hover:bg-primary border-none text-white animate-bounce">
-                                Join the community
+                                Join the Community
                             </Link>
                         </div>
                         <div className="justify-center items-center grid grid-cols-3 gap-5">

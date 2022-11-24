@@ -193,12 +193,12 @@ const Contact: NextPage = () => {
 
                         <div className="grid grid-cols-1 pt-10">
                             {[
-                                { question: "What is GenZtechies all about?", answer: "Africa’s largest network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." },
-                                { question: "How can I be a part of GenZtechies", answer: "" },
-                                { question: "What does GenZtechies Do ?", answer: "" },
-                                { question: "What are the perks of being a GenZtechie ?", answer: "" },
-                                { question: "Can I partner with GenZtechies ?", answer: "" },
-                                { question: "Can I sponsor with GenZtechies ?", answer: "" }
+                                { question: "What is GenZtechies all about?", answer: "Africa’s largest network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunities that lets us get hacky." },
+                                { question: "How can I be a part of GenZtechies", answer: "Click on the 'Join Community' button below to be part of GenZtechies" },
+                                { question: "Can I start a GenZtechies chapter in my community?", answer: "Instead of fragmenting the community into chapters, our ambassadors across Africa host initiatives open to anyone from anywhere" },
+                                { question: "What are the perks of being a GenZtechie ?", answer: "You get exclusive access to events, workshops, opportunities, and more to level-up your career in tech" },
+                                { question: "Can I partner with GenZtechies ?", answer: "Sure! send us a message via the contact form above or through our social media handles also above" },
+                                { question: "Can I sponsor with GenZtechies ?", answer: "Sure! send us a message via the contact form above or through our social media handles also above" }
                             ].map((faq, index) => (
                                 <FaqAccordion key={index} question={faq.question} answer={faq.answer} />
                             ))}
