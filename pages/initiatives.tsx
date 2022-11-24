@@ -46,6 +46,7 @@ const Initiatives: NextPage = () => {
                                 },
                                 {
                                     title: "AMA (Ask Me Anything)",
+                                    subtitle: "#AMAWithGenZtechies",
                                     image: "/assets/images/initiatives/ama.png",
                                     link: "https://twitter.com/genztechies/status/1507796306403766275",
                                     description: "If GenZtechies aren’t building or launching innovative solutions they’re either featured in the news for raising a million dollars for their new tech startup. AMAs are fun and inspiring, they help us to connect with a GenZ doing something amazing. We get to ask tonnes of about their passion, personal life, and many more."
