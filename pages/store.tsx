@@ -1,14 +1,14 @@
 import React from "react";
 
-import { Footer, TopNavigationBar } from "../components";
+import { Footer, Seo, TopNavigationBar } from "../components";
 
 import type { NextPage } from "next";
-import Seo from "../components/Seo";
 
 const Store: NextPage = () => {
     return (
         <>
             <Seo title="Store" />
+
             <TopNavigationBar />
 
             <main>

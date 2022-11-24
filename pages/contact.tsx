@@ -5,10 +5,9 @@ import { toast } from "react-toastify";
 import { useMutation } from "@tanstack/react-query";
 import axios, { AxiosError, AxiosResponse } from "axios";
 
-import { FaqAccordion, Footer, TopNavigationBar } from "../components";
+import { FaqAccordion, Footer, Seo, TopNavigationBar } from "../components";
 
 import type { NextPage } from "next";
-import Seo from "../components/Seo";
 
 const Contact: NextPage = () => {
     const { isLoading, mutate } = useMutation((context: any) => axios.post("/api/contact", context), {
@@ -34,6 +33,7 @@ const Contact: NextPage = () => {
     return (
         <>
             <Seo title="Contact Us" />
+
             <TopNavigationBar />
 
             <main>
