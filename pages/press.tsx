@@ -48,9 +48,19 @@ const Press: NextPage = () => {
                                     image: "https://blockbuild.africa/wp-content/uploads/2022/07/FXeWsWKXgAIBLL2.jpg"
                                 },
                                 {
+                                    url: "https://technext.ng/2022/05/31/eniola-osabiya-17-full-stack-developer/",
+                                    title: "Meet Eniola Osabiya, the 17-year-old developer building a community of Gen Z techies",
+                                    image: "https://technext.ng/wp-content/uploads/2022/05/FOxsCvwXwAM-RHk.jpeg"
+                                },
+                                {
                                     url: "https://techcabal.com/2022/07/19/gen-z-hackfest-2022-senator-tokunbo-abiru-charges-young-techies-to-develop-solutions-to-societal-problems/",
                                     title: "Gen Z Hackfest 2022: Senator Tokunbo Abiru Charges Young Techies To Develop Solutions To Societal Problems",
                                     image: "https://x7d4c5z5.stackpathcdn.com/wp-content/uploads/tc/2022/07/20220711_144431-2048x922.jpg"
+                                },
+                                {
+                                    url: "https://refinedng.com/eniola-osabiya-is-the-17-year-old-developer-building-a-community-of-gen-z-techies/",
+                                    title: "Eniola Osabiya is the 17-year-old developer building a community of Gen Z techies",
+                                    image: "https://i0.wp.com/refinedng.com/wp-content/uploads/2022/06/FBX5BTtWYAUhEkK-1-scaled.jpeg?resize=1170%2C694&ssl=1"
                                 },
                                 {
                                     url: "https://thenationonlineng.net/technology-key-to-youth-development-says-abiru/",
