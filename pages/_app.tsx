@@ -26,26 +26,26 @@ function App({ Component, pageProps }: AppProps) {
 
                 <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                 <meta name="title" content="GenZtechies - Connecting Gen-Zs in Tech Across Africa" />
-                <meta name="description" content="Africa’s largest network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." />
+                <meta name="description" content="Africa’s fastest growing network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." />
 
                 <link rel="icon" href="https://assets.genztechies.com/icon-coloured.png" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://genztechies.com/" />
                 <meta property="og:title" content="GenZtechies - Connecting Gen-Zs in Tech Across Africa" />
-                <meta property="og:description" content="Africa’s largest network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." />
+                <meta property="og:description" content="Africa’s fastest growing network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." />
                 <meta property="og:image" content="https://genztechies.com/assets/site-metaimage.png" />
 
                 <meta property="twitter:card" content="summary_large_image" />
                 <meta property="twitter:url" content="https://genztechies.com/" />
                 <meta property="twitter:title" content="GenZtechies - Connecting Gen-Zs in Tech Across Africa" />
-                <meta property="twitter:description" content="Africa’s largest network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." />
+                <meta property="twitter:description" content="Africa’s fastest growing network for Gen-Z developers, founders, and technologists. Dream, build, and launch things with us! We love networking, events, and opportunites that lets us get hacky." />
                 <meta property="twitter:image" content="https://genztechies.com/assets/site-metaimage.png" />
             </Head>
 
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
-            <FirstLoadAnimation timeout={4500} />
+            <FirstLoadAnimation timeout={4000} />
 
             <QueryClientProvider client={queryClient}>
                 <Component {...pageProps} />
