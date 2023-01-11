@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                             <h1 className="text-neutral-900 text-4xl md:text-6xl leading-10  font-bold my-5" data-aos="fade-up">
                                 Africa's Fastest Growing Network for <span className="text-primary">Gen-Zs</span> in Tech.
                             </h1>
-                            <Link href="https://linktr.ee/genztechies" target="_blank" className="btn btn-wide bg-primary hover:bg-primary border-none text-white animate-bounce">
+                            <Link href="https://apply.genztechies.com" target="_blank" className="btn btn-wide bg-primary hover:bg-primary border-none text-white animate-bounce">
                                 Join the Community
                             </Link>
                         </div>
