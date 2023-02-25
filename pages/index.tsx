@@ -114,8 +114,11 @@ const Home: NextPage = () => {
                         <p className="text-center text-neutral-900 text-lg font-light my-2">Brands we've loved working with</p>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 pt-10">
-                            {["vercel", "paystack", "lazerpay", "filecoin", "sail", "spheron", "technext", "i4g", "klas", "zeddpay", "techsteroid", "gameverse", "zuri", "abcd-community"].map((supporter) => (
-                                <img key={supporter} src={`/assets/images/supporters/${supporter}.svg`} className="m-auto h-44 aspect-video" alt="company-logo" data-aos="fade-up" />
+                            {/* {["vercel", "paystack", "lazerpay", "filecoin", "sail", "spheron", "technext", "i4g", "klas", "zeddpay", "techsteroid", "gameverse", "zuri", "abcd-community"].map((supporter) => ( */}
+                            {supporters.map((supporter) => (
+                                <Link href={supporter.link} target={"_blank"}>
+                                    <img key={supporter.title} src={`/assets/images/supporters/${supporter.title}.svg`} className="m-auto h-44 aspect-video" alt="company-logo" data-aos="fade-up" />
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -184,3 +187,62 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+const supporters: { title: string; link: string }[] = [
+    {
+        title: "vercel",
+        link: "https://vercel.com/?utm_source=genztechies&utm_campaign=oss"
+    },
+    {
+        title: "paystack",
+        link: "https://paystack.com/"
+    },
+    {
+        title: "lazerpay",
+        link: "https://lazerpay.finance/"
+    },
+    {
+        title: "filecoin",
+        link: "https://filecoin.io/"
+    },
+    {
+        title: "sail",
+        link: "https://www.tokunboabiru.org/sail"
+    },
+    {
+        title: "spheron",
+        link: "https://spheron.network/"
+    },
+    {
+        title: "technext",
+        link: "https://technext.ng/"
+    },
+    {
+        title: "i4g",
+        link: "https://ingressive.org/"
+    },
+    {
+        title: "klas",
+        link: "https://www.tryklas.com/"
+    },
+    {
+        title: "zeddpay",
+        link: "https://www.zeddpay.com/"
+    },
+    {
+        title: "techsteroid",
+        link: "https://techsteroid.africa/"
+    },
+    {
+        title: "gameverse",
+        link: "#"
+    },
+    {
+        title: "zuri",
+        link: "#"
+    },
+    {
+        title: "abcd-community",
+        link: "#"
+    }
+];
