@@ -84,6 +84,9 @@ const Footer = () => {
                                     <Link href="/press" className="list-item">
                                         Press
                                     </Link>
+                                    <Link href="/gallery" className="list-item">
+                                        Gallery
+                                    </Link>
                                     <Link href="/contact" className="list-item">
                                         Contact Us
                                     </Link>

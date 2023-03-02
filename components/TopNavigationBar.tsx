@@ -40,6 +40,9 @@ const TopNavigationBar = () => {
                         <Link href="/press" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "press" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
                             press
                         </Link>
+                        <Link href="/gallery" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "gallery" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
+                            gallery
+                        </Link>
                         <Link href="https://blog.genztechies.com" target="_blank" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "blog" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
                             blog
                         </Link>
