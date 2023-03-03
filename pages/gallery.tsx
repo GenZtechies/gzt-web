@@ -46,6 +46,11 @@ const Gallery: NextPage = () => {
                                     title: "AltSchool Office Tour",
                                     image: "https://lh3.googleusercontent.com/ZT797Ce8n5hA8hfID3JA36uKz7YrBSzD-tQgPe224KiB0AJ76UflWtXMgx-ZXiWycgH5hbr0oQXIBvASfB8DUUA6TPMy-tUUw8K4g_xpzirQOzO-ZRWqsppwC_talkHB2ilXDi-g1w=w2400",
                                     url: "https://photos.app.goo.gl/wciKAVECUykx5BhR8"
+                                },
+                                {
+                                    title: "Seerbit Office Tour",
+                                    image: "https://lh3.googleusercontent.com/6kye9DMyUv9tf37GNPBZguozhMID_EsUrqnvw_kTl5JjMBN46jWxKxDiUiVobXXGdlJ7AUoyu1RHfTgf-rNQ6lGniCtkChqMMx9-Pryaq0fCslIeSTz7UPlrHuBuQigBL_cmJfKc0w=w2400",
+                                    url: "https://photos.app.goo.gl/FeFa4HcDekFQKWVw6"
                                 }
                             ].map((press, index) => (
                                 <div key={index} data-aos="fade-up">
