@@ -10,7 +10,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                // Add color schemes
+                // color schemes here
                 primary: "#5D5CD6",
                 "primary-dark": "#151452",
                 "primary-light": "#D6D6F5",
@@ -21,7 +21,9 @@ module.exports = {
                 warning: "#FEC658"
             },
             fontFamily: {
-                // Add custom fonts
+                // custom fonts here
+                sora: ["Sora", "sans-serif"],
+                rubik: ["Rubik", "sans-serif"]
             }
         }
     },
