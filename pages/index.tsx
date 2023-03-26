@@ -44,7 +44,7 @@ const Home: NextPage = () => {
                         <img src="/assets/images/left-quote.png" alt="left-quote" className="w-14 md:w-24 aspect-square self-start" data-aos="fade-right" />
                         <div className="w-full">
                             <h3 className="text-primary text-lg uppercase font-bold my-2">We Are GenZtechies</h3>
-                            <p className="text-neutral-900 text-3xl font-light my-2">Where Gen Z developers, founders, designers, and techies across Africa connect, learn, and discover life-changing opportunites.</p>
+                            <p className="text-neutral-900 text-3xl font-light my-2">Where Gen Z developers, founders, designers, and techies across Africa connect, learn, and discover life-changing opportunities.</p>
                         </div>
                         <img src="/assets/images/right-quote.png" alt="right-quote" className="w-14 md:w-24 aspect-square self-end" data-aos="zoom-in" />
                     </div>
