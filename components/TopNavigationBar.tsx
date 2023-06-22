@@ -59,7 +59,7 @@ const TopNavigationBar = () => {
                     </div>
                     <div className={["lg:flex flex-col lg:flex-row justify-between my-4 lg:my-0 lg:gap-5 transition-all duration-500 ease-in", isMobileNavExpanded ? "flex w-full lg:w-auto" : "hidden"].join(" ")}>
                         {links.map((link) => (
-                            <Link href={link.href} target={link?.target || "_self"} className={["hover:text-primary text-base my-1 p-1 capitalize transition-all duration-300 ease-in font-semibold", router.pathname === link.href ? "text-primary font-bold" : "text-slate-600"].join(" ")}>
+                            <Link key={link.href} href={link.href} target={link?.target || "_self"} className={["hover:text-primary text-base my-1 p-1 capitalize transition-all duration-300 ease-in font-semibold", router.pathname === link.href ? "text-primary font-bold" : "text-slate-600"].join(" ")}>
                                 {link.name}
                             </Link>
                         ))}
