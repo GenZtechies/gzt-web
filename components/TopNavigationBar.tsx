@@ -63,27 +63,6 @@ const TopNavigationBar = () => {
                                 {link.name}
                             </Link>
                         ))}
-                        {/* <Link href="/initiatives" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "initiatives" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
-                            our initiatives
-                        </Link>
-                        <Link href="/donate" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "donate" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
-                            donate
-                        </Link>
-                        <Link href="/store" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "store" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
-                            store
-                        </Link>
-                        <Link href="/press" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "press" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
-                            press
-                        </Link>
-                        <Link href="/gallery" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "gallery" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
-                            gallery
-                        </Link>
-                        <Link href="https://blog.genztechies.com" target="_blank" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "blog" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
-                            blog
-                        </Link>
-                        <Link href="/contact" className={["hover:text-primary text-base my-1 p-1 capitalize", activePage === "contact" ? "text-primary font-bold" : "text-neutral-900 font-medium"].join(" ")}>
-                            contact us
-                        </Link> */}
                     </div>
 
                     <div className={["lg:block", isMobileNavExpanded ? "flex w-full lg:w-auto" : "hidden"].join(" ")}>
