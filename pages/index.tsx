@@ -10,7 +10,6 @@ const Home: NextPage = () => {
     return (
         <>
             <TopNavigationBar />
-
             <main>
                 <section className="flex flex-col items-center min-h-screen w-screen bg-[url('/assets/images/home-hero-bg.svg')] bg-cover bg-center bg-no-repeat p-5">
                     <div className="flex flex-col items-center w-full max-w-6xl gap-10 mt-10 md:flex-row md:py-10">
@@ -22,7 +21,7 @@ const Home: NextPage = () => {
                                 Join the Community
                             </Link>
 
-                            <Link href={"https://bit.ly/GenZHackFest2023"} target="_blank" className="flex items-center justify-center gap-2 font-semibold text-center md:justify-start text-primary hover:underline md:text-left">
+                            <Link href={"https://hackfest.genztechies.com/2023"} target="_blank" className="flex items-center justify-center gap-2 font-semibold text-center md:justify-start text-primary hover:underline md:text-left">
                                 Register for Hackfest 2023 🚀{" "}
                                 <span className="p-1 rounded-full text-primary bg-primary-light bg-opacity-40">
                                     <ChevronRightIcon />

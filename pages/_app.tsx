@@ -10,6 +10,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { FirstLoadAnimation } from "../components";
 
 import type { AppProps } from "next/app";
+import Link from "next/link";
 
 function App({ Component, pageProps }: AppProps) {
     const [queryClient] = React.useState(() => new QueryClient({ defaultOptions: { queries: { retry: false, refetchOnWindowFocus: false } } }));
@@ -48,6 +49,11 @@ function App({ Component, pageProps }: AppProps) {
             <FirstLoadAnimation timeout={4000} />
 
             <QueryClientProvider client={queryClient}>
+                <div className="flex items-center justify-center px-5 py-2 bg-gradient-to-l from-secondary via-primary to-tertiary">
+                    <Link href={"https://hackfest.genztechies.com/2023"} target="_blank" className="font-semibold text-center text-white">
+                        Register for Hackfest 2023 🚀
+                    </Link>
+                </div>
                 <Component {...pageProps} />
 
                 <ReactQueryDevtools initialIsOpen={false} />
