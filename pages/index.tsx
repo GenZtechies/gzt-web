@@ -21,11 +21,8 @@ const Home: NextPage = () => {
                                 Join the Community
                             </Link>
 
-                            <Link href={"https://hackfest.genztechies.com/2023"} target="_blank" className="flex items-center justify-center gap-2 font-semibold text-center md:justify-start text-primary hover:underline md:text-left">
-                                Register for Hackfest 2023 🚀{" "}
-                                <span className="p-1 rounded-full text-primary bg-primary-light bg-opacity-40">
-                                    <ChevronRightIcon />
-                                </span>
+                            <Link href={"https://hackfest.genztechies.com/2023"} target="_blank" className="flex items-center justify-center font-semibold text-center md:justify-start text-primary hover:underline md:text-left">
+                                Register for Hackfest 2023 🚀
                             </Link>
                         </div>
                         <div className="grid items-center justify-center grid-cols-3 gap-5">
