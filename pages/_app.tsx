@@ -46,12 +46,12 @@ function App({ Component, pageProps }: AppProps) {
 
             <ToastContainer newestOnTop={true} pauseOnHover={false} autoClose={3000} />
 
-            <FirstLoadAnimation timeout={4000} />
+            {/* <FirstLoadAnimation timeout={4000} /> */}
 
             <QueryClientProvider client={queryClient}>
                 <div className="flex items-center justify-center px-5 py-2 bg-gradient-to-l from-secondary via-primary to-tertiary">
                     <Link href={"https://hackfest.genztechies.com/2023"} target="_blank" className="font-semibold text-center text-white">
-                        Register for Hackfest 2023 🚀
+                        Register for Gen Z HackFest 2023 {">>"}
                     </Link>
                 </div>
                 <Component {...pageProps} />
