@@ -66,7 +66,7 @@ const TopNavigationBar = () => {
                     </div>
 
                     <div className={["lg:block", isMobileNavExpanded ? "flex w-full lg:w-auto" : "hidden"].join(" ")}>
-                        <Link href="https://apply.genztechies.com" target="_blank" className="text-white border-none btn btn-wide bg-primary hover:bg-primary">
+                        <Link href="https://linktr.ee/genztechies" target="_blank" className="text-white border-none btn btn-wide bg-primary hover:bg-primary">
                             Join the Community
                         </Link>
                     </div>
