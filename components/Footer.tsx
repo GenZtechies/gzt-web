@@ -111,7 +111,7 @@ const Footer = () => {
 
                                 <ul className="pt-5 space-y-4 text-lg font-normal">
                                     {quickLinks.map((link, index) => (
-                                        <Link href={link.link} className="list-item" target={link.target || "_self"}>
+                                        <Link key={link.name} href={link.link} className="list-item" target={link.target || "_self"}>
                                             {link.name}
                                         </Link>
                                     ))}
