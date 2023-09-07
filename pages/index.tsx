@@ -20,9 +20,8 @@ const Home: NextPage = () => {
                             <Link href={"https://linktr.ee/genztechies"} target="_blank" className="mx-auto text-white border-none md:ml-0 btn btn-wide bg-primary hover:bg-primary">
                                 Join the Community
                             </Link>
-
-                            <Link href={"https://hackfest.genztechies.com/2023"} target="_blank" className="flex items-center justify-center font-semibold text-center md:justify-start text-primary hover:underline md:text-left">
-                                Register for Gen Z HackFest 2023 🚀
+                            <Link href={"https://photos.app.goo.gl/b9rHzM8RgE4dpMXeA"} target="_blank" className="flex items-center justify-center font-semibold text-center md:justify-start text-primary hover:underline md:text-left">
+                                View Hackfest 2023 Official Photos 🚀
                             </Link>
                         </div>
                         <div className="grid items-center justify-center grid-cols-3 gap-5">

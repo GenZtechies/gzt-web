@@ -50,8 +50,8 @@ function App({ Component, pageProps }: AppProps) {
 
             <QueryClientProvider client={queryClient}>
                 <div className="flex items-center justify-center px-5 py-2 bg-gradient-to-l from-secondary via-primary to-tertiary">
-                    <Link href={"https://genztechies.notion.site/GenZHackfest2023-Progam-Outline-372f4e0439af458fbff01486ac63e5c4"} target="_blank" className="font-semibold text-center text-white">
-                        View Event Schedule {">>"}
+                    <Link href={"https://photos.app.goo.gl/b9rHzM8RgE4dpMXeA"} target="_blank" className="font-semibold text-center text-white">
+                        View Hackfest 2023 Official Photos {">>"}
                     </Link>
                 </div>
                 <Component {...pageProps} />
